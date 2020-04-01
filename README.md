@@ -1,5 +1,5 @@
 
-# Alchemist
+# Portfolio - Patrycja Tyra
 <!-- markdownlint-disable MD033 -->
 <div align="center">
 <img src="https://upload.wikimedia.org/wikipedia/en/d/d7/Ahsoka_Tano.png" height="350" width="350">
