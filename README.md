@@ -2,7 +2,7 @@
 # Portfolio - Patrycja Tyra
 <!-- markdownlint-disable MD033 -->
 <div align="center">
-<img src="" height="350" width="350">
+<img src="/wireframes/main.PNG" height="350" width="350">
 </div>
 
 One or two paragraphs providing an overview of your project.
