@@ -10,8 +10,6 @@ MONGO_DBNAME = os.environ.get('MONGO_DBNAME')
 MONGO_URI = os.environ.get('MONGO_URI')
 
 
-
-
 app = Flask(__name__)
 
 @app.route("/")
