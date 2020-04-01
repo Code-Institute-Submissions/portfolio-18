@@ -12,7 +12,7 @@ def about():
     return render_template('about.html')
 
 @app.route("/skills")
-def about():
+def skills():
     return render_template('skills.html') 
 
 if __name__ == '__main__':
