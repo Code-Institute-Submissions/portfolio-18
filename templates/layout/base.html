@@ -4,26 +4,21 @@
 
 <head>
     {% include 'links.html' %}
-    <title>patrycja.io</title>
+    <title>{patrycja.io}</title>
 </head>
 
 <body>
-    {% block navbar %} {% endblock %} {% block hero %} {% endblock %} {% block skills %} {% endblock %}
-
-
+    <header>
+        {% block navbar %} {% endblock %}
+    </header>
+    <main>
+        {% block hero %} {% endblock %}</main>
     <div class="jumbotron" id="portfolio">
-
+        {% block portfolio %} {% endblock %}
     </div>
-
-
-    <div class="jumbotron" id="experience">
-
-    </div>
-
 
     <footer>
         {% block footer %} {% endblock%}
-
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
