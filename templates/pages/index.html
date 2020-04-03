@@ -1,18 +1,30 @@
-{% extends 'layout/base.html' %} {% block hero %}
+{% extends 'layout/base.html' %} {% block content %}
 
-<section class="hero-area">
-    <div class="container" id="hero">
-        <div class="row">
-            <div class="col-12 col-lg-11 mx-lg-auto">
-                <h1 class="display-4">Hi my name is Patrycja,
-                    <br> And I am a software developer!</h1>
-            </div>
-            <a class="button" id="projects">
-                <span class="away">add skills</span>
-                <span class="over" href="/register">Register</span>
-            </a>
+<!-- Navigation section  -->
+
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                   <span class="icon icon-bar"></span>
+                   <span class="icon icon-bar"></span>
+                   <span class="icon icon-bar"></span>
+              </button>
+            <a href="index.html" class="navbar-brand"><i class="fab fa-product-hunt"></i></a>
         </div>
-    </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="index.html">Portfolio</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
 
-</section>
+    </div>
+</nav>
+
+
+
 {% endblock %}
