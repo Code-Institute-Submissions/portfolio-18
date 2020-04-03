@@ -10,11 +10,13 @@
 <body>
     <!-- Navigation -->
     {% include 'layout/navbar.html' %}
-    <main>
-        {% block hero %} {% endblock %}</main>
-    <div class="jumbotron" id="portfolio">
-        {% block portfolio %} {% endblock %}
-    </div>
+    <!-- Main content -->
+    <!-- hero content -->
+    {% block hero %} {% endblock %}
+
+    <!-- portfolio content -->
+    {% block portfolio %} {% endblock %}
+
 
     <!-- Footer -->
     {% include 'layout/footer.html' %}
