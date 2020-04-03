@@ -9,9 +9,10 @@ MONGO_URI = os.environ.get('MONGO_URI')
 
 
 app = Flask(__name__)
-
-@app.route("/")
-def hello():
+# Home page
+@app.route('/', methods=['GET', 'POST'])
+@app.route('/index', methods=['GET', 'POST'])
+def home_page():
     return render_template('pages/index.html')
 
 @app.route("/about")
