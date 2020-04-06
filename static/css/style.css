@@ -98,6 +98,43 @@ a:focus {
     padding-left: 22px;
 }
 
+.navbar-light .navbar-nav>li a:hover {
+    color: #333 !important;
+}
+
+.navbar-light .navbar-nav>li>a:hover,
+.navbar-light .navbar-nav>li>a:focus {
+    color: #777;
+    background-color: transparent;
+}
+
+.navbar-light .navbar-nav li a:hover,
+.navbar-light .navbar-nav .active>a {
+    color: #333;
+}
+
+.navbar-light .navbar-nav>.active>a,
+.navbar-light .navbar-nav>.active>a:hover,
+.navbar-light .navbar-nav>.active>a:focus {
+    color: #333;
+    background-color: transparent;
+}
+
+.navbar-light.navbar-toggler {
+    border: none;
+    padding-top: 10px;
+}
+
+.navbar-light .navbar-toggler .icon-bar {
+    background: #bdc3c7;
+    border-color: transparent;
+}
+
+.navbar-light .navbar-toggler:hover,
+.navbar-light .navbar-toggler:focus {
+    background-color: transparent;
+}
+
 
 /*---------------------------------------
    Portfolio section              
