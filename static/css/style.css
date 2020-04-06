@@ -20,6 +20,13 @@ h6 {
   Navbar             
 -----------------------------------------*/
 
+.navbar-default {
+    background: #ffffff;
+    padding: 18px 0;
+    border: none;
+    margin-top: 62px;
+}
+
 
 /*---------------------------------------
    Portfolio section              
