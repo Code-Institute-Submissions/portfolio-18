@@ -167,6 +167,10 @@ footer {
     position: relative;
 }
 
+footer .col-md-3 .fab {
+    font-size: 42px;
+}
+
 
 /*---------------------------------------
    Social icon             
