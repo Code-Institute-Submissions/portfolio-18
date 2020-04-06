@@ -106,14 +106,6 @@ h6 {
     position: relative;
 }
 
-.jumbotron {
-    margin-bottom: 0.1em !important;
-    background-color: #fff;
-    border-radius: .3rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bolder;
-}
-
 #skills {
     background-color: #000022;
     padding: 50px;
