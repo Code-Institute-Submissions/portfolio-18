@@ -11,6 +11,7 @@ MONGO_URI = os.environ.get('MONGO_URI')
 app = Flask(__name__)
 
 # Home page
+
 @app.route('/', methods=['GET', 'POST'])\
 
 @app.route('/index', methods=['GET', 'POST'])
