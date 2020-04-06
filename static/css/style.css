@@ -171,3 +171,8 @@ a:focus {
     margin: 0;
     text-align: center;
 }
+
+.social-icon li {
+    display: inline-block;
+    list-style: none;
+}
