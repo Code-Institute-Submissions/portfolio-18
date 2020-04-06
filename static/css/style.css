@@ -171,6 +171,20 @@ footer .col-md-3 .fab {
     font-size: 42px;
 }
 
+footer a {
+    color: #555;
+}
+
+footer hr {
+    border-color: #ffffff;
+    margin-top: 42px;
+    margin-bottom: 22px;
+}
+
+footer .footer-copyright {
+    padding-top: 16px;
+}
+
 
 /*---------------------------------------
    Social icon             
