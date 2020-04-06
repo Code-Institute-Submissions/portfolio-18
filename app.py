@@ -30,9 +30,13 @@ def skills():
 def contact():
     return render_template('pages/contact.html')
 
-@app.route("/login")
+@app.route('/login', methods=['GET', 'POST'])
 def login():
-    return render_template('pages/login.html')
+    if request.method == 'POST':
+        return do_the_login()
+    else:
+         return render_template('pages/login.html')
+  
 
 @app.route("/register")
 def register():
