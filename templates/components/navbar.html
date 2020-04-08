@@ -10,11 +10,11 @@
                 <li class="active nav-item"><a href="{{ url_for('portfolio')}}" class="nav-link {% if active == 'portfolio' %}portfolio{% endif %}">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ url_for('about_page')}}" class="nav-link {% if active == 'about' %}active{% endif %}">About me </a>
+                    <a href="{{ url_for('about')}}" class="nav-link {% if active == 'about' %}active{% endif %}">About me </a>
                 </li>
-                <li class=" nav-item "><a href="{{ url_for( 'skills_page')}} " class="nav-link {% if active == 'skills' %}skills{% endif %} ">Skills</a>
+                <li class=" nav-item "><a href="{{ url_for( 'skills')}} " class="nav-link {% if active == 'skills' %}skills{% endif %} ">Skills</a>
                 </li>
-                <li class="nav-item "><a href="{{ url_for( 'contact_page')}} " class="nav-link {% if active == 'contact' %}contact{% endif %}">Contact</a>
+                <li class="nav-item "><a href="{{ url_for( 'contact')}} " class="nav-link {% if active == 'contact' %}contact{% endif %}">Contact</a>
                 </li>
             </ul>
         </div>
