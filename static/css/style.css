@@ -173,6 +173,11 @@ a:focus {
     padding-bottom: 40px;
 }
 
+#home hr {
+    width: 82px;
+    margin-top: 32px;
+}
+
 
 /*---------------------------------------
    Portfolio section              
