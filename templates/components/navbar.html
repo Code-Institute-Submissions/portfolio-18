@@ -7,13 +7,13 @@
             <i class="fab fa-product-hunt"></i></a>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav ml-auto">
-                <li class="active nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a>
+                <li class="active nav-item"><a href="{{ url_for('portfolio_page')}}" class="nav-link">Portfolio</a>
                 </li>
-                <li class="nav-item"><a href="about.html" class="nav-link">About me </a>
+                <li class="nav-item"><a href="{{ url_for('about_page')}}" class="nav-link">About me </a>
                 </li>
-                <li class="nav-item"><a href="skills.html" class="nav-link">Skills</a>
+                <li class="nav-item"><a href="{{ url_for('skills_page')}}" class="nav-link">Skills</a>
                 </li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a>
+                <li class="nav-item"><a href="{{ url_for('contact_page')}}" class="nav-link">Contact</a>
                 </li>
             </ul>
         </div>
