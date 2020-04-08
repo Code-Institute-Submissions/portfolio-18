@@ -9,11 +9,12 @@
             <ul class="nav navbar-nav ml-auto">
                 <li class="active nav-item"><a href="{{ url_for('portfolio_page')}}" class="nav-link">Portfolio</a>
                 </li>
-                <li class="nav-item"><a href="{{ url_for('about_page')}}" class="nav-link">About me </a>
+                <li class="nav-item">
+                    <a href="{{ url_for('about_page')}}" class="nav-link {% if active == 'about' %}active{% endif %}">About me </a>
                 </li>
-                <li class="nav-item"><a href="{{ url_for('skills_page')}}" class="nav-link">Skills</a>
+                <li class=" nav-item "><a href="{{ url_for( 'skills_page')}} " class="nav-link {% if active == 'contact' %}skills{% endif %} ">Skills</a>
                 </li>
-                <li class="nav-item"><a href="{{ url_for('contact_page')}}" class="nav-link">Contact</a>
+                <li class="nav-item "><a href="{{ url_for( 'contact_page')}} " class="nav-link {% if active == 'contact' %}contact{% endif %}">Contact</a>
                 </li>
             </ul>
         </div>
