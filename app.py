@@ -20,7 +20,7 @@ def home_page():
 
 @app.route("/about")
 def about():
-    return render_template('pages/about.html', page_title="About me")
+    return render_template("pages/about.html", page_title="About me")
 
 @app.route("/skills")
 def skills():
@@ -41,9 +41,6 @@ def login():
 @app.route("/register")
 def register():
     return render_template('pages/register.html')
-
-
-
 
 
 
