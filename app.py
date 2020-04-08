@@ -20,15 +20,15 @@ def home_page():
 
 @app.route("/about")
 def about():
-    return render_template('pages/about.html')
+    return render_template('pages/about.html', page_title="About me")
 
 @app.route("/skills")
 def skills():
-    return render_template('pages/skills.html') 
+    return render_template('pages/skills.html' , page_title="Skills") 
 
 @app.route("/contact")
 def contact():
-    return render_template('pages/contact.html')
+    return render_template('pages/contact.html', page_title="Contact me")
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
