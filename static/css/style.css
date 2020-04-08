@@ -205,6 +205,26 @@
         text-transform: uppercase;
     }
     /*---------------------------------------
+   Contact section              
+-----------------------------------------*/
+    
+    #contact .col-md-6,
+    #contact .col-md-12 {
+        padding-left: 0px;
+    }
+    
+    #contact .form-control {
+        border: 1px solid #f0f0f0;
+        box-shadow: none;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        transition: all 0.4s ease-in-out;
+    }
+    
+    #contact .form-control:hover {
+        border-color: #777;
+    }
+    /*---------------------------------------
    Footer section              
 -----------------------------------------*/
     
