@@ -23,7 +23,7 @@ def about():
     return render_template("pages/about.html", page_title="About me")
 
 @app.route("/portfolio")
-def about():
+def portfolio():
     return render_template("pages/portfolio.html", page_title="Portfolio")  
 
 @app.route("/skills")
