@@ -23,7 +23,7 @@ def about():
 
 @app.route("/portfolio")
 def about():
-    return render_template("pages/portfolio.html", page_title="portfolio")  
+    return render_template("pages/portfolio.html", page_title="Portfolio")  
 
 @app.route("/skills")
 def skills():
@@ -33,12 +33,6 @@ def skills():
 def contact():
     return render_template('pages/contact.html', page_title="Contact me")
 
-@app.route('/login', methods=['GET', 'POST'])
-def login():
-    if request.method == 'POST':
-        return do_the_login()
-    else:
-         return render_template('pages/login.html')
   
 @app.route("/register")
 def register():
