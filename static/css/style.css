@@ -1,20 +1,29 @@
     @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
-
-/*---------------------------------------
+    /*---------------------------------------
    Mobile Responsive         
 -----------------------------------------*/
-
-@media (max-width: 767px) {
-    h1 {
-        font-size: 38px;
+    
+    @media (max-width: 767px) {
+        h1 {
+            font-size: 38px;
+        }
+        h2 {
+            font-size: 32px;
+            line-height: 48px;
+        }
+        h3 {
+            font-size: 22px;
+        }
+        .section-title h2 {
+            font-size: 22px;
+            line-height: 35px;
+        }
+        .navbar-light {
+            margin-top: 0px;
+            text-align: center;
+        }
     }
-    h2 {
-        font-size: 32px;
-        line-height: 48px;
-    }
-    h3 {
-        font-size: 22px;
-    }
+    
     body {
         background: #ffffff;
         font-family: 'Work Sans', sans-serif;
@@ -25,6 +34,7 @@
     /*--------------------------------------
     Typography             
 -----------------------------------------*/
+    
     h1,
     h2,
     h3,
@@ -35,19 +45,23 @@
         font-weight: 300;
         letter-spacing: 0.5px;
     }
+    
     h2 {
         font-size: 32px;
         line-height: 46px;
     }
+    
     h3 {
         font-size: 26px;
     }
+    
     h4 {
         color: #666;
         font-size: 12px;
         font-weight: normal;
         letter-spacing: 2px;
     }
+    
     p {
         color: #777;
         font-size: 15px;
@@ -55,15 +69,18 @@
         line-height: 26px;
         letter-spacing: 0.2px;
     }
+    
     span {
         font-weight: 400;
     }
     /*---------------------------------------
     General               
 -----------------------------------------*/
+    
     html {
         -webkit-font-smoothing: antialiased;
     }
+    
     a {
         color: #4d638c;
         -webkit-transition: 0.5s;
@@ -71,15 +88,18 @@
         transition: 0.5s;
         text-decoration: none !important;
     }
+    
     a:hover,
     a:active,
     a:focus {
         color: #4d638c;
         outline: none;
     }
+    
     * {
         box-sizing: border-box;
     }
+    
     *:before,
     *:after {
         box-sizing: border-box;
@@ -87,18 +107,22 @@
     /*---------------------------------------
   Navbar             
 -----------------------------------------*/
+    
     .navbar-light {
         background: #ffffff;
         padding: 18px 0;
         border: none;
     }
+    
     .navbar-light .navbar-brand {
         padding-top: 6px;
     }
+    
     .navbar-light .navbar-brand .fab {
         color: #000;
         font-size: 42px;
     }
+    
     .navbar-light .navbar-nav li a {
         color: #777;
         font-size: 16px;
@@ -108,32 +132,39 @@
         padding-right: 22px;
         padding-left: 22px;
     }
+    
     .navbar-light .navbar-nav>li a:hover {
         color: #333 !important;
     }
+    
     .navbar-light .navbar-nav>li>a:hover,
     .navbar-light .navbar-nav>li>a:focus {
         color: #777;
         background-color: transparent;
     }
+    
     .navbar-light .navbar-nav li a:hover,
     .navbar-light .navbar-nav .active>a {
         color: #333;
     }
+    
     .navbar-light .navbar-nav>.active>a,
     .navbar-light .navbar-nav>.active>a:hover,
     .navbar-light .navbar-nav>.active>a:focus {
         color: #333;
         background-color: transparent;
     }
+    
     .navbar-light.navbar-toggler {
         border: none;
         padding-top: 10px;
     }
+    
     .navbar-light .navbar-toggler .icon-bar {
         background: #bdc3c7;
         border-color: transparent;
     }
+    
     .navbar-light .navbar-toggler:hover,
     .navbar-light .navbar-toggler:focus {
         background-color: transparent;
@@ -141,6 +172,7 @@
     /*---------------------------------------
     Home section              
 -----------------------------------------*/
+    
     #home {
         background-size: cover;
         background-position: center center;
@@ -157,6 +189,7 @@
         padding-top: 60px;
         padding-bottom: 40px;
     }
+    
     #home hr {
         width: 82px;
         margin-top: 32px;
@@ -164,6 +197,7 @@
     /*---------------------------------------
    Portfolio section              
 -----------------------------------------*/
+    
     #portfolio span {
         color: #f0f0f0;
         font-size: 10px;
@@ -173,38 +207,46 @@
     /*---------------------------------------
    Footer section              
 -----------------------------------------*/
+    
     footer {
         border-top: 1px solid #f0f0f0;
         padding: 100px 0px;
         position: relative;
     }
+    
     footer .col-md-3 .fab {
         font-size: 42px;
     }
+    
     footer a {
         color: #555;
     }
+    
     footer hr {
         border-color: #ffffff;
         margin-top: 42px;
         margin-bottom: 22px;
     }
+    
     footer .footer-copyright {
         padding-top: 16px;
     }
     /*---------------------------------------
    Social icon             
 -----------------------------------------*/
+    
     .social-icon {
         position: relative;
         padding: 0;
         margin: 0;
         text-align: center;
     }
+    
     .social-icon li {
         display: inline-block;
         list-style: none;
     }
+    
     .social-icon li a {
         color: #777;
         cursor: pointer;
@@ -216,6 +258,7 @@
         position: relative;
         margin: 22px 12px 10px 12px;
     }
+    
     .social-icon li a:hover {
         color: #000;
         transform: scale(1.1);
