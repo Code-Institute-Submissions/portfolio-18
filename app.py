@@ -16,10 +16,14 @@ app = Flask(__name__)
 @app.route('/index', methods=['GET', 'POST'])
 def home_page():
     return render_template('pages/index.html')
-
+    
 @app.route("/about")
 def about():
     return render_template("pages/about.html", page_title="About me")
+
+@app.route("/portfolio")
+def about():
+    return render_template("pages/portfolio.html", page_title="portfolio")  
 
 @app.route("/skills")
 def skills():
@@ -36,7 +40,6 @@ def login():
     else:
          return render_template('pages/login.html')
   
-
 @app.route("/register")
 def register():
     return render_template('pages/register.html')
