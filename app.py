@@ -18,24 +18,24 @@ app = Flask(__name__)
 def home_page():
     return render_template('pages/index.html')
     
-@app.route("/about")
+@app.route("/about", methods=['GET', 'POST'])
 def about():
     return render_template("pages/about.html", page_title="About me")
 
-@app.route("/portfolio")
+@app.route("/portfolio", methods=['GET', 'POST'])
 def portfolio():
     return render_template("pages/portfolio.html", page_title="Portfolio")  
 
-@app.route("/skills")
+@app.route("/skills", methods=['GET', 'POST'])
 def skills():
     return render_template('pages/skills.html' , page_title="Skills") 
 
-@app.route("/contact")
+@app.route('/contact', methods=['GET', 'POST'])
 def contact():
     return render_template('pages/contact.html', page_title="Contact me")
 
   
-@app.route("/register")
+@app.route("/register", methods=['GET', 'POST'])
 def register():
     return render_template('pages/register.html')
 
