@@ -12,9 +12,11 @@
                 </li>
                 <li class=" nav-item"><a href="{{ url_for('portfolio')}}" class="nav-link {% if active == 'portfolio' %}portfolio{% endif %}">Portfolio</a>
                 </li>
-
                 <li class=" nav-item "><a href="{{ url_for( 'skills')}} " class="nav-link {% if active == 'skills' %}skills{% endif %} ">Skills</a>
                 </li>
+                <li class=" nav-item "><a href="{{ url_for( 'register')}} " class="nav-link {% if active == 'register' %}register{% endif %} ">Register</a>
+                </li>
+
                 <li class="nav-item "><a href="{{ url_for( 'contact')}} " class="nav-link {% if active == 'contact' %}contact{% endif %}">Contact</a>
                 </li>
             </ul>
