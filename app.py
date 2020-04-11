@@ -23,19 +23,19 @@ def home_page():
     
 @app.route("/about", methods=['GET', 'POST'])
 def about():
-    return render_template("pages/about.html", page_title="About me")
+    return render_template("pages/about.html", headTitle="About me")
 
 @app.route("/portfolio", methods=['GET', 'POST'])
 def portfolio():
-    return render_template("pages/portfolio.html", page_title="Portfolio")  
+    return render_template("pages/portfolio.html", headTitle="Portfolio")  
 
 @app.route("/skills", methods=['GET', 'POST'])
 def skills():
-    return render_template('pages/skills.html' , page_title="Skills") 
+    return render_template('pages/skills.html' , headTitle="Skills") 
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
-    return render_template('pages/contact.html', page_title="Contact me")
+    return render_template('pages/contact.html', headTitle="Contact me")
 
   
 @app.route("/register", methods=['GET', 'POST'])
