@@ -5,13 +5,12 @@ from os import path
 if path.exists('env.py'):
     import env
 
+app = Flask(__name__)
 
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 app.config['MONGO_URI'] = os.getenv('MONGO_URI')
 COLLECTION_NAME = 'listingsAndReviews'
 
-
-app = Flask(__name__)
 
 # Home page
 
