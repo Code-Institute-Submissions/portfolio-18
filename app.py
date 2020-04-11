@@ -2,9 +2,12 @@ from flask import Flask, render_template, url_for, request
 import os
 from os import path
 
+if path.exists('env.py'):
+    import env
+
 
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
-app.config['MONGO_URI'] = os.getenv('mongodb+srv://patrycja:<@scor81C>@firstcluster-y49uk.mongodb.net/test?retryWrites=true&w=majority')
+app.config['MONGO_URI'] = os.getenv('MONGO_URI')
 COLLECTION_NAME = 'listingsAndReviews'
 
 
