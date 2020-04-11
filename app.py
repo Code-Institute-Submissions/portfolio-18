@@ -3,9 +3,9 @@ import os
 from os import path
 
 
-SECRET_KEY = os.environ.get('SECRET_KEY')
-MONGO_DBNAME = os.environ.get('MONGO_DBNAME')
-MONGO_URI = os.environ.get('MONGO_URI')
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
+app.config['MONGO_URI'] = os.getenv('mongodb+srv://patrycja:<@scor81C>@firstcluster-y49uk.mongodb.net/test?retryWrites=true&w=majority')
+COLLECTION_NAME = 'listingsAndReviews'
 
 
 app = Flask(__name__)
