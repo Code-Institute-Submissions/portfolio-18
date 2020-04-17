@@ -345,6 +345,16 @@
     }
     /*-- skill progress bar --*/
     
+    #skills span {
+        top: -30px;
+        left: 2%;
+        position: relative;
+        font-size: 1.4em;
+        font-weight: bolder;
+        font-family: monospace;
+        color: #fff;
+    }
+    
     progress {
         border-radius: 100px;
         background-color: #f3f3f3;
