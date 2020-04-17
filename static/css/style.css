@@ -343,10 +343,26 @@
         color: #000;
         transform: scale(1.1);
     }
-    /*---------------------------------------
-  skill circle
-            
------------------------------------------*/
+    /*-- skill progress bar --*/
+    
+    progress {
+        background-color: #f3f3f3;
+        border: 0;
+        height: 2.5em;
+        width: 100%;
+    }
+    
+    progress::-webkit-progress-bar {
+        background-color: #e0eaf0;
+    }
+    
+    progress::-webkit-progress-value {
+        background-color: #329ad1;
+    }
+    
+    progress::-moz-progress-bar {
+        background-color: #329ad1;
+    }
     /*Add button*/
     
     .button-add blockquote {
