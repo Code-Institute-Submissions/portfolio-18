@@ -346,18 +346,22 @@
     /*-- skill progress bar --*/
     
     progress {
+        border-radius: 100px;
         background-color: #f3f3f3;
-        border: 0;
         height: 2.5em;
         width: 100%;
+        font-weight: 400;
+        letter-spacing: 1px;
+        padding: 14px 28px;
+        margin-top: 26px;
     }
     
     progress::-webkit-progress-bar {
-        background-color: #e0eaf0;
+        background-color: #f5f7f8;
     }
     
     progress::-webkit-progress-value {
-        background-color: #329ad1;
+        background-color: #777;
     }
     
     progress::-moz-progress-bar {
