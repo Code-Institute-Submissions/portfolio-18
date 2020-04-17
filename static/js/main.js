@@ -1,10 +1,8 @@
-$(function() {
-    $('.chart').easyPieChart({
-        scaleColor: false,
-        lineWidth: 10,
-        lineCap: 'round',
-        barColor: '#333',
-        size: 150,
-        animate: 500
+$(document).ready(function() {
+    $('.skill-icons').children('.active').each(function(i) {
+        var row = $(this);
+        setTimeout(function() {
+            row.css('background', '#c0392b');
+        }, 100 * i);
     });
 });

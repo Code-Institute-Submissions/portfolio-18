@@ -364,29 +364,34 @@
         margin: 50px 5%;
     }
     
-    svg {
-        width: 100%
+    .skills .skill-column {
+        width: 50%;
+        float: left;
     }
     
-    circle {
-        fill: none;
-        stroke-width: 3;
-        stroke: #030303;
+    @media (max-width: 1000px) {
+        .skills .skill-column {
+            width: 100%;
+        }
     }
     
-    path {
-        fill: transparent;
-        stroke-width: 3;
-        stroke-linecap: round;
+    .skills .skill-column .skill-label {
+        font-size: 20px;
+        text-align: center;
+        font-family: Verdana;
+        color: #cccccc;
     }
     
-    #aPath {
-        stroke: #bff70a;
+    .skills .skill-column .skill-icons {
+        text-align: center;
     }
     
-    text {
-        dominant-baseline: central;
-        text-anchor: middle;
-        font-size: 5px;
-        fill: Linen;
+    .skills .skill-column .skill-icons span {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        display: inline-block;
+        background: #cccccc;
+        margin: 10px 5px 20px 5px;
+        font-weight: 700;
     }
