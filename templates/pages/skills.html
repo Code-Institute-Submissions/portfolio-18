@@ -1,43 +1,25 @@
 {% extends 'layout/base.html' %} {% block content %}
 
 
-<div class="jumbotron" id="skills">
-    <h1>Skills</h1>
-    <div class="progress-holder" id="pswhole">
-        <svg width="150px" height="150px">
-         <circle class="progress-circle one" cx="60px" cy="60px" r="50"/>
-         <circle class="progress-circle one fullchaser" id="ps" cx="60px" cy="60px" r="50"/>
-        </svg>
+<section id="blog">
+    <div class="container">
+        <div class="row">
 
+            <div class="col-md-offset-1 col-md-10 col-sm-12">
+                <div class="section-title">
+                    <h3>my skills</h3>
+                    <h2>Here you can see some of my latest coding technologies skills.</h2>
+                </div>
+
+                <div class="skill-dots-thumb">
+                    <div class="skill-dots-anim">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
+</section>
 
-    <div class="progress-holder">
-        <svg width="150px" height="150px">
-         <circle class="progress-circle two" cx="60px" cy="60px" r="50"/>
-         <circle class="progress-circle two halfchaser" cx="60px" cy="60px" r="50"/>
-        </svg>
-
-    </div>
-    <div class="progress-holder">
-        <svg width="150px" height="150px">
-         <circle class="progress-circle two" cx="60px" cy="60px" r="50"/>
-         <circle class="progress-circle two halfchaser" cx="60px" cy="60px" r="50"/>
-        </svg>
-
-    </div>
-    <div class="progress-holder">
-        <svg width="150px" height="150px">
-         <circle class="progress-circle two" cx="60px" cy="60px" r="50"/>
-         <circle class="progress-circle two halfchaser" cx="60px" cy="60px" r="50"/>
-        </svg>
-
-    </div>
-    <div class="progress-holder">
-        <svg width="150px" height="150px">
-         <circle class="progress-circle two" cx="60px" cy="60px" r="50"/>
-         <circle class="progress-circle two halfchaser" cx="60px" cy="60px" r="50"/>
-        </svg>
-
-    </div>
-</div>
 <a href="add.html" class="btn btn-secondary">Add</a> {% endblock %}
