@@ -41,6 +41,11 @@ def contact():
 def page_not_found(e):
     return render_template('pages/404.html'), 404
 
+# No permission page
+@app.route('/permission-denied')
+def permission_denied():
+    return render_template("pages/permission.html")
+
 
 
 
