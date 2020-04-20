@@ -36,11 +36,6 @@ def skills():
 def contact():
     return render_template('pages/contact.html', headTitle="Contact me")
 
-  
-@app.route("/register", methods=['GET', 'POST'])
-def register():
-    return render_template('pages/register.html')
-
 
 
 if __name__ == '__main__':
