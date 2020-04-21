@@ -3,7 +3,7 @@ import os
 from os import path
 
 
-mongo = PyMongo()
+
 
 
 if path.exists('env.py'):
