@@ -1,9 +1,10 @@
 from flask import Flask, render_template, url_for, request, abort
 import os
 from os import path
-from flask_pymongo import PyMongo
+from Flask_Pymongo import PyMongo
 
-mongo = PyMongo(app)
+mongo = PyMongo()
+
 
 if path.exists('env.py'):
     import venv
