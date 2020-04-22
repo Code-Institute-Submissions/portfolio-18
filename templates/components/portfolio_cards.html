@@ -1,13 +1,18 @@
+{% block portfolio_cards %}
+
+
 <div class="col-md-4 col-sm-6">
-    <a href="">
+    <a href="{{ url_for('activity_listing_page', activity_id=activity['_id'], title=activity['title']|slugify)}}">
         <div class="portfolio-thumb">
-            <img src="/static/img/purple-square.png" class="img-responsive" alt="Portfolio">
+            <img src="{{ url_for('portfolio.imgUrl')}}" class="img-responsive" alt="Portfolio">
             <div class="portfolio-overlay">
                 <div class="portfolio-item">
-                    <h3>Music Player</h3>
-                    <span>patrycja.io</span>
+                    <h3>{{portfolio.title}}</h3>
+                    <span>{{portfolio.brand}}</span>
                 </div>
             </div>
         </div>
     </a>
 </div>
+
+{% endblock %}
