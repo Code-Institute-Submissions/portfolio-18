@@ -40,6 +40,11 @@ def skills():
 def contact():
     return render_template('pages/contact.html', headTitle="Contact me")
 
+@app.route('/login', methods=['GET', 'POST'])
+def contact():
+    return render_template('pages/login.html', headTitle="Admin panel")
+
+
 # 404 error page
 @app.errorhandler(404)
 def page_not_found(e):
