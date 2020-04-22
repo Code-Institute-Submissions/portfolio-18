@@ -22,7 +22,7 @@ COLLECTION_NAME = 'listingsAndReviews'
 
 @app.route('/index', methods=['GET', 'POST'])
 def home_page():
-    return render_template('pages/index.html')
+    return render_template('pages/index.html', headTitle="home")
     
 @app.route("/about", methods=['GET', 'POST'])
 def about():
@@ -37,13 +37,18 @@ def skills():
     return render_template('pages/skills.html' , headTitle="Skills") 
 
 @app.route("/login", methods=['GET', 'POST'])
-def contact():
+def login():
     return render_template("pages/login.html", headTitle="Admin panel")
 
 @app.route("/contact", methods=['GET', 'POST'])
 def contact():
     return render_template("pages/contact.html", headTitle="Contact me")
 
+
+# 404 error page
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('pages/404.html'), 404
 
 # No permission page
 @app.route('/permission-denied')
