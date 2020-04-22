@@ -17,12 +17,44 @@
     </div>
 </section>
 
+<!--carousel slide-->
+{% for activity in recommended %} {% if loop.index % 4 == 1 %}
+<div class="carousel-item">
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <div class="row no-gutters justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    {% include 'components/cards/carousel_card.html' %}
+                </div>
+                {% endif %} {% if loop.index % 4 == 2 %}
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-md-block">
+                    {% include 'components/cards/carousel_card.html' %}
+                </div>
+
+                {% endif %} {% if loop.index % 4 == 3 %}
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-lg-block">
+                    {% include 'components/cards/carousel_card.html' %}
+                </div>
+                {% endif %} {% if loop.index % 4 == 0 %}
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 d-none d-xl-block">
+                    {% include 'components/cards/carousel_card.html' %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %} {% endfor %}
+<!--/.slide-->
+
 <!-- portfolio Section -->
 <section id="portfolio">
     <div class="container">
         <div class="row">
             <!--  Section 1 -->
+            {% for project in portfolio %} {% if loop.index % 6 == 1 %}
             <div class="col-md-4 col-sm-6">
+                {% include 'components/portfolio_cards.html' %}
                 <a href="">
                     <div class="portfolio-square">
                         <img src="/static/img/400px-Pomme.svg.png" class="img-responsive" alt="Portfolio">
@@ -34,7 +66,7 @@
                         </div>
                     </div>
                 </a>
-            </div>
+            </div> {% endif %} {% if loop.index % 6 == 2 %}
             <!-- Section 2-->
             <div class="col-md-4 col-sm-6">
                 <a href="">
@@ -48,7 +80,7 @@
                         </div>
                     </div>
                 </a>
-            </div>
+            </div> {% endif %} {% if loop.index % 6 == 3 %}
             <!--  Section 3 -->
             <div class="col-md-4 col-sm-6">
                 <a href="">
@@ -62,7 +94,7 @@
                         </div>
                     </div>
                 </a>
-            </div>
+            </div> {% endif %} {% if loop.index % 6 == 4 %}
             <!-- Section 4 -->
             <div class="col-md-4 col-sm-6">
                 <a href="">
@@ -76,7 +108,7 @@
                         </div>
                     </div>
                 </a>
-            </div>
+            </div> {% endif %} {% if loop.index % 6 == 5 %}
             <!-- Section 5 -->
             <div class="col-md-4 col-sm-6">
                 <a href="">
@@ -90,7 +122,7 @@
                         </div>
                     </div>
                 </a>
-            </div>
+            </div> {% endif %} {% if loop.index % 6 == 6 %}
             <!--  Section 6 -->
             <div class="col-md-4 col-sm-6">
                 <a href="">
@@ -104,8 +136,8 @@
                         </div>
                     </div>
                 </a>
-            </div>
-
+            </div>{% endif %}
+            <hr>
             <div class="col-md-12 col-sm-12 text-center">
                 <h3>hello, if you interest working together. just send message <a href="contact.html">contact page</a></h3>
             </div>
