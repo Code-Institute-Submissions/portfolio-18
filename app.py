@@ -36,9 +36,13 @@ def portfolio():
 def skills():
     return render_template('pages/skills.html' , headTitle="Skills") 
 
-@app.route('/contact', methods=['GET', 'POST'])
+@app.route("/login", methods=['GET', 'POST'])
 def contact():
-    return render_template('pages/contact.html', headTitle="Contact me")
+    return render_template("pages/login.html", headTitle="Admin panel")
+
+@app.route("/contact", methods=['GET', 'POST'])
+def contact():
+    return render_template("pages/contact.html", headTitle="Contact me")
 
 
 
