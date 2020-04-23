@@ -48,7 +48,7 @@ def contact():
 # No permission page
 @app.route('/permission-denied')
 def permission_denied():
-    return render_template("pages/permission.html")
+    return render_template("pages/permission.html", active="errorPage", loggedIn=False)
 
 
 
