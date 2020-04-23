@@ -1,7 +1,7 @@
-from flask import Flask, render_template, url_for, request, abort
+from flask import Flask, render_template, redirect, url_for, request, abort
 import os
 from os import path
-
+from flask_pymongo import PyMongo
 
 
 
