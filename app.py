@@ -18,6 +18,13 @@ mongo = PyMongo(app)
 
 @app.route('/', methods=['GET', 'POST'])
 
+@app.route('/get_tasks')
+def get_tasks():
+    return 'Hello world'
+    
+    
+
+
 @app.route('/index', methods=['GET', 'POST'])
 def home_page():
     return render_template('pages/index.html', headTitle="home")
