@@ -16,7 +16,7 @@ mongo = PyMongo(app)
 
 # Home page
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/')
 
 @app.route('/get_tasks')
 def get_tasks():
