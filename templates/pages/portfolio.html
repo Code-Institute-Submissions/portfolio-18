@@ -1,4 +1,4 @@
-{% extends 'layout/base.html' %} {% block content %}
+{% extends 'layout/base.html' %} {% block content %} {% for project in projects %} {{ project.project_name }} {{ project.for_who}}{% endfor %}
 
 <section id="portfolio">
     <div class="container">
@@ -10,7 +10,7 @@
                         <img src="/static/img/400px-Pomme.svg.png" class="img-responsive" alt="Portfolio">
                         <div class="portfolio-overlay">
                             <div class="portfolio-item">
-                                <h3>Music Player</h3>
+                                <h3>{{ project.project_name }}</h3>
                                 <span>patrycja.io</span>
                             </div>
                         </div>
@@ -24,7 +24,7 @@
                         <img src="/static/img/400px-Pomme.svg.png" class="img-responsive" alt="Portfolio">
                         <div class="portfolio-overlay">
                             <div class="portfolio-item">
-                                <h3>Seat reservation</h3>
+                                <h3>{{ project.project_name }}</h3>
                                 <span>patrycja.io</span>
                             </div>
                         </div>
@@ -39,7 +39,7 @@
                         <img src="/static/img/400px-Pomme.svg.png" class="img-responsive" alt="Portfolio">
                         <div class="portfolio-overlay">
                             <div class="portfolio-item">
-                                <h3>Asteroids</h3>
+                                <h3>{{ project.project_name }}</h3>
                                 <span>patrycja.io for CodeInstitue</span>
                             </div>
                         </div>
@@ -54,7 +54,7 @@
                         <img src="/static/img/400px-Pomme.svg.png" class="img-responsive" alt="Portfolio">
                         <div class="portfolio-overlay">
                             <div class="portfolio-item">
-                                <h3>Martinez Studio</h3>
+                                <h3>{{ project.project_name }}</h3>
                                 <span>patrycja.io for CodeInstitute</span>
                             </div>
                         </div>
@@ -69,7 +69,7 @@
                         <img src="/static/img/400px-Pomme.svg.png" class="img-responsive" alt="Portfolio">
                         <div class="portfolio-overlay">
                             <div class="portfolio-item">
-                                <h3>Satisfaction Survey</h3>
+                                <h3>{{ project.project_name }}</h3>
                                 <span>patrycja.io for WCG</span>
                             </div>
                         </div>
@@ -84,7 +84,7 @@
                         <img src="/static/img/400px-Pomme.svg.png" class="img-responsive" alt="Portfolio">
                         <div class="portfolio-overlay">
                             <div class="portfolio-item">
-                                <h3>Project Name</h3>
+                                <h3>{{ project.project_name }}</h3>
                                 <span>Brand Identity</span>
                             </div>
                         </div>
@@ -95,5 +95,4 @@
         </div>
     </div>
 </section>
-
-{% endblock %}
+{% endfor %} {% endblock %}
