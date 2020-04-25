@@ -44,7 +44,7 @@ def contact():
 
 @app.route('/project_presentation')
 def project_presentation():
-    return render_template('pages/project_presentation.html', tasks=mongo.db.tasks.find())
+    return render_template('pages/project_presentation.html', projects=mongo.db.projects.find())
 
 @app.route("/add_project")
 def add_project():
