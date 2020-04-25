@@ -48,7 +48,7 @@ def project_presentation():
 
 @app.route("/add_project")
 def add_project():
-    return render_template('pages/tasks.html', tasks=mongo.db.tasks.find())
+    return render_template('pages/add_project.html', tasks=mongo.db.tasks.find())
 
 @app.route("/insert_project", methods=['POST'])
 def insert_project():
