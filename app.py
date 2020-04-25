@@ -49,9 +49,13 @@ def login():
 def contact():
     return render_template("pages/contact.html", headTitle="Contact me")
 
-@app.route("/addproject")
-def get_tasks():
+@app.route("/add_project")
+def add_project():
     return render_template('pages/tasks.html', tasks=mongo.db.tasks.find())
+
+@app.route("/insert_project")
+def insert_project():
+    return render_template('pages/tasks.html', tasks=mongo.db.tasks.find())    
 
 
 # No permission page
