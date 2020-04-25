@@ -3,94 +3,33 @@
 <section id="portfolio">
     <div class="container">
         <div class="row">
+            {% for project in projects %} {% if loop.index % 6 == 1 %}
             <!-- Portfolio Section 1 -->
             <div class="col-md-4 col-sm-6">
-                <a href="">
-                    <div class="portfolio-thumb">
-                        <img src="/static/img/400px-Pomme.svg.png" class="img-responsive" alt="Portfolio">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-item">
-                                <h3>{{ project.project_name }}</h3>
-                                <span>{{project.for_who}}</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
+                {% include 'components\portfolio_cards.html' %}
             </div>
+            {% endif %} {% if loop.index % 6 == 2 %}
+
             <!-- Portfolio Section 2-->
             <div class="col-md-4 col-sm-6">
-                <a href="">
-                    <div class="portfolio-thumb">
-                        <img src="/static/img/400px-Pomme.svg.png" class="img-responsive" alt="Portfolio">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-item">
-                                <h3>{{ project.project_name }}</h3>
-                                <span>{{ project.for_who}}</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
+                {% include 'components\portfolio_cards.html' %}
+            </div>{% endif %} {% if loop.index % 6 == 3 %}
             <!-- Portfolio Section 3 -->
             <div class="col-md-4 col-sm-6">
-                <a href="">
-                    <div class="portfolio-thumb">
-                        <img src="/static/img/400px-Pomme.svg.png" class="img-responsive" alt="Portfolio">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-item">
-                                <h3>{{ project.project_name }}</h3>
-                                <span>{{ project.for_who}}</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
+                {% include 'components\portfolio_cards.html' %}
+            </div>{% endif %} {% if loop.index % 6 == 4 %}
             <!-- Portfolio Section 4 -->
             <div class="col-md-4 col-sm-6">
-                <a href="">
-                    <div class="portfolio-thumb">
-                        <img src="/static/img/400px-Pomme.svg.png" class="img-responsive" alt="Portfolio">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-item">
-                                <h3>{{ project.project_name }}</h3>
-                                <span>{{ project.for_who}}/span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
+                {% include 'components\portfolio_cards.html' %}
+            </div>{% endif %} {% if loop.index % 6 == 5 %}
             <!-- Portfolio Section 5 -->
             <div class="col-md-4 col-sm-6">
-                <a href="">
-                    <div class="portfolio-thumb">
-                        <img src="/static/img/400px-Pomme.svg.png" class="img-responsive" alt="Portfolio">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-item">
-                                <h3>{{ project.project_name }}</h3>
-                                <span>{{ project.for_who}}</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
+                {% include 'components\portfolio_cards.html' %}
+            </div>{% endif %} {% if loop.index % 6 == 0 %}
             <!-- Portfolio Section 6 -->
             <div class="col-md-4 col-sm-6">
-                <a href="">
-                    <div class="portfolio-thumb">
-                        <img src="/static/img/400px-Pomme.svg.png" class="img-responsive" alt="Portfolio">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-item">
-                                <h3>{{ project.project_name }}</h3>
-                                <span>{{ project.for_who}}</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
+                {% include 'components\portfolio_cards.html' %}
+            </div>{% endif %}
 
         </div>
     </div>
