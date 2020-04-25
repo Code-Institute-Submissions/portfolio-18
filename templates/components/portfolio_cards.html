@@ -1,14 +1,13 @@
 {% block portfolio_cards %}
 
-
 <div class="col-md-4 col-sm-6">
-    <a href="{{ url_for('activity_listing_page', activity_id=activity['_id'], title=activity['title']|slugify)}}">
+    <a href="">
         <div class="portfolio-thumb">
-            <img src="{{ url_for('portfolio.imgUrl')}}" class="img-responsive" alt="Portfolio">
+            <img src="/static/img/400px-Pomme.svg.png" class="img-responsive" alt="Portfolio">
             <div class="portfolio-overlay">
                 <div class="portfolio-item">
-                    <h3>{{portfolio.title}}</h3>
-                    <span>{{portfolio.brand}}</span>
+                    <h3>{{ project.project_name }}</h3>
+                    <span>{{project.for_who}}</span>
                 </div>
             </div>
         </div>
