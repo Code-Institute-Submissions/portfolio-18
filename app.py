@@ -18,6 +18,12 @@ mongo = PyMongo(app)
 
 @app.route('/')
 
+@app.route('/get_tasks')
+def get_tasks():
+    return render_template('pages/tasks.html', tasks=mongo.db.tasks.find())
+    
+    
+
 
 @app.route('/index', methods=['GET', 'POST'])
 def home_page():
@@ -44,12 +50,8 @@ def contact():
     return render_template("pages/contact.html", headTitle="Contact me")
 
 @app.route("/addproject")
-def addproject():
-    return render_template('pages/addproject.html', tasks=mongo.db.tasks.find())
-
-@app.route("/insert_project", methods=['POST'])
-def insert_project():
-    return render_template('pages/addproject.html', tasks=mongo.db.tasks.find())
+def get_tasks():
+    return render_template('pages/tasks.html', tasks=mongo.db.tasks.find())
 
 
 # No permission page
