@@ -47,6 +47,10 @@ def contact():
 def addproject():
     return render_template('pages/addproject.html', tasks=mongo.db.tasks.find())
 
+@app.route("/insert_project", methods=['POST'])
+def insert_project():
+    return render_template('pages/addproject.html', tasks=mongo.db.tasks.find())
+
 
 # No permission page
 @app.route('/permission-denied')
