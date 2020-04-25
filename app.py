@@ -18,13 +18,6 @@ mongo = PyMongo(app)
 
 @app.route('/')
 
-@app.route('/get_tasks')
-def get_tasks():
-    return render_template('pages/tasks.html', tasks=mongo.db.tasks.find())
-    
-    
-
-
 @app.route('/index', methods=['GET', 'POST'])
 def home_page():
     return render_template('pages/index.html', headTitle="home")
@@ -48,6 +41,10 @@ def login():
 @app.route("/contact", methods=['GET', 'POST'])
 def contact():
     return render_template("pages/contact.html", headTitle="Contact me")
+
+@app.route('/get_tasks')
+def get_tasks():
+    return render_template('pages/tasks.html', tasks=mongo.db.tasks.find())
 
 @app.route("/add_project")
 def add_project():
