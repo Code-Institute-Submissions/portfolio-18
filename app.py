@@ -53,7 +53,7 @@ def add_project():
 
 @app.route("/insert_project", methods=['POST'])
 def insert_project():
-    projects=mongo.db.projects
+    projects = mongo.db.projects
     projects.insert_one(request.form.to_dict())
     return redirect(url_for('project_presentation'))
 
