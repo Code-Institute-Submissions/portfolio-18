@@ -60,13 +60,9 @@ def insert_project():
 
 @app.route("/edit_project/<project_id>")
 def edit_project(project_id):
-    projects=mongo.db.projects
-    projects.insert_one(request.form.to_dict())
-    return redirect(url_for('project_presentation'))
+    project=mongo.db.projects.find_one({"_id":ObjectId(project_id)})
+    return render_template('edit_project.html', project=project)
 
-
-
-       
 
 
 # No permission page
