@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for, request, abort
+from flask import Flask, render_template, redirect, url_for, request, abort, session
 import os
 from os import path
 from flask_pymongo import PyMongo
@@ -36,7 +36,12 @@ def skills():
 
 @app.route("/login", methods=['POST'])
 def login():
-    
+    users = mongo.db.users
+    login_user = users.find_one({'name' : request.form['username']})
+
+    if login_user:
+        if bcrypt.hashpw(request.form['pass'].encode('utf-8'), login_user['password'].encode('utf-8')) == login_user['password'].encode('utf-8')
+            session ['username'] = request.form['username']
     return render_template("pages/login.html", headTitle="Admin panel")
 
 @app.route("/contact", methods=['GET', 'POST'])
