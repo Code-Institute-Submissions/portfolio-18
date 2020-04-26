@@ -37,8 +37,7 @@ def skills():
 
 @app.route("/login", methods=['POST'])
 def login():
-    users = mongo.db.users
-    login_user = users.find_one({'name' : request.form['username']})
+
     return render_template("pages/login.html", headTitle="Admin panel")
 
 @app.route("/contact", methods=['GET', 'POST'])
