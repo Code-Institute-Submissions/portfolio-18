@@ -288,12 +288,29 @@
      Submit section              
 -----------------------------------------*/
     
-    #contact input,
-    #contact select {
+    #add_project .col-lg-6,
+    #add_project .col-lg-12 {
+        padding-left: 0px;
+    }
+    
+    #add_project .form-control {
+        border: 1px solid #f0f0f0;
+        box-shadow: none;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        transition: all 0.4s ease-in-out;
+    }
+    
+    #add_project .form-control:hover {
+        border-color: #777;
+    }
+    
+    #add_project input,
+    #add_project select {
         height: 50px;
     }
     
-    #contact input[type="submit"] {
+    #add_project input[type="Add Project"] {
         background: #222;
         border-radius: 100px;
         border: none;
@@ -302,7 +319,7 @@
         transition: all 0.4s ease-in-out;
     }
     
-    #contact input[type="submit"]:hover {
+    #add_project input[type="Add Project"]:hover {
         background: #000;
     }
     /*---------------------------------------
