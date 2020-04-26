@@ -48,13 +48,29 @@ def project_presentation():
 
 @app.route("/add_project")
 def add_project():
-    return render_template('pages/add_project.html')
+    return render_template('pages/add_project.html',
+    projects=mongo.db.projects.find())
 
 @app.route("/insert_project", methods=['POST'])
 def insert_project():
     projects=mongo.db.projects
     projects.insert_one(request.form.to_dict())
     return redirect(url_for('project_presentation'))
+
+@app.route("/insert_project", methods=['POST'])
+def insert_project():
+    projects=mongo.db.projects
+    projects.insert_one(request.form.to_dict())
+    return redirect(url_for('project_presentation'))
+
+@app.route("/edit_project/<project_id>")
+def edit_project(project_id):
+    projects=mongo.db.projects
+    projects.insert_one(request.form.to_dict())
+    return redirect(url_for('project_presentation'))
+
+
+
        
 
 
