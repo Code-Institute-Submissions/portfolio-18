@@ -4,16 +4,13 @@
     <form method="POST" action="{{ url_for( 'login')}}" class="form">
         <h2>Admin panel</h2>
         <hr>
-        <div class="col-lg-6 col-md-6">
-            <input type="email" class="form-control" placeholder="E-mail" required/>
-            <small>Error message</small>
+        <div class="form-group col-lg-6 col-md-6">
+            <input type="text" class="form-control" name="username" placeholder="Username" required/>
         </div>
 
-        <div class="col-lg-6 col-md-6">
-            <input type="password" class="form-control" placeholder="Password" required/>
-            <small>Error message</small>
+        <div class="form-group col-lg-6 col-md-6">
+            <input type="email" class="form-control" name="password" placeholder="Password" required/>
         </div>
-
         <div class="col-md-3 col-sm-4">
             <input class="form-control" type="submit">
         </div>
