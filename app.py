@@ -34,7 +34,7 @@ def portfolio():
 def skills():
     return render_template('pages/skills.html' , headTitle="Skills") 
 
-@app.route("/login", methods=['GET', 'POST'])
+@app.route("/login", methods=['POST'])
 def login():
     return render_template("pages/login.html", headTitle="Admin panel")
 
