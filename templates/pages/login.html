@@ -1,11 +1,9 @@
 {% extends 'layout/base.html' %} {% block content %}
 
 <div class="container">
-    <form id="form" class="form">
+    <form method="POST" action="{{ url_for( 'login')}}" class="form">
         <h2>Admin panel</h2>
         <hr>
-        <h3>Log in</h3>
-
         <div class="col-lg-6 col-md-6">
             <input type="email" class="form-control" placeholder="E-mail" required/>
             <small>Error message</small>
