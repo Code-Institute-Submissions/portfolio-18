@@ -3,22 +3,19 @@
 <section id="add_project">
     <div class="container">
         <div class="row">
-
             <div class="col-md-offset-1 col-md-10 col-sm-12">
                 <div class="section-title">
                     <h2>Add new project </h2>
-
                     <hr>
                 </div>
-
                 <form action="{{url_for('insert_project')}}" method="POST">
                     <div class="col-lg-6 col-md-6">
                         <input type="text" class="form-control" placeholder="Name of the project" required/>
                     </div>
+
                     <div class="col-lg-12 col-md-12">
                         <textarea class="form-control" rows="7" placeholder="Project details" required></textarea>
                     </div>
-
 
                     <div class="col-lg-6 col-md-6">
                         <input type="text" class="form-control" placeholder="Client name" required/>
