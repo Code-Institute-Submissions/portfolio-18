@@ -1,6 +1,7 @@
 from flask import Flask, render_template, redirect, url_for, request, abort, session
 import os
 from os import path
+from werkzeug.security import generate_password_hash, check_password_hash
 from flask_pymongo import PyMongo
 
 
