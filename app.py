@@ -33,17 +33,17 @@ def portfolio():
     projects=mongo.db.projects.find()
     return render_template("pages/portfolio.html", headTitle="Portfolio", projects=projects)  
 
-@app.route("/login", methods=['GET', 'POST'])
-def login():
-    return render_template("pages/login.html", headTitle="Admin panel")
-
 @app.route("/contact", methods=['GET', 'POST'])
 def contact():
     return render_template("pages/contact.html", headTitle="Contact me")
 
-@app.route('/project')
-def project():
-    return render_template('pages/project.html', projects=mongo.db.projects.find())
+@app.route("/login", methods=['GET', 'POST'])
+def login():
+    return render_template("pages/login.html", headTitle="Admin panel")
+
+@app.route('/presentation')
+def presentation():
+    return render_template('pages/presentation.html', projects=mongo.db.projects.find())
 
 @app.route("/add_project")
 def add_project():
