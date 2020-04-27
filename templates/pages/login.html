@@ -4,21 +4,24 @@
 <section id="login">
     <div class="container">
         <div class="row">
-            <form methods="post" action="{{ url_for( 'login')}}" class="form">
-                <h2>Admin panel</h2>
-                <hr>
-                <div class="form-group col-lg-6 col-md-6">
-                    <input type="text" class="form-control" name="username" placeholder="Username" required/>
+            <div class="offset-md-1 col-md-10 col-sm-12">
+                <div class="section-title">
+                    <h2>Admin panel</h2>
+                    <hr>
                 </div>
-                <div class="form-group col-lg-6 col-md-6">
-                    <input type="email" class="form-control" name="password" placeholder="Password" required/>
-                </div>
-                <div class="col-md-3 col-sm-4">
-                    <a href="{{ url_for('editor')}} " class="btn form-control" type="submit">Log in</a>
-                </div>
-            </form>
+                <form methods="post" action="{{ url_for( 'login')}}" class="form">
+                    <div class="form-group col-lg-6 col-md-6">
+                        <input type="text" class="form-control" name="username" placeholder="Username" required/>
+                    </div>
+                    <div class="form-group col-lg-6 col-md-6">
+                        <input type="email" class="form-control" name="password" placeholder="Password" required/>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <a href="{{ url_for('editor')}} " class="btn form-control" type="submit">Log in</a>
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
 </section>
 
 
