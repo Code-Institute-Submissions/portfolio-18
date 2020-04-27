@@ -25,6 +25,7 @@ def home_page():
     
 @app.route("/about", methods=['GET', 'POST'])
 def about():
+    projects=
     return render_template("pages/about.html", headTitle="About me")
 
 @app.route("/portfolio", methods=['GET', 'POST'])

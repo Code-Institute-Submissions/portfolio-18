@@ -3,32 +3,12 @@
 <section id="portfolio">
     <div class="container">
         <div class="row">
-
+            {% for project in projects %}
             <!-- Portfolio Section 1 -->
             <div class="col-md-4 col-sm-6">
                 {% include 'portfolio_cards.html' %}
             </div>
-            <!-- Portfolio Section 2-->
-            <div class="col-md-4 col-sm-6">
-                {% include 'templates\components\portfolio_cards.html' %}
-            </div>
-            <!-- Portfolio Section 3 -->
-            <div class="col-md-4 col-sm-6">
-                {% include 'templates\components\portfolio_cards.html' %}
-            </div>
-            <!-- Portfolio Section 4 -->
-            <div class="col-md-4 col-sm-6">
-                {% include 'templates\components\portfolio_cards.html' %}
-            </div>
-            <!-- Portfolio Section 5 -->
-            <div class="col-md-4 col-sm-6">
-                {% include 'templates\components\portfolio_cards.html' %}
-            </div>
-            <!-- Portfolio Section 6 -->
-            <div class="col-md-4 col-sm-6">
-                {% include 'templates\components\portfolio_cards.html' %}
-            </div>
-
+            {% endfor %}
         </div>
     </div>
 </section>
