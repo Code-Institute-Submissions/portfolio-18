@@ -43,7 +43,7 @@ def login():
 
 @app.route('/presentation')
 def presentation():
-    return render_template('pages/presentation.html', projects=mongo.db.projects.find())
+    return render_template('pages/presentation.html', headTitle="Project", projects=mongo.db.projects.find())
 
 @app.route("/add_project")
 def add_project():
