@@ -130,7 +130,7 @@
     
     .navbar-light .navbar-brand {
         padding-top: 6px;
-        font-weight: 300;
+        font-weight: 700;
         font-size: 42px;
     }
     
@@ -179,10 +179,6 @@
     .navbar-light .navbar-toggler:hover,
     .navbar-light .navbar-toggler:focus {
         background-color: transparent;
-    }
-    
-    .navbar-brand {
-        font-weight: 300;
     }
     /*---------------------------------------
     Home section              
