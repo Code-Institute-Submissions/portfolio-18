@@ -25,11 +25,12 @@ def home_page():
     
 @app.route("/about", methods=['GET', 'POST'])
 def about():
-    projects=
+    project= mongo.db.projects
     return render_template("pages/about.html", headTitle="About me")
 
 @app.route("/portfolio", methods=['GET', 'POST'])
 def portfolio():
+    projects=mongo.db.projects.find()
     return render_template("pages/portfolio.html", headTitle="Portfolio")  
 
 @app.route("/skills", methods=['GET', 'POST'])
