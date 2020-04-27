@@ -108,7 +108,8 @@
     
     #portfolio,
     #about,
-    #contact {
+    #contact,
+    #admin {
         padding-top: 80px;
         padding-bottom: 120px;
     }
