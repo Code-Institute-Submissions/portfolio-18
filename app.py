@@ -33,10 +33,6 @@ def portfolio():
     projects=mongo.db.projects.find()
     return render_template("pages/portfolio.html", headTitle="Portfolio", projects=projects)  
 
-@app.route("/skills", methods=['GET', 'POST'])
-def skills():
-    return render_template('pages/skills.html' , headTitle="Skills") 
-
 @app.route("/login", methods=['POST'])
 def login():
 
