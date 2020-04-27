@@ -1,4 +1,4 @@
-{% block 'cards' %}
+{% block portfolio_cards %}
 
 <div class="col-md-4 col-sm-6">
     <a href="">
@@ -6,8 +6,8 @@
             <img src="/static/img/400px-Pomme.svg.png" class="img-responsive" alt="Portfolio">
             <div class="portfolio-overlay">
                 <div class="portfolio-item">
-                    <h3></h3>
-                    <span></span>
+                    <h3>{{ project.project_name }}</h3>
+                    <span>{{project.for_who}}</span>
                 </div>
             </div>
         </div>
