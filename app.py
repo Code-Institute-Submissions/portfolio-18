@@ -57,10 +57,10 @@ def insert_project():
     return redirect(url_for('project_presentation'))
 
 
-@app.route("/edit_project/<project_id>")
-def edit_project(project_id):
+@app.route("/editor/<project_id>")
+def editor(project_id):
     project=mongo.db.projects.find_one({"_id":ObjectId(project_id)})
-    return render_template('edit_project.html', project=project)
+    return render_template('editor.html', project=project)
 
 
 # No permission page
