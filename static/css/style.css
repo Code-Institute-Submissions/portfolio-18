@@ -130,8 +130,10 @@
     
     .navbar-light .navbar-brand {
         padding-top: 6px;
-        font-weight: 700;
         font-size: 42px;
+        color: rgb(85, 85, 85);
+        font-weight: 400;
+        letter-spacing: 4px;
     }
     
     .navbar-light .navbar-nav li a {
