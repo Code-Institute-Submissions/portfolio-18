@@ -9,13 +9,13 @@
                 <hr>
             </div>
             <form methods="post" action="{{ url_for( 'login')}}" class="form">
-                <div class="form-group col-lg-6 col-md-6">
+                <div class="form-group col-md-12 col-sm-12">
                     <input type="text" class="form-control" name="username" placeholder="Username" required/>
                 </div>
-                <div class="form-group col-lg-6 col-md-6">
+                <div class="form-group col-md-12 col-sm-12">
                     <input type="email" class="form-control" name="password" placeholder="Password" required/>
                 </div>
-                <div class="col-md-3 col-sm-4">
+                <div class="col-md-6 col-sm-6">
                     <a href="{{ url_for('editor')}} " class="button-add btn form-control" type="submit">Log in</a>
                 </div>
             </form>
