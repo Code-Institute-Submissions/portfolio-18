@@ -105,6 +105,19 @@
     *:after {
         box-sizing: border-box;
     }
+    
+    #portfolio,
+    #about,
+    #contact {
+        padding-top: 80px;
+        padding-bottom: 120px;
+    }
+    
+    .section-title {
+        position: relative;
+        padding-bottom: 62px;
+        text-align: center;
+    }
     /*---------------------------------------
   Navbar             
 -----------------------------------------*/
