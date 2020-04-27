@@ -59,7 +59,7 @@ def insert_project():
 
 @app.route("/editor/<project_id>")
 def editor(project_id):
-    project=mongo.db.projects.find_one({"_id":ObjectId(project_id)})
+    project=mongo.db.projects.find_one()
     return render_template('editor.html', project=project)
 
 
