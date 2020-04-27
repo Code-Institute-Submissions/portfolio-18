@@ -57,8 +57,8 @@ def insert_project():
     return redirect(url_for('project_presentation'))
 
 
-@app.route("/editor/<project_id>")
-def editor(project_id):
+@app.route("/editor")
+def editor(project):
     project=mongo.db.projects.find_one()
     return render_template('editor.html', project=project)
 
