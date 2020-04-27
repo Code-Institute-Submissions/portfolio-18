@@ -31,7 +31,7 @@ def about():
 @app.route("/portfolio", methods=['GET', 'POST'])
 def portfolio():
     projects=mongo.db.projects.find()
-    return render_template("pages/portfolio.html", headTitle="Portfolio")  
+    return render_template("pages/portfolio.html", headTitle="Portfolio", projects=projects)  
 
 @app.route("/skills", methods=['GET', 'POST'])
 def skills():
