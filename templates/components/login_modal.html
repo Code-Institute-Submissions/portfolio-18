@@ -1,0 +1,51 @@
+{% block login %}
+
+
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <form methods="" action="{{ url_for( 'login')}}" class="form">
+                <h2>Admin panel</h2>
+                <hr>
+                <div class="form-group col-lg-6 col-md-6">
+                    <input type="text" class="form-control" name="username" placeholder="Username" required/>
+                </div>
+
+                <div class="form-group col-lg-6 col-md-6">
+                    <input type="email" class="form-control" name="password" placeholder="Password" required/>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <a href="{{ url_for('editor')}} " class="btn form-control" type="submit">Log in</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Admin panel</h2>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group col-lg-6 col-md-6">
+                        <input type="text" class="form-control" name="username" placeholder="Username" required/>
+                    </div>
+                    <div class="form-group col-lg-6 col-md-6">
+                        <input type="email" class="form-control" name="password" placeholder="Password" required/>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-3 col-sm-4">
+                <a href="{{ url_for('editor')}} " class="btn form-control" type="submit">Log in</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock %}
