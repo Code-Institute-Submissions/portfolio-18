@@ -246,6 +246,14 @@
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
+    
+    #portfolio .portfolio-thumb:hover .portfolio-overlay {
+        opacity: 0.9;
+    }
+    
+    #portfolio .text-center {
+        padding-top: 62px;
+    }
     /*---------------------------------------
    Contact section              
 -----------------------------------------*/
