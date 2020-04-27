@@ -35,7 +35,6 @@ def portfolio():
 
 @app.route("/login", methods=['POST'])
 def login():
-
     return render_template("pages/login.html", headTitle="Admin panel")
 
 @app.route("/contact", methods=['GET', 'POST'])
