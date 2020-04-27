@@ -23,4 +23,14 @@
                         </div>
                     </div>
                     <hr>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <h3>Image for minature*</h3>
+                            <p>Please upload the photo for new project <a href="https://imgbb.com/" target="_blank" aria-label="ImgBB">ImgBB</a>) and paste the direct url for it here.</p>
+                            <input id="imgUrl" name="imgUrl" class="form-control" type="url" maxlength="200" {% if editor=='edit' %}value="{{ imgUrl }}" {% endif %} placeholder="https://..." required>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
 </section>
