@@ -33,6 +33,10 @@ def portfolio():
     projects=mongo.db.projects.find()
     return render_template("pages/portfolio.html", headTitle="Portfolio", projects=projects)  
 
+@app.route('/presentation')
+def presentation():
+    return render_template('pages/presentation.html', headTitle="Project", projects=mongo.db.projects.find())
+
 @app.route("/contact", methods=['GET', 'POST'])
 def contact():
     return render_template("pages/contact.html", headTitle="Contact me")
@@ -41,9 +45,10 @@ def contact():
 def login():
     return render_template("pages/login.html", headTitle="Admin panel")
 
-@app.route('/presentation')
-def presentation():
-    return render_template('pages/presentation.html', headTitle="Project", projects=mongo.db.projects.find())
+@app.route("/editor")
+def editor():
+    return render_template('pages/editor.html', headTitle="Editor")
+
 
 @app.route("/add_project")
 def add_project():
@@ -57,10 +62,6 @@ def insert_project():
     return redirect(url_for('project_presentation'))
 
 
-@app.route("/editor")
-def editor(project):
-    project=mongo.db.projects.find_one()
-    return render_template('editor.html', project=project)
 
 
 # No permission page
