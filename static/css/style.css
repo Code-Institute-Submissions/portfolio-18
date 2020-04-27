@@ -294,6 +294,12 @@
     #contact input[type="submit"]:hover {
         background: #000;
     }
+    
+    .section-title h3 {
+        color: rgb(85, 85, 85);
+        font-weight: 400;
+        letter-spacing: 4px;
+    }
     /*---------------------------------------
    Footer section              
 -----------------------------------------*/
