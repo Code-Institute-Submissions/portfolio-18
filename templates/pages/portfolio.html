@@ -6,7 +6,17 @@
             {% for project in projects %}
             <!-- Portfolio Section 1 -->
             <div class="col-md-4 col-sm-6">
-                {% include 'portfolio_cards.html' %}
+                <a href="">
+                    <div class="portfolio-thumb">
+                        <img src="/static/img/400px-Pomme.svg.png" class="img-responsive" alt="Portfolio">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-item">
+                                <h3>{{ project.project_name }}</h3>
+                                <span>{{project.for_who}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
             {% endfor %}
         </div>
