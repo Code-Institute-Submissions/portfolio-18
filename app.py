@@ -68,7 +68,7 @@ def login():
 
     return render_template('login.html', headTitle="Admin panel", users=users)
 
-@app.route("/register", methods=['GET','POST'])
+@app.route("/register", methods=['POST','GET'])
 def register():
     if request.method == 'POST':
         users = mongo.db.users
