@@ -45,7 +45,7 @@ def contact():
 @app.route("/login", methods=['GET', 'POST'])
 def login():
     users = mongo.db.users
-    return render_template("pages/login.html", headTitle="Admin panel", users=users)
+    return render_template('login.html', headTitle="Admin panel", users=users)
 
 @app.route("/editor")
 def editor():
