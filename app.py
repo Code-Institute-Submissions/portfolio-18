@@ -15,6 +15,7 @@ app.config['MONGO_URI'] = os.getenv('MONGO_URI')
 
 mongo = PyMongo(app)
 
+users = mongo.db.users
 # Home page
 
 @app.route('/')
