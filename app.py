@@ -82,7 +82,7 @@ def register():
 
         return 'User already exits'
 
-    return render_template('register.html')
+    return render_template("pages/register.html", headTitle="Register")
 
 
 @app.route("/editor")
