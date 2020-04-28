@@ -79,6 +79,9 @@ def register():
 
         return 'User already exits'
 
+    return render_template('register.html')
+
+
 @app.route("/editor")
 def editor():
     return render_template('pages/editor.html', headTitle="Editor")
