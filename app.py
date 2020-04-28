@@ -55,7 +55,7 @@ def login():
     login_user = users.find_one({'username': request.form['username']})
 
     if login_user:
-        if bcrypt.hashpw(request.form['password'].encode('utf-8'), login_user['password'].encode('utf-8')) == login_user['password'].encode('utf-8'):
+        if bcrypt.hashpw(request.form['password'].encode('utf-8'), login_user['password']) == login_user['password']:
            session['username'] = request.form['username']
            return redirect( url_for('editor'))
     return 'Invalid username/password'
