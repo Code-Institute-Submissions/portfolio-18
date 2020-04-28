@@ -1,5 +1,6 @@
 from flask import Flask, render_template, redirect, url_for, request, abort, session
 import os
+import bcrypt
 from os import path
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_pymongo import PyMongo
@@ -46,8 +47,20 @@ def contact():
 
 @app.route("/login", methods=['POST'])
 def login():
+
+    """ 
+    Flask-Bcrypt is a Flask extension that provides bcrypt hashing utilities for your application.
+
+    Due to the recent increased prevelance of powerful hardware, such as modern GPUs, hashes have become increasingly easy to crack. A proactive solution to this is to use a hash that was designed to be “de-optimized”. Bcrypt is such a hashing facility; unlike hashing algorithms such as MD5 and SHA1, which are optimized for speed, bcrypt is intentionally structured to be slow.
+
+    For sensitive data that must be protected, such as passwords, bcrypt is an advisable choice.
+
+    """
     users = mongo.db.users
     login_user = users.find_one({'name': request.form['username']})
+
+    if login_user:
+        if bcryp
     login_password = users.find_one({'password': request.form['userpassword']})
 
     return render_template('login.html', headTitle="Admin panel", users=users)
