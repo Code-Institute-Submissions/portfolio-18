@@ -45,7 +45,7 @@ def presentation():
 def contact():
     return render_template("pages/contact.html", headTitle="Contact me")
 
-@app.route("/login", methods=['POST'])
+@app.route("/login", methods=['GET', 'POST'])
 def login():
 
     """ 
