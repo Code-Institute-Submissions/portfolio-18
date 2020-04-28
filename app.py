@@ -49,6 +49,7 @@ def login():
 def editor():
     return render_template('pages/editor.html', headTitle="Editor")
 
+
 @app.route("/add_project")
 def add_project():
     return render_template('pages/add_project.html',
