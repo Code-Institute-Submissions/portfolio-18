@@ -65,6 +65,20 @@ def login():
 
     return render_template('login.html', headTitle="Admin panel", users=users)
 
+@app.route("/register", methods=['GET','POST'])
+def register():
+    if request.method == 'POST':
+        users = mongo.db.users
+        existing_user = users.find_one({'name' : request.form['username']})
+
+        if existing_user is None:
+            hashpass = bcrypt.hashpw(request.form['pass'], bcrypt.gensalt())
+            users.insert({'name': request.form['username'], password : hashpass})
+            session['username'] = request.form['username']
+            return redirect(url_for('index'))
+
+        return 'User already exits'
+
 @app.route("/editor")
 def editor():
     return render_template('pages/editor.html', headTitle="Editor")
