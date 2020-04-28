@@ -22,6 +22,8 @@ users = mongo.db.users
 
 @app.route('/index', methods=['GET', 'POST'])
 def home_page():
+    if 'username' in session:
+        return 'You are logged in as' + session['username']
     return render_template('pages/index.html', headTitle="Home")
     
 @app.route("/about", methods=['GET', 'POST'])
@@ -42,9 +44,12 @@ def presentation():
 def contact():
     return render_template("pages/contact.html", headTitle="Contact me")
 
-@app.route("/login", methods=['GET', 'POST'])
+@app.route("/login", methods=['POST'])
 def login():
     users = mongo.db.users
+    login_user = users.find_one({'name': request.form['username']})
+    login_password = users.find_one({'password': request.form['userpassword']})
+
     return render_template('login.html', headTitle="Admin panel", users=users)
 
 @app.route("/editor")
