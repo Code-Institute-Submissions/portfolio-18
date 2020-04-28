@@ -8,7 +8,7 @@
                     <h1>
                         {% if editor == 'new' %}Add New {% elif editor == 'edit' %}Edit {% endif %}
                     </h1>
-                    <hr>
+
                 </div>
 
                 <div class="col-12">
@@ -22,7 +22,7 @@
                             <input id="for who" name="For who was made this project" class="form-control full-width" type="text" maxlength="50" placeholder="Title for new project name " value="{% if editor == 'edit' %}{{portfolio.brand}}{% endif %}" required>
                         </div>
                     </div>
-                    <hr>
+
                     <div class="col-12">
                         <div class="form-group">
                             <h3>Image for minature*</h3>
