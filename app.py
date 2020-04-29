@@ -45,15 +45,20 @@ def contact():
 @app.route("/login", methods=['GET', 'POST'])
 def login():
 
-    users = mongo.db.users
-    login_user = users.find_one({'name': request.form['name']})
-
-    if login_user:
-        if bcrypt.hashpw(request.form['pass'].encode('utf-8'), login_user['password'].encode('utf-8')) == login_user['password'].encode('utf-8'):
-            session['username'] = request.form['username']
-            return redirect(url_for('admin'))
-
-    return 'Invalid username/password combination'
+    if request.method == 'GET': 
+        return render_template('login.html')
+    else:
+        user = mongo.db.user
+        login_user = user.find_one({
+        'email': request.form.get('email'), 
+        'password':request.form.get('password')})
+        
+        if login_user:
+            session['email'] = login_user['email']
+            session['name'] = login_user['name']
+            return redirect(url_for('user'))
+       
+        return 'Invalid username or password combination'
 
 @app.route("/register", methods=['POST','GET'])
 def register():
