@@ -286,12 +286,15 @@
         border-color: #777;
     }
     
-    #contact input,
-    #contact select {
+    #contact,
+    #home input,
+    #contact,
+    #home select {
         height: 50px;
     }
     
-    #contact input[type="submit"] {
+    #contact,
+    #home input[type="submit"] {
         background: #222;
         border-radius: 100px;
         border: none;
@@ -300,7 +303,8 @@
         transition: all 0.4s ease-in-out;
     }
     
-    #contact input[type="submit"]:hover {
+    #contact,
+    #home input[type="submit"]:hover {
         background: #000;
     }
     
