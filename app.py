@@ -46,7 +46,7 @@ def contact():
 def login():
 
     users = mongo.db.users
-    login_user = users.find_one ({'name': request.form['username']})
+    login_user = users.find_one ({'username': request.form['name']})
 
     """ 
     Flask-Bcrypt is a Flask extension that provides bcrypt hashing utilities for your application.
