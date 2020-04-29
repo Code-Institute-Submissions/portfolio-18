@@ -114,7 +114,7 @@ def permission_denied():
 @app.errorhandler(404) 
 def pageNotFound(e): 
     """ Displays custom 404 page if url isn't recognised """ 
-    return render_template("pages/404.html", active="errorPage", loggedIn=False)
+    return render_template("pages/404.html", headTitle="Page not found", active="errorPage", loggedIn=False)
 
 
 if __name__ == '__main__':
