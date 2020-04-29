@@ -65,7 +65,7 @@ def register():
             hashpass = bcrypt.hashpw(request.form['password'].encode('utf-8'), bcrypt.gensalt())
             users.insert({'name': request.form['username'], 'password' : hashpass})
             session['username'] = request.form['username']
-            return redirect(url_for('editor'))
+            return redirect(url_for('login'))
 
         return 'User already exits'
 
