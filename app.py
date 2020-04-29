@@ -62,22 +62,26 @@ def login():
        
       
 
-@app.route("/register", methods=['POST','GET'])
+@app.route('/register', methods=['POST', 'GET'])
 def register():
+    email = session.get('email')
+    if email:
+      return redirect(url_for('index'))
+    
+    user = None
     if request.method == 'POST':
-        users = mongo.db.users
-        existing_user = users.find_one({'name' : request.form['username']})
+        name = request.form['username']
+        email = request.form['email']
+        password = request.form['password']
+        user = {'name': name, 'email': email, 'password': password}
 
-        if existing_user is None:
-            hashpass = bcrypt.hashpw(request.form['password'].encode('utf-8'), bcrypt.gensalt())
-            users.insert({'name': request.form['username'], 'password' : hashpass})
-            session['username'] = request.form['username']
-            return redirect(url_for('login'))
+        if mongo.db.user.find_one({"email": email}):
+            return render_template('register.html')
+        else:
+            mongo.db.user.insert_one(user)
+            return render_template('login.html')
 
-        return 'User already exits'
-
-    return render_template("pages/register.html", headTitle="Register")
-
+    return render_template('register.html', headTitle="Register")
 
 @app.route("/logout")
 def logout():
