@@ -74,7 +74,10 @@ def register():
 
 @app.route("/logout")
 def logout():
-    return render_template('pages/logout.html', headTitle="Editor")
+    session['email'] = None
+    session['name'] = None
+    return redirect(url_for('home_page'))
+   
 
 @app.route("/admin")
 def admin():
