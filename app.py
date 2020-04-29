@@ -83,13 +83,12 @@ def register():
 
 
 @app.route("/logout")
-def editor():
+def logout():
     return render_template('pages/logout.html', headTitle="Editor")
 
 @app.route("/admin")
-def editor():
+def admin():
     return render_template('pages/admin.html', headTitle="Editor")
-
 
 @app.route("/editor")
 def editor():
