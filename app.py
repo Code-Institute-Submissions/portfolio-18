@@ -46,7 +46,7 @@ def contact():
 def login():
 
     users = mongo.db.users
-    login_user = users.find_one({'name': request.data['username']})
+    login_user = users.find_one({'name': request.form['name']})
 
     if login_user:
         if bcrypt.hashpw(request.form['pass'].encode('utf-8'), login_user['password'].encode('utf-8')) == login_user['password'].encode('utf-8'):
