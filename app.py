@@ -76,10 +76,10 @@ def register():
         user = {'name': name, 'email': email, 'password': password}
 
         if mongo.db.user.find_one({"email": email}):
-            return render_template('register.html')
+            return render_template('pages/register.html')
         else:
             mongo.db.user.insert_one(user)
-            return render_template('login.html')
+            return render_template('pages/login.html')
 
     return render_template('pages/register.html', headTitle="Register")
 
