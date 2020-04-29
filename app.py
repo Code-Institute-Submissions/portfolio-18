@@ -82,6 +82,15 @@ def register():
     return render_template("pages/register.html", headTitle="Register")
 
 
+@app.route("/logout")
+def editor():
+    return render_template('pages/logout.html', headTitle="Editor")
+
+@app.route("/admin")
+def editor():
+    return render_template('pages/admin.html', headTitle="Editor")
+
+
 @app.route("/editor")
 def editor():
     return render_template('pages/editor.html', headTitle="Editor")
@@ -97,9 +106,6 @@ def insert_project():
     projects = mongo.db.projects
     projects.insert_one(request.form.to_dict())
     return redirect(url_for('project_presentation'))
-
-
-
 
 # No permission page
 @app.route('/permission-denied')
