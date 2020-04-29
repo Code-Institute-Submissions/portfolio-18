@@ -46,7 +46,7 @@ def contact():
 def login():
 
     if request.method == 'GET': 
-        return render_template('login.html')
+        return render_template('pages/login.html')
     else:
         user = mongo.db.user
         login_user = user.find_one({
