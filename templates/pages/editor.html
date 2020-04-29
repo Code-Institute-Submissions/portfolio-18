@@ -38,6 +38,9 @@
                         </div>
                     </div>
                 </div>
+                <button id="editorSubmitBtn" class="btn btn-accept ml-4 submit-js" type="submit">Accept</button> {% if editor == 'edit' %}
+                <button id="{{project['_id']}}" type="button" class="btn btn-delete delete-button ml-3">Delete</button> {% endif %}
+            </form>
         </div>
     </div>
 </section>
