@@ -81,7 +81,7 @@ def register():
             mongo.db.user.insert_one(user)
             return render_template('login.html')
 
-    return render_template('register.html', headTitle="Register")
+    return render_template('pages/register.html', headTitle="Register")
 
 @app.route("/logout")
 def logout():
