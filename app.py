@@ -51,7 +51,7 @@ def login():
     For sensitive data that must be protected, such as passwords, bcrypt is an advisable choice.
     """
     users = mongo.db.users
-    login_user = users.find_one({'username': request.form['username']})
+    login_user = users.find_one ({'name': request.form['username']})
 
     if login_user:
         if bcrypt.hashpw(request.form['password'].encode('utf-8'), login_user['password']) == login_user['password']:
