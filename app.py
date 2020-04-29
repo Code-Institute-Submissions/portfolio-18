@@ -45,25 +45,25 @@ def contact():
 @app.route("/login", methods=['GET', 'POST'])
 def login():
 
+    users = mongo.db.users
+    login_user = users.find_one ({'name': request.form['username']})
+
     """ 
     Flask-Bcrypt is a Flask extension that provides bcrypt hashing utilities for your application.
     Due to the recent increased prevelance of powerful hardware, such as modern GPUs, hashes have become increasingly easy to crack. A proactive solution to this is to use a hash that was designed to be “de-optimized”. Bcrypt is such a hashing facility; unlike hashing algorithms such as MD5 and SHA1, which are optimized for speed, bcrypt is intentionally structured to be slow.
     For sensitive data that must be protected, such as passwords, bcrypt is an advisable choice.
     """
-    users = mongo.db.users
-    login_user = users.find_one ({'name': request.form['username']})
-
     if login_user:
         if bcrypt.hashpw(request.form['password'].encode('utf-8'), login_user['password']) == login_user['password']:
            session['username'] = request.form['username']
-           return redirect( url_for('editor'))
+           return redirect( url_for('admin', name=users['username']))
     return 'Invalid username/password'
 
 
     
-    login_password = users.find_one({'password': request.form['userpassword']})
+    login_password = users.find_one({'password': request.form['password']})
 
-    return render_template('login.html', headTitle="Admin panel", users=users)
+    return render_template('login.html', headTitle="login", users=users)
 
 @app.route("/register", methods=['POST','GET'])
 def register():
