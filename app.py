@@ -89,8 +89,9 @@ def admin():
     projects=mongo.db.projects.find({'name':session.get('name')})
     email = session.get('email')
     if not email:
-       return redirect(url_for('admin'))
-    return render_template('pages/admin.html',projects=projects, headTitle="Admin panel")
+        return redirect(url_for('admin'))
+    else:
+        return render_template('pages/admin.html',projects=projects, headTitle="Admin panel")
 
 @app.route('/insert_project', methods=['POST'])
 def insert_project():
