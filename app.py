@@ -64,14 +64,12 @@ def register():
     email = session.get('email')
     if email:
       return redirect(url_for('login'))
-    
     user = None
     if request.method == 'POST':
         name = request.form['username']
         email = request.form['email']
         password = request.form['password']
         user = {'name': name, 'email': email, 'password': password}
-
         if mongo.db.user.find_one({"email": email}):
             return render_template('pages/register.html')
         else:
@@ -91,7 +89,7 @@ def admin():
     projects=mongo.db.projects.find({'user':session.get('name')})
     email = session.get('email')
     if not email:
-        return redirect(url_for('admin'))
+       return redirect(url_for('login'))
     return render_template('pages/admin.html',projects=projects, headTitle="Admin panel")
 
 @app.route('/insert_project', methods=['POST'])
@@ -101,7 +99,7 @@ def insert_project():
         form_dict = request.form.to_dict()
         form_dict.update({'user': session['name']})
         projects.insert_one(form_dict)
-    return redirect(url_for('admin'))
+        return redirect(url_for('admin'))
 
 # No permission page
 @app.route('/permission-denied')
