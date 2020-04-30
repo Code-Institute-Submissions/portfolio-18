@@ -55,8 +55,7 @@ def login():
        
     return 'Invalid username or password combination'
        
-      
-
+    
 @app.route('/register', methods=['POST', 'GET'])
 def register():
     email = session.get('email')
@@ -83,16 +82,14 @@ def logout():
     session['email'] = None
     session['name'] = None
     return redirect(url_for('home_page'))
-   
 
 @app.route("/admin")
 def admin():
-    projects=mongo.db.projects.find({'user':session.get('name')})
+    projects=mongo.db.projects.find({'seller':session.get('name')})
     email = session.get('email')
     if not email:
-        return redirect(url_for('login'))
+        return redirect(url_for('admin'))
     return render_template('pages/admin.html',projects=projects, headTitle="Admin panel")
-
 
 @app.route("/editor")
 def editor():
