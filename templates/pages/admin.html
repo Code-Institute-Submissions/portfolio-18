@@ -18,7 +18,7 @@
             </div>
 
             <div class="col-sm-6 card">
-                <form id="add_new" action="{{url_for('insert_project')}}" onSubmit="alert('New project added succesfully');" method='POST'>
+                <form method="POST" id="add_new" action="{{url_for('insert_project')}}" onSubmit="alert('New project added succesfully');">
 
                     <input type="text" id="project_name" name="project_name" class="form-control mb-4" placeholder="Project Title" required>
 
@@ -26,7 +26,7 @@
 
                     <input type="number" min="1" step="any" id="year_of_submission" name="year_of_submission" class="form-control mb-4" placeholder="When finished?" required>
 
-                    <input type="text" id="url" name="url" class="form-control mb-4" placeholder="Add Image URL" value="" required>
+                    <input type="text" id="url" name="URL" class="form-control mb-4" placeholder="Add Image URL" value="" required>
 
                     <div class="form-group green-border-focus label">
                         <textarea class="form-control" id="description" name='description' placeholder="Add description" rows="3" required></textarea>
