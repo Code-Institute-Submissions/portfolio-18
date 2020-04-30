@@ -42,6 +42,7 @@ In this section, you should mention all of the languages, frameworks, libraries,
 
 - [JQuery](https://jquery.com)
 - [The Padwan Project](https://github.com/Eventyret/Padawan)
+https://favicon.io/favicon-generator/
 
 ## Testing
 
