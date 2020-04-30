@@ -39,17 +39,46 @@
 
                 </form>
             </div>
-        </div>
-    </div>
+
+            <div class="col-sm-6 card card-body">
+                {% if session['email'] != None %}
+                <div class="vertical-nav bg-white" id="sidebar">
+                    <div class=" bg-light">
+                        <div class="media d-flex align-items-center"><img src="{{ url_for('static', filename='#') }}" alt="..." width="65" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+                            <div class="media-body">
+                                <h4 class="m-0">{{ session['name'] }}</h4>
+                                <p class="font-weight-light text-muted mb-0">Admin</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="overflow-x:auto;">
+                        <table class="table table-sm table-striped">
+
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Poject</th>
+                                    <th scope="col">Preview</th>
+                                    <th scope="col">Edit</th>
+                                    <th scope="col">Delete</th>
+                                </tr>
+                            </thead>
 
 
-    <div class="row">
 
 
-    </div>
-    </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+
+
+                </div>
+            </div>
 
 
 
 
-    {% endblock %}
+            {% endblock %}
