@@ -15,8 +15,8 @@ app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 app.config['MONGO_URI'] = os.getenv('MONGO_URI')
 
 mongo = PyMongo(app)
-# Home page
 
+# Home page
 @app.route('/')
 
 @app.route('/index', methods=['GET', 'POST'])
@@ -91,27 +91,21 @@ def admin():
         return redirect(url_for('admin'))
     return render_template('pages/admin.html',projects=projects, headTitle="Admin panel")
 
-@app.route("/editor")
-def editor():
-    return render_template('pages/editor.html', headTitle="Editor")
-
-
-@app.route("/add_project")
-def add_project():
-    return render_template('pages/add_project.html',
-    projects=mongo.db.projects.find())
-
-@app.route("/insert_project", methods=['POST'])
+@app.route('/insert_project', methods=['POST'])
 def insert_project():
-    projects = mongo.db.projects
-    projects.insert_one(request.form.to_dict())
-    return redirect(url_for('project_presentation'))
+    projects=mongo.db.projects
+    if request.method == 'POST':
+        form_dict = request.form.to_dict()
+        form_dict.update({'user': session['name']})
+        projects.insert_one(form_dict)
+    return redirect(url_for('admin'))
 
 # No permission page
 @app.route('/permission-denied')
 def permission_denied():
     return render_template("pages/permission.html", active="errorPage", loggedIn=False)
 
+# 404 - Page not found
 @app.errorhandler(404) 
 def pageNotFound(e): 
     """ Displays custom 404 page if url isn't recognised """ 
