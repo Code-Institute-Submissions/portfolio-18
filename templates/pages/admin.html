@@ -1,14 +1,7 @@
 {% extends 'layout/base.html' %} {% block content %}
 
 <main class="content">
-
-    {% if deleted == True %}
-    <!-- publish success bar shows when user has just published their new activity -->
-    <div id="publish-success" class="hide">
-        <p class="hide">Your listing has been successfully deleted!</p>
-        <i id="closeNotice" class="fas fa-times text-white fa-2x hide"></i>
-    </div>
-    {% endif %}
+    }
 
     <div id="my-account-wrapper" class="container">
         <div class="row">
@@ -16,31 +9,16 @@
                 <h1>Admin panel</h1>
                 <hr>
             </div>
-        </div>
 
-
-        <div class="row">
-            <div class="col-12">
-                <h2>My projects</h2>
-                <a href="{{url_for('editor', username=session['username'])}}" class="heading-btn btn btn-create float-right">Add New</a>
-                <hr>
+            <div class="row">
+                <div class="col-12">
+                    <h2>My projects</h2>
+                    <a href="{{url_for('editor', username=session['username'])}}" class="heading-btn btn btn-create float-right">Add New</a>
+                    <hr>
+                </div>
             </div>
-        </div>
-        <div class="row">
-
-            {% if projects %} {% for project in projects %}
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                {% include 'components/cards/portfolio_cards.html' %}
-            </div>
-            {% endfor %} {% endif%}
-        </div>
-
-    </div>
-
-
-</main>
+            <div class="row">
 
 
 
-
-{% endblock %}
+                {% endblock %}
