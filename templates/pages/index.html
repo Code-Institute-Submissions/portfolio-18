@@ -11,10 +11,40 @@
                 <h2>Hi, My name is Patrycja and I am a front-end developer.<br> Come on in to see my projects! </h2>
                 <hr>
             </div>
-            <div class="col-md-2 col-sm-5 offset-md-5 p-5">
-                <button href="{{ url_for('portfolio')}}" type="submit" class="form-control" value="See more">See more</button>
-            </div>
+
+            <section id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12">
+                            <h3>About me</h3>
+                            <p>I am a student of CodeInstitute and I am future Full-Stack Software developer.</p>
+                            <p>Although I am still learnig I've been hired already as a Front-End developer currently at Learning Pool</p>
+                            <p>I absolutely love programming and I know that in this industry will never stop learning new things.</p>
+
+                        </div>
+
+                        <div class="col-lg-8 col-md-12">
+                            <img src="/static/img/patrycja.PNG" class="img-responsive" alt="About">
+                        </div>
+
+
+
+                        <div class="clearfix"></div>
+
+                        <hr>
+
+                    </div>
+
+                </div>
         </div>
+        </section>
+
+
+
+        <div class="col-md-2 col-sm-5 offset-md-5 p-5">
+            <button href="{{ url_for('portfolio')}}" type="submit" class="form-control" value="See more">See more</button>
+        </div>
+    </div>
     </div>
 </section>
 
