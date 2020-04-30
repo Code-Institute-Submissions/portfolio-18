@@ -19,20 +19,23 @@ mongo = PyMongo(app)
 # Home page
 @app.route('/')
 
+# Index page
 @app.route('/index', methods=['GET', 'POST'])
-def home_page():
-    
-    return render_template('pages/index.html', headTitle="Home")  
+def home_page():    
+    return render_template('pages/index.html', headTitle="Home")
 
+# Portfolio - cards presentation page
 @app.route("/portfolio", methods=['GET', 'POST'])
 def portfolio():
     projects=mongo.db.projects.find()
     return render_template("pages/portfolio.html", headTitle="Portfolio", projects=projects)  
 
+# View page 
 @app.route('/presentation')
 def presentation():
     return render_template('pages/presentation.html', headTitle="Project", projects=mongo.db.projects.find())
 
+# Contact page
 @app.route("/contact", methods=['GET', 'POST'])
 def contact():
     return render_template("pages/contact.html", headTitle="Contact me")
