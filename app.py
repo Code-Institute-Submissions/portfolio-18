@@ -88,6 +88,7 @@ def logout():
 def admin():
     projects=mongo.db.projects.find({'name':session.get('name')})
     email = session.get('email')
+    
     return render_template('pages/admin.html',projects=projects, headTitle="Admin panel")
 
 @app.route('/insert_project', methods=['POST'])
