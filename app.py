@@ -33,7 +33,7 @@ def portfolio():
 # View page 
 @app.route('/presentation')
 def presentation():
-    return render_template('pages/presentation.html', headTitle="Project", projects=mongo.db.projects.find())
+    return render_template('pages/presentation.html', headTitle="Project", projects=projects)
 
 # Contact page
 @app.route("/contact", methods=['GET', 'POST'])
