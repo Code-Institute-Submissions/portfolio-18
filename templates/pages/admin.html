@@ -17,8 +17,8 @@
                 <hr>
             </div>
 
-            <div class="col-sm-6 card">
 
+            <div class="col-sm-6 card">
                 <form id="add_new" action="{{url_for('add_project')}}" onSubmit="alert('New project added succesfully');" method='POST'>
 
                     <input type="text" id="project_name" name="project_name" class="form-control mb-4" placeholder="Project Title" required>
@@ -65,22 +65,22 @@
                                 <tr>
                                     <th scope="col">#</th>
                                     <th scope="col">Poject</th>
-                                    <th scope="col">Preview</th>
+                                    <th scope="col">View</th>
                                     <th scope="col">Edit</th>
                                     <th scope="col">Delete</th>
                                 </tr>
                             </thead>
                             <tbody>
 
-                                {% for item in items %}
+                                {% for project in projects %}
                                 <tr>
                                     <th scope="row">{{ loop.index }}</th>
 
-                                    <td>{{item.project_title}}</td>
+                                    <td>{{project.project_name}}</td>
 
-                                    <td><a href="{{ url_for('review', id=item._id) }}"><button type="button" class="btn btn-outline-info" ><i class="fas fa-search"></i></button></a></td>
-                                    <td><a href="{{  url_for('edit_project', project_id=item._id) }}"><button type="button" class="btn btn-outline-warning" ><i class="fas fa-edit"></i></button></a></td>
-                                    <td><a href="{{  url_for('delete_project', project_id=item._id) }}"><button type="button" class="btn btn-outline-danger"><i class="far fa-trash-alt"></i></button></a></td>
+                                    <td><a href="{{ url_for('view', id=project._id) }}"><button type="button" class="btn btn-outline-info" ><i class="fas fa-search"></i></button></a></td>
+                                    <td><a href="{{ url_for('edit_project', project_id=project._id) }}"><button type="button" class="btn btn-outline-warning" ><i class="fas fa-edit"></i></button></a></td>
+                                    <td><a href="{{ url_for('delete_project', project_id=project._id) }}"><button type="button" class="btn btn-outline-danger"><i class="far fa-trash-alt"></i></button></a></td>
                                 </tr>
                                 {% endfor %}
                             </tbody>
