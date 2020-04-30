@@ -22,12 +22,7 @@ mongo = PyMongo(app)
 @app.route('/index', methods=['GET', 'POST'])
 def home_page():
     
-    return render_template('pages/index.html', headTitle="Home")
-    
-@app.route("/about", methods=['GET', 'POST'])
-def about():
-    project= mongo.db.projects
-    return render_template("pages/about.html", headTitle="About me")
+    return render_template('pages/index.html', headTitle="Home")  
 
 @app.route("/portfolio", methods=['GET', 'POST'])
 def portfolio():
