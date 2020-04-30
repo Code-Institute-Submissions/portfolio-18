@@ -85,7 +85,7 @@ def logout():
 
 @app.route("/admin")
 def admin():
-    projects=mongo.db.projects.find({'seller':session.get('name')})
+    projects=mongo.db.projects.find({'user':session.get('name')})
     email = session.get('email')
     if not email:
         return redirect(url_for('admin'))
