@@ -87,7 +87,14 @@ def logout():
 
 @app.route("/admin")
 def admin():
-    return render_template('pages/admin.html', headTitle="Editor")
+    projects=mongo.db.projects.find()({'user':session.get('name')})
+    email = session.get('email')
+    if not email:
+        return redirect(url_for('login'))
+    return render_template('pages/admin.html',projects=projects, headTitle="Admin panel")
+
+
+
 
 @app.route("/editor")
 def editor():
