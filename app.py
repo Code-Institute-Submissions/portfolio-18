@@ -88,7 +88,7 @@ def logout():
 def admin():
     projects=mongo.db.projects.find({'name':session.get('name')})
     email = session.get('email')
-    
+
     return render_template('pages/admin.html',projects=projects, headTitle="Admin panel")
 
 @app.route('/insert_project', methods=['POST'])
@@ -96,7 +96,7 @@ def insert_project():
     projects=mongo.db.projects
     if request.method == 'POST':
         form_dict = request.form.to_dict()
-        form_dict.update({'user': session['name']})
+        form_dict.update({'user': session['username']})
         projects.insert_one(form_dict)
         return redirect(url_for('admin'))
 
