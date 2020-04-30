@@ -61,7 +61,7 @@ def login():
 def register():
     email = session.get('email')
     if email:
-      return redirect(url_for('index'))
+      return redirect(url_for('login'))
     
     user = None
     if request.method == 'POST':
