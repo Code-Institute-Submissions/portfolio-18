@@ -16,9 +16,39 @@
                     <a href="{{url_for('editor', username=session['username'])}}" class="heading-btn btn btn-create float-right">Add New</a>
                     <hr>
                 </div>
+
+                <!--2nd card for -->
+                <div class="col-sm-6 card">
+
+                    <form id="add_new" action="{{url_for('add_project')}}" onSubmit="alert('New project added succesfully');" method='POST'>
+
+                        <p class="h4 mb-4">Add a new project</p>
+
+                        <div class="form-row mb-4" required>
+
+                        </div>
+
+                        <input type="text" id="project_name" name="project_name" class="form-control mb-4" placeholder="Project Title" required>
+
+                        <input type="text" id="for_who" name="for_who" class="form-control mb-4" placeholder="Client Name" required>
+
+                        <input type="number" min="1" step="any" id="year_of_submission" name="year_of_submission" class="form-control mb-4" placeholder="When finished?" required>
+
+                        <input type="text" id="url" name="url" class="form-control mb-4" placeholder="Add Image URL" value="" required>
+
+                        <div class="form-group green-border-focus label">
+                            <textarea class="form-control" id="description" name='description' placeholder="Add description" rows="3" required></textarea>
+                        </div>
+
+                        <button class="btn btn-info my-4 btn-block" type="submit">Add</button>
+                        <hr>
+
+                    </form>
+                </div>
             </div>
-            <div class="row">
+        </div>
 
 
 
-                {% endblock %}
+
+        {% endblock %}
