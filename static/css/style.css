@@ -374,7 +374,21 @@
     .fa-html5 {
         color: #e34f26
     }
-    /*-- skill progress bar --*/
+    
+    .fa-css3-alt {
+        color: #264de4
+    }
+    
+    .fa-js {
+        color: #f7df1e
+    }
+    
+    .fa-python {
+        color: #4584b6
+    }
+    /*---------------------------------------
+        
+-----------------------------------------*/
     
     #skills span {
         top: -30px;
