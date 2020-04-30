@@ -37,22 +37,22 @@ def presentation():
 def contact():
     return render_template("pages/contact.html", headTitle="Contact me")
 
-@app.route("/login", methods=['GET', 'POST'])
+@app.route('/login', methods=['POST', 'GET'])
 def login():
-
     if request.method == 'GET': 
         return render_template('pages/login.html', headTitle="Login")
     else:
         user = mongo.db.user
         login_user = user.find_one({
         'email': request.form.get('email'), 
-        'password':request.form.get('password')})
+        'password':request.form.get('password'
+        )})
         
         if login_user:
             session['email'] = login_user['email']
             session['name'] = login_user['name']
-            return redirect(url_for('admin'))
-
+            return redirect(url_for('user'))
+       
         return 'Invalid username or password combination'
        
       
