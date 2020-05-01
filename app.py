@@ -28,7 +28,7 @@ def home_page():
 # Page to add project
 @app.route('/add_project')
 def addproject():
-    return render_template('add_project.html')
+    return render_template('pages/add_project.html')
 
 # Adding a project to the database
 @app.route('/insert_project', methods=['POST'])
@@ -48,7 +48,8 @@ def see_projects():
 @app.route('/project_view/<project_id>')
 def project_view(project_id):
     the_project = mongo.db.projects.find_one({"_id": ObjectId(project_id)})
-    return render_template('project_view.html', project=the_project)
+    return render_template('pages/project_view.html', project=the_project)
+
 
 # View page 
 @app.route('/presentation/project_id=<id>', methods=['POST', 'GET'])
