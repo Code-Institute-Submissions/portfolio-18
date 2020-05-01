@@ -50,6 +50,12 @@ def project_view(project_id):
     the_project = mongo.db.projects.find_one({"_id": ObjectId(project_id)})
     return render_template('pages/project_view.html', project=the_project)
 
+# Deleting projects's entry from database
+@app.route('/delete_project/<project_id>')
+def delete_project(project_id):
+    mongo.db.library.remove({'_id': ObjectId(project_id)})
+    return redirect(url_for('see_projects'))
+
 
 # View page 
 @app.route('/presentation/project_id=<id>', methods=['POST', 'GET'])
@@ -122,7 +128,6 @@ def logout():
 def admin():
     projects=mongo.db.projects.find({'name':session.get('name')})
     email = session.get('email')
-
     return render_template('pages/admin.html',projects=projects, headTitle="Admin panel")
 
 
