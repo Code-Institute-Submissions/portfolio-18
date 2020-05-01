@@ -26,7 +26,7 @@ def home_page():
     return render_template('pages/index.html', headTitle="Home")
 
 # Portfolio - cards presentation page
-@app.route("/portfolio", methods=['GET', 'POST'])
+@app.route("/portfolio")
 def portfolio():
     portfolio=mongo.db.projects.find()
     return render_template("pages/portfolio.html", headTitle="Portfolio", portfolio="portfolio")  
