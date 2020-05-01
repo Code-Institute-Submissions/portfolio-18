@@ -32,8 +32,8 @@
             </div>
             {% endfor %}
             <div class="books-container">
-                {% for project in portfolio|reverse %}
-                <a class="books-display" href="{{url_for('presentation', _id=._id)}}"> <img src="{{project.url}}"></a>
+                {% for portfolio in portfolio %}
+                <a class="books-display" href="{{url_for('presentation', _id=_id)}}"> <img src="{{project.url}}"></a>
                 {% endfor %}
             </div>
 
