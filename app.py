@@ -43,21 +43,22 @@ def contact():
 
 @app.route('/login', methods=['POST', 'GET'])
 def login():
-    if request.method == 'GET': 
-        return render_template('pages/login.html', headTitle="Login")
-    else:
-        user = mongo.db.user
-        login_user = user.find_one({
+    user = mongo.db.user
+    login_user = user.find_one({
         'email': request.form.get('email'), 
         'password':request.form.get('password'
         )})
+
+    if request.method == 'GET': 
+        return render_template('pages/login.html', headTitle="Login")
+    
         
         if login_user:
             if request.form['password'] == login_user['password']:
                session['username'] = request.form['username']
             return redirect(url_for('admin'))
 
-    return render_template('try_again.html')
+        return render_template('try_again.html')
        
     
 @app.route('/register', methods=['POST', 'GET'])
