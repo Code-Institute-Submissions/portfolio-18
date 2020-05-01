@@ -50,11 +50,29 @@ def project_view(project_id):
     the_project = mongo.db.projects.find_one({"_id": ObjectId(project_id)})
     return render_template('pages/project_view.html', project=the_project)
 
+# Updating project in database
+@app.route('/update_project/<project_id>', methods=["POST"])
+def update_project(project_id):
+    projects=mongo.db.projects
+    projects.update({'_id': ObjectId(project_id)},
+    {
+        'project_name': request.form.get('project_name'),
+        'for_who': request.form.get('for_who'),
+        'description': request.form.get('description'),
+        'username': request.form.get('username'),
+        'url': request.form.get('url'),
+        'year_of_submission': request.form.get('year_of_submission')
+    })
+    return redirect(url_for('see_project'))
+
+
 # Deleting projects's entry from database
 @app.route('/delete_project/<project_id>')
 def delete_project(project_id):
     mongo.db.library.remove({'_id': ObjectId(project_id)})
     return redirect(url_for('see_projects'))
+
+
 
 
 # View page 
