@@ -50,9 +50,45 @@ In particular, as part of this section we recommend that you provide a list of U
 
 This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
 
-## Features
+### Existing features:
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+#### Main Page
+The main page allows all users of the site to view the qc data for all sequencing runs. The page is divided into two sections. The first section has four modal links that display qc data as line charts. The second section contains two modal links that display qc data as pie charts. From the main page the user is able to access the login or signup page.
+
+#### Login Page
+The login page allows a registered user to log into their user account using their unique username. If successful the user is directed to the main user page.
+#### User/Admin Page
+The user page (accessed by logging in with username) allows the user to view all of the qc data for their own sequencing runs. The page has the main layout features as the main page. From the user page the user is able to access the add-run page and the manage-runs page.
+
+#### Add Run Page
+The add-run page allows the user to add new qc run data to the database.
+
+#### Manage Runs Page
+The manage-runs page allows the user to view qc data for individual runs or groups of runs. Once an individual run has been selected, the user is able to access the delete-run or update-run pages.
+
+#### Admin or User Page
+The admin-or-user page allows users with admin privileges to choose to login as a standard user or as an admin user.
+
+#### Delete Run Page
+The delete-run page allows the user or admin-user to delete the currently selected run.
+
+#### Update Run Page
+The update-run page allows the user or admin-user to update the currently selected run.
+
+#### Delete User Page
+The delete-user page allows the admin-user to delete the currently selected user account.
+
+#### Update User Page
+The update-user page allows the admin-user to update the currently selected user account.
+
+#### Logout Page
+Accessed via the logout button and allows the user or admin-user to end their current session. Informs the user that they have successfully logged out and provides a link back to the main page.
+
+#### Permission Denied Page
+If the user tries to access a user account, other than the current user count, via the url address then they will be redirected to the permission-denied page. The permission-denied page informs the current user that they don't have permission to go to that page and provides a link back to the main page.
+
+#### 404 Error Page
+If the user attempts to use a url that does not exist then they will be redirected to the 404 page. The 404 page will inform the current user that the page they are trying to access doesn't exist and provides a link back to the main page.
 
 ### Existing Features
 
