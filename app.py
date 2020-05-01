@@ -33,8 +33,8 @@ def portfolio():
 # View page 
 @app.route('/presentation')
 def presentation():
-    projects=mongo.db.projects.find()
-    return render_template('pages/presentation.html', headTitle="Project", projects=projects)
+    projects= mongo.db.projects.find()
+    return render_template('pages/presentation.html', headTitle="Project", projects="projects")
 
 # Contact page
 @app.route("/contact", methods=['GET', 'POST'])
@@ -43,22 +43,21 @@ def contact():
 
 @app.route('/login', methods=['POST', 'GET'])
 def login():
-    user = mongo.db.user
-    login_user = user.find_one({
+    if request.method == 'GET': 
+        return render_template('pages/login.html', headTitle="Login")
+    else:
+        user = mongo.db.user
+        login_user = user.find_one({
         'email': request.form.get('email'), 
         'password':request.form.get('password'
         )})
-
-    if request.method == 'GET': 
-        return render_template('pages/login.html', headTitle="Login")
-    
         
         if login_user:
-            if request.form['password'] == login_user['password']:
-               session['username'] = request.form['username']
-            return redirect(url_for('admin'))
-
-        return render_template('try_again.html')
+            session['email'] = login_user['email']
+            session['name'] = login_user['name']
+        return redirect(url_for('admin'))
+       
+    return 'Invalid username or password combination'
        
     
 @app.route('/register', methods=['POST', 'GET'])
