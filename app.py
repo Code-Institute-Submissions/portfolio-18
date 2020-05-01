@@ -42,7 +42,7 @@ def insert_project():
 # View all projects in the database
 @app.route('/portfolio')
 def see_projects():
-    return render_template('pages/portfolio.html',headTitle="Portfolio", projects=mongo.db.projects.find())
+    return render_template('pages/portfolio.html', headTitle="Portfolio", projects=mongo.db.projects.find())
 
 # Viewing a projects's information
 @app.route('/project_view/<project_id>')
