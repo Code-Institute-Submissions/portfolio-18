@@ -156,7 +156,47 @@ The following must be installed on your machine:
 - Python 3
 - Git
 - An account at MongoDB Atlas or MongoDB running locally on your machine.
-How to set up your Mongo Atlas account here.
+     How to set up your Mongo Atlas account here.
+
+
+### Instructions
+
+1. Save a copy of the github repository located at https://github.com/AJGreaves/familyhub by clicking the "download zip" button at the top of the page and extracting the zip file to your chosen folder. If you have Git installed on your system, you can clone the repository with the following command.
+
+`git clone https://github.com/AJGreaves/familyhub`
+
+2. If possible open a terminal session in the unzip folder or cd to the correct location.
+
+3. A virtual environment is recommended for the Python interpreter, I recommend using Pythons built in virtual environment. Enter the command:
+
+`python -m .venv venv`
+
+NOTE: Your Python command may differ, such as python3 or py
+
+Activate the .venv with the command:
+
+`.venv\Scripts\activate`
+
+Again this command may differ depending on your operating system, please check the Python Documentation on virtual environments for further instructions.
+
+4. If needed, Upgrade pip locally with
+
+`pip install --upgrade pip.`
+
+5. Install all required modules with the command
+
+`pip -r requirements.txt.`
+
+6. In your local IDE create a file called `.flaskenv.`
+
+7. Inside the `.flaskenv` file, create a SECRET_KEY variable and a MONGO_URI to link to your own database. Please make sure to call your database `portfolio`, with 2 collections called `users` and `projects`. You will find example json structures for these collections in the schemas folder.
+
+8. You can now run the application with the command
+
+`python app.py`
+
+You can visit the website at `http://127.0.0.1:5000`
+
 
 
 
