@@ -126,7 +126,7 @@ In addition, you may also use this section to discuss plans for additional featu
 - Bootstrap to simplify the structure of the website and make the website responsive easily.
 - FontAwesome to provide icons for Family Hub.
 - Google Fonts to style the website fonts.
-- PyMongo to make communication between Python and MongoDB possible.
+- [PyMongo](https://flask-pymongo.readthedocs.io/en/latest/) to make communication between Python and MongoDB possible.
 - Flask to construct and render pages.
 - Jinja to simplify displaying data from the backend of this project smoothly and effectively in html.
 
@@ -140,7 +140,22 @@ Please see [Testing](TESTING.md) for all my testing
 
 ## Deployment
 
+In order to deploy this project you must first set up an account at MongoDB Atlas. Click here for instructions on how to set up able Mongo Atlas account.
+
+### How to run this project locally
+
+
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+
+### Heroku Deployment
+  
+  1.
+  2.
+  3.
+  4.
+  5.
+  6.
+
 
 In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
 
@@ -163,8 +178,10 @@ In addition, if it is not obvious, you should also describe how to run your code
 ### Acknowledgements
 
 
-- I received inspiration for this project from X
-- [Simen Daehlin](https://github.com/Eventyret) - [The Padwan Project](https://github.com/Eventyret/Padawan)
+- The project is inspired by my experience made so far in software developmet.
+
+- Special thanks to my Code Institute Mentor [Simen Daehlin](https://github.com/Eventyret)for his coding expertise, patience and generosity with his time. 
+ [The Padwan Project](https://github.com/Eventyret/Padawan)
 https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat
 https://code.visualstudio.com/docs/python/environments
-https://flask-pymongo.readthedocs.io/en/latest/
+
