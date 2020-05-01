@@ -147,21 +147,22 @@ In order to deploy this project you must first set up an account at MongoDB Atla
 
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
 
-### Heroku Deployment
+## Heroku Deployment
+-----
   
-  1.Create a `requirements.txt` file from the terminal using the command `pip3 freeze --local > requirements.txt`
+  1. Create a `requirements.txt` file from the terminal using the command `pip3 freeze --local > requirements.txt`
 
-  2.Create a `Procfile` from the terminal using the command `echo web: python app.py > Procfile.`
+  2. Create a `Procfile` from the terminal using the command `echo web: python app.py > Procfile.`
 
-  3.`git add` and `git commit` the new requirements and Procfile and then `git push` the project to GitHub.
+  3. `git add` and `git commit` the new requirements and ProcFile and then `git push` the project to GitHub.
 
-  4.Create a new app on the Heroku website by clicking the "New" button in your dashboard. Give it a name and set the region to Europe.
+  4. Create a new app on the Heroku website by clicking the "New" button in your dashboard. Give it a name and set the region to Europe.
 
-  5.From the heroku dashboard of your new app, click on "Deploy" > "Deployment method" and select GitHub.
+  5. From the Heroku dashboard of your new app, click on "Deploy" > "Deployment method" and select GitHub.
 
-  6.In the App connected to GitHub section confirm the heroku app is linked to the correct GitHub repository.
+  6. In the App connected to GitHub section confirm the Heroku app is linked to the correct GitHub repository.
 
-  7.In the heroku dashboard for the application, click on "Settings" > "Reveal Config Vars".
+  7. In the Heroku dashboard for the application, click on "Settings" > "Reveal Config Vars".
 
   8. Set the following config vars:
   
@@ -173,9 +174,9 @@ This section should describe the process you went through to deploy the project 
 | PORT     | 	5000     |  
 | SECRET_KEY |	`<your_secret_key> `   |
  - To get you MONGO_URI read the MongoDB Atlas documentation here.
- 9.In the heroku dashboard, click "Deploy".
- 10.In the Automatic Deploys section click Enable Automatic Deploys to ensure your heroku app is automatically updated everytime your github repository is updated.
- 11.Click on the "Open App" button at the top of the page. The Heroku website is now successfully deployed.
+ 9. In the heroku dashboard, click "Deploy".
+ 10. In the Automatic Deploys section click Enable Automatic Deploys to ensure your heroku app is automatically updated everytime your GitHub repository is updated.
+ 11. Click on the "Open App" button at the top of the page. The Heroku website is now successfully deployed.
 
 ## Credits
 
