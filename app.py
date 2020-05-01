@@ -50,6 +50,12 @@ def project_view(project_id):
     the_project = mongo.db.projects.find_one({"_id": ObjectId(project_id)})
     return render_template('pages/project_view.html', project=the_project)
 
+# Page for user to edit review
+@app.route('/edit_project/<project_id>')
+def edit_project(project_id):
+    the_project = mongo.db.projects.find_one({"_id": ObjectId(project_id)})
+    return render_template('pages/edit_project.html',  project=the_project)    
+
 # Updating project in database
 @app.route('/update_project/<project_id>', methods=["POST"])
 def update_project(project_id):
