@@ -1,5 +1,16 @@
-
 # Portfolio - Patrycja Tyra
+
+
+# Introduction
+
+Patrycja.io is created by Patrycja Tyra as her Full - Stack Developer professional portofolio to be able to get freelance projects on side but as well to be visible to future employers
+
+***
+##### Table of Contents  
+[Headers](#headers)  
+[Emphasis](#emphasis)  
+
+
 <!-- markdownlint-disable MD033 -->
 <div align="center">
 <img src="/wireframes/main.PNG" >
