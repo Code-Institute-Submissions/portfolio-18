@@ -174,8 +174,11 @@ This section should describe the process you went through to deploy the project 
 | PORT     | 	5000     |  
 | SECRET_KEY |	`<your_secret_key> `   |
  - To get you MONGO_URI read the MongoDB Atlas documentation here.
- 9. In the heroku dashboard, click "Deploy".
- 10. In the Automatic Deploys section click Enable Automatic Deploys to ensure your heroku app is automatically updated everytime your GitHub repository is updated.
+ 
+ 9. In the Heroku dashboard, click "Deploy".
+
+ 10. In the Automatic Deploys section click Enable Automatic Deploys to ensure your Heroku app is automatically updated everytime your GitHub repository is updated.
+ 
  11. Click on the "Open App" button at the top of the page. The Heroku website is now successfully deployed.
 
 ## Credits
