@@ -42,22 +42,13 @@ def insert_project():
 # View all projects in the database
 @app.route('/portfolio')
 def see_projects():
-    return render_template('portfolio.html', projects=mongo.db.projects.find())
+    return render_template('pages/portfolio.html',headTitle="Portfolio", projects=mongo.db.projects.find())
 
 # Viewing a projects's information
 @app.route('/project_view/<project_id>')
 def project_view(project_id):
     the_project = mongo.db.projects.find_one({"_id": ObjectId(project_id)})
     return render_template('project_view.html', project=the_project)
-
-
-
-
-# Portfolio - cards presentation page
-@app.route("/portfolio")
-def portfolio():
-    portfolio=mongo.db.projects.find()
-    return render_template("pages/portfolio.html", headTitle="Portfolio", portfolio="portfolio")  
 
 # View page 
 @app.route('/presentation/project_id=<id>', methods=['POST', 'GET'])
