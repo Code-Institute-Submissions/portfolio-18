@@ -7,8 +7,28 @@ Patrycja.io is created by Patrycja Tyra as her Full - Stack Developer profession
 
 ***
 ##### Table of Contents  
-[1.UX](##UX)  
-[Goals](###Goals)  
+- [UX](#ux)
+  * [Goals](#goals)
+- [Features](#features)
+  * [Existing features:](#existing-features-)
+    + [Main Page](#main-page)
+    + [Login Page](#login-page)
+    + [Signup Page](#signup-page)
+    + [User Page](#user-page)
+    + [Add Run Page](#add-run-page)
+    + [Manage Runs Page](#manage-runs-page)
+    + [Admin or User Page](#admin-or-user-page)
+    + [Admin Page](#admin-page)
+    + [Delete Run Page](#delete-run-page)
+    + [Update Run Page](#update-run-page)
+    + [Manage Users Page](#manage-users-page)
+    + [Delete User Page](#delete-user-page)
+    + [Update User Page](#update-user-page)
+    + [Logout Page](#logout-page)
+    + [Permission Denied Page](#permission-denied-page)
+
+
+
 
 
 <!-- markdownlint-disable MD033 -->
