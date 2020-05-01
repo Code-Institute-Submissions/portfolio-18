@@ -220,12 +220,12 @@ You can visit the website at `http://127.0.0.1:5000`
 
   8. Set the following config vars:
   
-|Key       | Value           | 
-| ------------- |:-------------:|
-| DEBUG     | FALSE| 
-| IP  | 0.0.0.0     |  
-| MONGO_URI | `mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority`    | 
-| PORT     | 	5000     |  
+|Key     | Value | 
+| -------|-------|
+| DEBUG  | FALSE | 
+| IP     | 0.0.0.0|  
+| MONGO_URI | `mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority`      | 
+| PORT   |5000   |  
 | SECRET_KEY |	`<your_secret_key> `   |
  - To get you MONGO_URI read the MongoDB Atlas documentation [here](https://docs.atlas.mongodb.com/).
  
