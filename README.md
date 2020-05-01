@@ -104,12 +104,23 @@ In addition, you may also use this section to discuss plans for additional featu
 - Another feature idea
 
 ## Technologies Used
+------
+### Tools
+- Visual Studio Code is the IDE used for developing this project.
+- PIP for installation of tools needed in this project.
+- Git to handle version control.
+- MongoDB Atlas is the database for this project
+- GitHub to store and share all project code remotely.
+- Picresize to edit, crop and save images as well as ulitizing the colour picker to ensure color consistency over the entire project.
+- GitHub Wiki TOC generator
+- -https://dillinger.io/
+- https://favicon.io/favicon-generator/
+- Browserstack to test functionality on all browsers and devices.
+- Am I Responsive to create the images in this readme file of each page displayed on different screen sizes.
+- EZgif provided gif editing software for the gif in this readme file.
+- https://coolors.co/
+-  [The Padwan Project](https://github.com/Eventyret/Padawan)
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
-
-- [JQuery](https://jquery.com)
-- [The Padwan Project](https://github.com/Eventyret/Padawan)
-https://favicon.io/favicon-generator/
 
 ## Testing
 
