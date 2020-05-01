@@ -30,7 +30,14 @@ def home_page():
 def addproject():
     return render_template('add_project.html')
 
-
+# Adding a project to the database
+@app.route('/insert_project', methods=['POST'])
+def insert_project():
+    projects=mongo.db.projects
+    if request.method == 'POST':
+        form_dict = request.form.to_dict()
+        projects.insert_one(form_dict)
+        return redirect(url_for('see_project'))
 
 
 # Portfolio - cards presentation page
@@ -113,14 +120,6 @@ def admin():
 
     return render_template('pages/admin.html',projects=projects, headTitle="Admin panel")
 
-@app.route('/insert_project', methods=['POST'])
-def insert_project():
-
-    projects=mongo.db.projects
-    if request.method == 'POST':
-        form_dict = request.form.to_dict()
-        projects.insert_one(form_dict)
-        return redirect(url_for('admin'))
 
 # No permission page
 @app.route('/permission-denied')
