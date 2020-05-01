@@ -138,14 +138,28 @@ This project uses HTML, CSS, JavaScript and Python programming languages.
 
 Please see [Testing](TESTING.md) for all my testing
 
-## Deployment
+# Deployment
 
 In order to deploy this project you must first set up an account at MongoDB Atlas. Click here for instructions on how to set up able Mongo Atlas account.
 
-### How to run this project locally
+## How to run this project locally
+
+To run this project on your own IDE follow the instructions below:
+
+Ensure you have the following tools:
+
+-An IDE such as Visual Studio Code - Used in this projects
+
+The following must be installed on your machine:
+
+- PIP
+- Python 3
+- Git
+- An account at MongoDB Atlas or MongoDB running locally on your machine.
+How to set up your Mongo Atlas account here.
 
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+
 
 ## Heroku Deployment
 
