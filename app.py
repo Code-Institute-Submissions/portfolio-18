@@ -39,6 +39,12 @@ def insert_project():
         projects.insert_one(form_dict)
         return redirect(url_for('see_project'))
 
+# View all projects in the database
+@app.route('/portfolio')
+def see_projects():
+    return render_template('portfolio.html', projects=mongo.db.projects.find())
+
+
 
 # Portfolio - cards presentation page
 @app.route("/portfolio")
