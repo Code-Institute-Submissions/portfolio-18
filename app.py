@@ -25,6 +25,14 @@ mongo = PyMongo(app)
 def home_page():    
     return render_template('pages/index.html', headTitle="Home")
 
+# Page to add project
+@app.route('/add_project')
+def addproject():
+    return render_template('add_project.html')
+
+
+
+
 # Portfolio - cards presentation page
 @app.route("/portfolio")
 def portfolio():
