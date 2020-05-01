@@ -44,6 +44,13 @@ def insert_project():
 def see_projects():
     return render_template('portfolio.html', projects=mongo.db.projects.find())
 
+# Viewing a projects's information
+@app.route('/project_view/<project_id>')
+def project_view(project_id):
+    the_project = mongo.db.projects.find_one({"_id": ObjectId(project_id)})
+    return render_template('project_view.html', project=the_project)
+
+
 
 
 # Portfolio - cards presentation page
