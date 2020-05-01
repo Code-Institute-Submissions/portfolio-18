@@ -4,6 +4,7 @@ import bcrypt
 from os import path
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_pymongo import PyMongo
+from bson.objectid import ObjectId
 
 
 if path.exists('venv.py'):
@@ -31,10 +32,22 @@ def portfolio():
     return render_template("pages/portfolio.html", headTitle="Portfolio", projects=projects)  
 
 # View page 
-@app.route('/presentation')
-def presentation():
-    projects= mongo.db.projects.find()
-    return render_template('pages/presentation.html', headTitle="Project", projects="projects")
+@app.route('/presentation/project_id=<id>', methods=['POST', 'GET'])
+def presentation(id):
+    print_post=request.form.get('presentation')
+    presentation = mongo.db.projects.find_one({"_id": ObjectId(id)})
+    if request.method == 'POST':
+        mongo.db.projects.find_one_and_update({"_id": ObjectId(id)},{
+                    '$push':{'review':{
+                    'name': session['name'],
+                    'post': print_post
+                    }
+                }
+            }
+        )
+        return redirect(url_for('presentation', id=id))
+    mongo.db.projects.find_one_and_update({"_id": ObjectId(id)}, {"$inc": {"views": 1}})
+    return render_template('pages/presentation.html', headTitle="Project", presentation="presentation")
 
 # Contact page
 @app.route("/contact", methods=['GET', 'POST'])
