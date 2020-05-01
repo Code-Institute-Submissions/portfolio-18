@@ -28,8 +28,8 @@ def home_page():
 # Portfolio - cards presentation page
 @app.route("/portfolio", methods=['GET', 'POST'])
 def portfolio():
-    projects=mongo.db.projects.find()
-    return render_template("pages/portfolio.html", headTitle="Portfolio", projects=projects)  
+    portfolio=mongo.db.projects.find()
+    return render_template("pages/portfolio.html", headTitle="Portfolio", portfolio="portfolio")  
 
 # View page 
 @app.route('/presentation/project_id=<id>', methods=['POST', 'GET'])
