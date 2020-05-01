@@ -121,6 +121,17 @@ In addition, you may also use this section to discuss plans for additional featu
 - https://coolors.co/
 -  [The Padwan Project](https://github.com/Eventyret/Padawan)
 
+### Libraries
+-JQuery to simplify DOM manipulation.
+-Bootstrap to simplify the structure of the website and make the website responsive easily.
+-FontAwesome to provide icons for Family Hub.
+-Google Fonts to style the website fonts.
+-PyMongo to make communication between Python and MongoDB possible.
+-Flask to construct and render pages.
+-Jinja to simplify displaying data from the backend of this project smoothly and effectively in html.
+### Languages
+This project uses HTML, CSS, JavaScript and Python programming languages.
+
 
 ## Testing
 
