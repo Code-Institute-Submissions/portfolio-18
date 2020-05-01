@@ -148,15 +148,14 @@ In order to deploy this project you must first set up an account at MongoDB Atla
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
 
 ## Heroku Deployment
------
-  
+
   1. Create a `requirements.txt` file from the terminal using the command `pip3 freeze --local > requirements.txt`
 
   2. Create a `Procfile` from the terminal using the command `echo web: python app.py > Procfile.`
 
   3. `git add` and `git commit` the new requirements and ProcFile and then `git push` the project to GitHub.
 
-  4. Create a new app on the Heroku website by clicking the "New" button in your dashboard. Give it a name and set the region to Europe.
+  4. Create a new app on the [Heroku website](heroku.com) by clicking the "New" button in your dashboard. Give it a name and set the region to Europe.
 
   5. From the Heroku dashboard of your new app, click on "Deploy" > "Deployment method" and select GitHub.
 
@@ -173,12 +172,12 @@ This section should describe the process you went through to deploy the project 
 | MONGO_URI | `mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority`    | 
 | PORT     | 	5000     |  
 | SECRET_KEY |	`<your_secret_key> `   |
- - To get you MONGO_URI read the MongoDB Atlas documentation here.
+ - To get you MONGO_URI read the MongoDB Atlas documentation [here](https://docs.atlas.mongodb.com/).
  
  9. In the Heroku dashboard, click "Deploy".
 
  10. In the Automatic Deploys section click Enable Automatic Deploys to ensure your Heroku app is automatically updated everytime your GitHub repository is updated.
- 
+
  11. Click on the "Open App" button at the top of the page. The Heroku website is now successfully deployed.
 
 ## Credits
