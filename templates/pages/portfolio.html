@@ -22,7 +22,7 @@
             {% for project in projects %}
             <!-- Portfolio Section  -->
             <div class="col-md-4 col-sm-6">
-                <a href="{{ url_for('project_view')}}">
+                <a href="{{ url_for('project_view', project_id=project._id)}}">
                     <div class="portfolio-thumb">
                         <img src="{{project.url}}" class="img-responsive" alt="Portfolio">
                         <div class="portfolio-overlay">
