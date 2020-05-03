@@ -6,6 +6,7 @@
         <div class="row">
             <div class="col-12">
                 <h1>Admin panel</h1>
+
                 {% if 'username' in session %}
                 <li><a href="{{url_for('log_out')}}">Log Out</a></li>
                 {% endif %}
@@ -46,7 +47,7 @@
                 {% if session['email'] != None %}
                 <div class="vertical-nav bg-white" id="sidebar">
                     <div class=" bg-light">
-                        <div class="media d-flex align-items-center"><img src="{{ url_for('static', filename='#') }}" alt="..." width="65" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+                        <div class="media d-flex align-items-center">
                             <div class="media-body">
                                 <h4 class="m-0">{{ session['name'] }}</h4>
                                 <p class="font-weight-light text-muted mb-0">Admin</p>
