@@ -81,9 +81,10 @@ def delete_project(project_id):
 
 
 
+
 # View page 
-@app.route('/presentation/project_id=<id>', methods=['POST', 'GET'])
-def presentation(id):
+@app.route('/portfolio/project_id=<id>', methods=['POST', 'GET'])
+def portfolio(id):
     print_post=request.form.get('presentation')
     presentation = mongo.db.projects.find_one({"_id": ObjectId(id)})
     if request.method == 'POST':
