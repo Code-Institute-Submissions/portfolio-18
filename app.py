@@ -85,8 +85,8 @@ def delete_project(project_id):
 # View page 
 @app.route('/portfolio/project_id=<id>', methods=['POST', 'GET'])
 def portfolio(id):
-    print_post=request.form.get('presentation')
-    presentation = mongo.db.projects.find_one({"_id": ObjectId(id)})
+    print_post=request.form.get('portfolio')
+    portfolio = mongo.db.projects.find_one({"_id": ObjectId(id)})
     if request.method == 'POST':
         mongo.db.projects.find_one_and_update({"_id": ObjectId(id)},{
                     '$push':{'review':{
@@ -96,9 +96,9 @@ def portfolio(id):
                 }
             }
         )
-        return redirect(url_for('presentation', id=id))
+        return redirect(url_for('portfolio', id=id))
     mongo.db.projects.find_one_and_update({"_id": ObjectId(id)}, {"$inc": {"views": 1}})
-    return render_template('pages/presentation.html', headTitle="Project", presentation="presentation")
+    return render_template('pages/portfolio.html', headTitle="Project", portfolio="portfolio")
 
 # Contact page
 @app.route("/contact", methods=['GET', 'POST'])
