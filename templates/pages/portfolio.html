@@ -12,31 +12,16 @@
     </div>
 </section>
 
+<!-- Section to display projects -->
 <section id="portfolio">
     <div class="container">
         <div class="row">
-            {% for project in projects %}
-            <!-- Portfolio Section 1 -->
-            <div class="col-md-4 col-sm-6">
-                <a href="{{ url_for('project_view')}}">
-                    <div class="portfolio-thumb">
-                        <img src="{{project.url}}" class="img-responsive" alt="Portfolio">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-item">
-                                <h3>{{project.project_name}}</h3>
-                                <span>{{project.for_who}}</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            {% endfor %}
-            <div class="books-container">
+
+            <div class="container">
                 {% for portfolio in portfolio %}
-                <a class="books-display" href="{{url_for('portfolio', _id=_id)}}"> <img src="{{project.url}}"></a>
+                <a class="display" href="{{url_for('project_view', project_id=project._id)}}"> <img src="{{project.url}}"></a>
                 {% endfor %}
             </div>
-
 
             <hr>
             <div class="col-md-12 col-sm-12 text-center">
