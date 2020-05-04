@@ -22,9 +22,11 @@
                 </div>
             </div>
 
+            {% if 'email' in session %}
             <div class="col-md-12 col-sm-12 text-center">
-                <a href="{{ url_for('admin')}}" type="button" class="btn btn-outline-dark" class="form-control" value="See more">Go back</a>
+                <a href="{{ url_for('admin')}}" type="submit" class="form-control btn"> go to admin</a>
             </div>
+            {% endif %}
         </div>
     </div>
 </section>
