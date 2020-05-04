@@ -98,7 +98,7 @@ def login():
                     session['email'] = request.form['email']
              return redirect(url_for('admin'))
 
-        return render_template('404.html')
+        return render_template('pages/404.html')
 
                   
     
