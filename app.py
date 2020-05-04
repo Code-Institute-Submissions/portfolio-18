@@ -59,8 +59,8 @@ def edit_project(project_id):
 # Updating project in database
 @app.route('/update_project/<project_id>', methods=["POST"])
 def update_project(project_id):
-    the_project=mongo.db.projects
-    the_project.update({'_id': ObjectId(project_id)},
+    projects=mongo.db.projects
+    projects.update({'_id': ObjectId(project_id)},
     {
         'project_name': request.form.get('project_name'),
         'for_who': request.form.get('for_who'),
@@ -69,7 +69,7 @@ def update_project(project_id):
         'url': request.form.get('url'),
         'year_of_submission': request.form.get('year_of_submission')
     })
-    return redirect(url_for('see_projects'))
+    return redirect(url_for('admin'))
 
 
 # Deleting projects's entry from database
@@ -130,11 +130,11 @@ def logout():
 
 @app.route("/admin")
 def admin():
-    the_project=mongo.db.projects.find({'username':session.get('email')})
+    projects=mongo.db.projects.find({'username':session.get('email')})
     email = session.get('email')
     if not email:
         return redirect(url_for('login'))
-    return render_template('pages/admin.html',project=the_project, headTitle="Admin panel")
+    return render_template('pages/admin.html',projects=projects, headTitle="Admin panel")
 
 
 # No permission page
