@@ -5,8 +5,8 @@
         <form class="text-center border border-light p-5" action="{{ url_for('update_project', project_id=project._id) }}" method='POST'>
             <p class="h4 mb-4">Edit project</p>
             <!-- Product Name -->
-            <input type="text" id="project_name" name="project_name" class="form-control mb-4" placeholder="Project Title" value="{{project.for_who}}">
             <input type="text" id="project_name" name="project_name" class="form-control mb-4" placeholder="Project Title" value="{{project.project_name}}">
+            <input type="text" id="project_name" name="project_name" class="form-control mb-4" placeholder="Project Title" value="{{project.for_who}}">
             <!-- Price -->
             <input type="number" min="1" step="any" id="#" name="price" class="form-control mb-4" value="{{project.year_of_submission}}" placeholder="When finished?">
             <input type="text" id="url" name="url" class="form-control mb-4" value="{{project.url}}" placeholder="Add Image URL">
