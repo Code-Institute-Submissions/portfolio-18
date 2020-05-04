@@ -93,7 +93,7 @@ def login():
         login_user = user.find_one({
         'email': request.form.get('email')})
 
-    print(login_user['password'])
+    print(request.form.get('email'))
     
     if login_user:
           if request.form['password'] == login_user['password']:
