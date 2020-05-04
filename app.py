@@ -93,6 +93,8 @@ def login():
         login_user = user.find_one({
         'email': request.form.get('email')})
 
+    print(login_user['password'])
+    
     if login_user:
           if request.form['password'] == login_user['password']:
                   session['username'] = request.form['username']
