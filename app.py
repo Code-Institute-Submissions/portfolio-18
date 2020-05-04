@@ -75,7 +75,7 @@ def update_project(project_id):
 # Deleting projects's entry from database
 @app.route('/delete_project/<project_id>')
 def delete_project(project_id):
-    mongo.db.library.remove({'_id': ObjectId(project_id)})
+    mongo.db.projects.remove({'_id': ObjectId(project_id)})
     return redirect(url_for('see_projects'))
 
 
