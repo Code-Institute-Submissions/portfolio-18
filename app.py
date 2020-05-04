@@ -95,7 +95,7 @@ def login():
                   session['username'] = request.form['username']
           return redirect(url_for('admin'))
       
-    return render_template('permission.html')
+    return render_template('pages/permission.html')
        
     
 @app.route('/register', methods=['POST', 'GET'])
