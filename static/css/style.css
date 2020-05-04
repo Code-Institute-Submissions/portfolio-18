@@ -239,7 +239,7 @@
     #portfolio .portfolio-thumb {
         position: relative;
         padding: 0;
-        margin-top: 32px;
+        margin-top: 10px;
     }
     
     #portfolio .portfolio-thumb .portfolio-overlay {
