@@ -97,13 +97,12 @@ def login():
         
         if login_user:
              if request.form['password'] == login_user['password']:
-                session['username'] = request.form['username']
-                return redirect(url_for('see_library'))
+                session['email'] = request.form['email']
+             return redirect(url_for('admin'))
 
         return render_template('404.html')
 
-           
-       
+                  
     
 @app.route('/register', methods=['POST', 'GET'])
 def register():
