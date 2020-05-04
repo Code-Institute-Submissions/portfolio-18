@@ -86,20 +86,16 @@ def contact():
 
 @app.route('/login', methods=['POST', 'GET'])
 def login():
-    if request.method == 'GET': 
-        return render_template('pages/login.html', headTitle="Login")
-    else:
-        user = mongo.db.user
-        login_user = user.find_one({
-        'email': request.form.get('email'), 
-        'password':request.form.get('password'
-        )})
-        
-        if login_user:
-            session['name'] = login_user['name']
-        return redirect(url_for('admin'))
-       
-    return 'Invalid username or password combination'
+    user = mongo.db.user
+    login_user = user.find_one({
+        'email': request.form.get('email')})
+
+    if login_user:
+          if request.form['password'] == login_user['password']:
+                  session['username'] = request.form['username']
+          return redirect(url_for('admin'))
+      
+    return render_template('permission.html')
        
     
 @app.route('/register', methods=['POST', 'GET'])
