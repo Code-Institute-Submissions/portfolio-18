@@ -86,8 +86,11 @@ def contact():
 
 @app.route('/login', methods=['POST', 'GET'])
 def login():
-    user = mongo.db.user
-    login_user = user.find_one({
+    if request.method == 'GET': 
+        return render_template('pages/login.html', headTitle="Login")
+    else:
+        user = mongo.db.user
+        login_user = user.find_one({
         'email': request.form.get('email')})
 
     if login_user:
