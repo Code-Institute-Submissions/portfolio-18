@@ -13,8 +13,10 @@
                 </li>
                 <li class="nav-item "><a href="{{ url_for( 'contact')}} " class="nav-link {% if active == 'contact' %}active{% endif %}">Contact</a>
                 </li>
-                <li class="nav-item "><a href="{{ url_for( 'login')}} " class="nav-link {% if active == 'admin' %}active{% endif %}">Admin</a>
+                {% if 'email' in session %}
+                <li class="nav-item "><a href="{{ url_for( 'logout')}} " class="nav-link {% if active == 'admin' %}active{% endif %}">Log out</a>
                 </li>
+                {% endif %}
 
             </ul>
         </div>
