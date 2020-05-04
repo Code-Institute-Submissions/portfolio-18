@@ -96,11 +96,13 @@ def login():
         )})
         
         if login_user:
-            session['email'] = login_user['email']
-            session['name'] = login_user['name']
-        return redirect(url_for('admin'))
-       
-    return 'Invalid username or password combination'
+             if request.form['password'] == login_user['password']:
+                session['username'] = request.form['username']
+                return redirect(url_for('see_library'))
+
+        return render_template('404.html')
+
+           
        
     
 @app.route('/register', methods=['POST', 'GET'])
