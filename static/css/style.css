@@ -104,7 +104,8 @@
     }
     
     #portfolio,
-    #about {
+    #contact,
+    #index {
         padding-top: 50px;
         position: relative;
         text-align: center;
