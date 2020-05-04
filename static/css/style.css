@@ -408,13 +408,6 @@
    Submit button           
 -----------------------------------------*/
     
-    .btn-outline-dark {
-        color: #0a0a0a !important;
-        background-color: transparent;
-        background-image: none;
-        border-color: #050505 !important;
-    }
-    
     .btn {
         display: inline-block;
         font-weight: 400;
@@ -441,10 +434,12 @@
         width: 40%;
     }
     /*---------------------------------------
-   Delete Button           
------------------------------------------*/
-    /*---------------------------------------
-   Edit Button           
+Admin Panel         
 -----------------------------------------*/
     
-    e34f26
+    .table td,
+    .table th {
+        padding: .75rem;
+        vertical-align: top;
+        border-top: 1px solid #72727294;
+    }
