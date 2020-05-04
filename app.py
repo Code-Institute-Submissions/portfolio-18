@@ -37,7 +37,7 @@ def insert_project():
     if request.method == 'POST':
         form_dict = request.form.to_dict()
         projects.insert_one(form_dict)
-        return redirect(url_for('see_project'))
+        return redirect(url_for('admin'))
 
 # View all projects in the database
 @app.route('/portfolio')
