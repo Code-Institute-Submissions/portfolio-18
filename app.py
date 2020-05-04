@@ -69,7 +69,7 @@ def update_project(project_id):
         'url': request.form.get('url'),
         'year_of_submission': request.form.get('year_of_submission')
     })
-    return redirect(url_for('see_project'))
+    return redirect(url_for('see_projects'))
 
 
 # Deleting projects's entry from database
