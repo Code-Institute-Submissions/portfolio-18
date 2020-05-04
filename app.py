@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for, request, abort, session
+from flask import Flask, render_template, redirect, session, url_for, request, abort
 import os
 import bcrypt
 from os import path

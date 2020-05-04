@@ -4,13 +4,10 @@
     <div class="col-md-6 ">
         <form class="text-center border border-light p-5" action="{{ url_for('update_project', project_id=project._id) }}" method='POST'>
             <p class="h4 mb-4">Edit project</p>
-            <!-- Product Name -->
             <input type="text" id="project_name" name="project_name" class="form-control mb-4" placeholder="Project Title" value="{{project.project_name}}">
             <input type="text" id="for_who" name="for_who" class="form-control mb-4" placeholder="For who" value="{{project.for_who}}">
-            <!-- Price -->
             <input type="number" id="year_of_submission" name="year_of_submission" class="form-control mb-4" value="{{project.year_of_submission}}" placeholder="When finished?">
             <input type="text" id="url" name="url" class="form-control mb-4" value="{{project.url}}" placeholder="Add Image URL">
-
             <div class="form-group green-border-focus">
                 <textarea class="form-control" id="project_description" name='project_description' rows="3">{{project.description }}</textarea>
             </div>
