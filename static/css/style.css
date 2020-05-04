@@ -295,12 +295,7 @@
         border-color: #777;
     }
     
-    #home input,
-    #home select {
-        height: 50px;
-    }
-    
-    #home input[type="submit"] {
+    input[type="submit"] {
         background: #222;
         border-radius: 100px;
         border: none;
@@ -309,7 +304,7 @@
         transition: all 0.4s ease-in-out;
     }
     
-    #home input[type="submit"]:hover {
+    input[type="submit"]:hover {
         background: #000;
     }
     
