@@ -91,17 +91,17 @@ def login():
     else:
         user = mongo.db.user
         login_user = user.find_one({
-        'email': request.form.get('email'),
-        'password':request.form.get('password')})
-
+        'email': request.form.get('email'), 
+        'password':request.form.get('password'
+        )})
+        
         if login_user:
-             if request.form['password'] == login_user['password']:
-                    session['email'] = request.form['email']
-             return redirect(url_for('admin'))
-
-        return render_template('pages/404.html')
-
-                  
+            session['email'] = login_user['email']
+            session['name'] = login_user['name']
+        return redirect(url_for('admin'))
+       
+    return 'Invalid username or password combination'
+       
     
 @app.route('/register', methods=['POST', 'GET'])
 def register():
