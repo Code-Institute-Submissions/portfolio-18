@@ -90,7 +90,8 @@ def login():
         return render_template('pages/login.html', headTitle="Login")
     else:
         user = mongo.db.user
-        login_user = user.find_one({'email': request.form['email']})
+        login_user = user.find_one({
+        'email': request.form.get('email')})
 
         if login_user:
              if request.form['password'] == login_user['password']:
