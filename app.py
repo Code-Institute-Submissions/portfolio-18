@@ -91,7 +91,8 @@ def login():
     else:
         user = mongo.db.user
         login_user = user.find_one({
-        'email': request.form.get('email')})
+        'email': request.form.get('email'),
+        'password':request.form.get('password')})
 
         if login_user:
              if request.form['password'] == login_user['password']:
