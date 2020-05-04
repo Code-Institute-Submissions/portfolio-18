@@ -403,10 +403,10 @@
 -----------------------------------------*/
     
     .btn-outline-dark {
-        color: #0a0a0a;
+        color: #0a0a0a !important;
         background-color: transparent;
         background-image: none;
-        border-color: #0a0a0a;
+        border-color: #0a0a0a !important;
     }
     
     .btn {
