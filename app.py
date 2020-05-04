@@ -25,7 +25,6 @@ mongo = PyMongo(app)
 def home_page():    
     return render_template('pages/index.html', headTitle="Home")
 
-
 # Adding a project to the database
 @app.route('/insert_project', methods=['POST'])
 def insert_project():
@@ -96,7 +95,7 @@ def login():
                   session['email'] = request.form['email']
           return redirect(url_for('admin'))
       
-    return render_template('pages/permission.html')
+    return render_template('pages/permission.html', headTitle="Access denied")
        
     
 @app.route('/register', methods=['POST', 'GET'])
@@ -136,7 +135,7 @@ def admin():
 # No permission page
 @app.route('/permission-denied')
 def permission_denied():
-    return render_template("pages/permission.html", active="errorPage", loggedIn=False)
+    return render_template("pages/permission.html", active="errorPage", loggedIn=False, headTitle="Access denied")
 
 # 404 - Page not found
 @app.errorhandler(404) 
