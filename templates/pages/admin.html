@@ -8,8 +8,7 @@
                 <h2>Admin panel</h2>
 
                 {% if 'user' in session %}
-                <li><a href="{{url_for('logout')}}">Log Out</a></li>
-                {% endif %}
+                <a href="{{url_for('logout')}}">Log Out</a> {% endif %}
                 <hr>
             </div>
             <div class="col-6">
