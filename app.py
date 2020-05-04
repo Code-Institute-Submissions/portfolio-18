@@ -25,10 +25,6 @@ mongo = PyMongo(app)
 def home_page():    
     return render_template('pages/index.html', headTitle="Home")
 
-# Page to add project
-@app.route('/add_project')
-def addproject():
-    return render_template('pages/add_project.html')
 
 # Adding a project to the database
 @app.route('/insert_project', methods=['POST'])
@@ -54,7 +50,7 @@ def project_view(project_id):
 @app.route('/edit_project/<project_id>')
 def edit_project(project_id):
     the_project = mongo.db.projects.find_one({"_id": ObjectId(project_id)})
-    return render_template('pages/edit_project.html',  project=the_project)    
+    return render_template('pages/edit_project.html',  project=the_project, headTitle="Edit")    
 
 # Updating project in database
 @app.route('/update_project/<project_id>', methods=["POST"])
