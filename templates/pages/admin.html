@@ -74,6 +74,9 @@
                                     <th scope="row">{{ loop.index }}</th>
 
                                     <td>{{project.project_name}}</td>
+                                    <td><a href="{{ url_for('project_view', project_id=project._id) }}"><button type="button" class="btn btn-outline-info" ><i class="fas fa-search"></i></button></a></td>
+                                    <td><a href="{{ url_for('edit_project', project_id=project._id) }}"><button type="button" class="btn btn-outline-warning" ><i class="fas fa-edit"></i></button></a></td>
+                                    <td><a href="{{ url_for('delete_project', project_id=project._id) }}"><button type="button" class="btn btn-outline-danger"><i class="far fa-trash-alt"></i></button></a></td>
                                 </tr>
                                 {% endfor %}
                             </tbody>

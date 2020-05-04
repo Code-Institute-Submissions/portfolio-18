@@ -96,7 +96,6 @@ def login():
         )})
         
         if login_user:
-            session['email'] = login_user['email']
             session['name'] = login_user['name']
         return redirect(url_for('admin'))
        
