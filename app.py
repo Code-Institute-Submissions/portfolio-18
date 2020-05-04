@@ -97,7 +97,7 @@ def login():
     
     if login_user:
           if request.form['password'] == login_user['password']:
-                  session['user'] = request.form['email']
+                  session['email'] = request.form['email']
           return redirect(url_for('admin'))
       
     return render_template('pages/permission.html')
