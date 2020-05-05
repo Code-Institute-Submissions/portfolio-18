@@ -57,11 +57,13 @@ def update_project(project_id):
     projects=mongo.db.projects
     projects.update({'_id': ObjectId(project_id)},
     {
+        'email': request.form.get("email"),
         'project_name': request.form.get('project_name'),
         'for_who': request.form.get('for_who'),
         'description': request.form.get('description'),
-        'username': request.form.get('username'),
         'url': request.form.get('url'),
+        'url_big':request.form.get('url'),
+        'url_source':request.form.get('url_source'),
         'year_of_submission': request.form.get('year_of_submission')
     })
     return redirect(url_for('admin'))
