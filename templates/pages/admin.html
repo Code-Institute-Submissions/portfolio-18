@@ -13,8 +13,8 @@
                 <hr>
                 <form method="POST" id="add_new" action="{{url_for('insert_project')}}" onSubmit="alert('New project added succesfully');">
                     <i class="material-icons prefix">You are logged in as:</i>
-                    <input value="{{session.email}}" id="email" name="email" type="text" class="validate" required>
-                    <label for="username">Username</label>
+                    <input value="{{session.email}}" id="email" name="email" type="text" class="form-control mb-4" required>
+
                     <input type="text" id="project_name" name="project_name" class="form-control mb-4" placeholder="Project Title" required>
 
                     <input type="text" id="for_who" name="for_who" class="form-control mb-4" placeholder="Client Name" required>
