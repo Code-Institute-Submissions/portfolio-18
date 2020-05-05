@@ -106,14 +106,14 @@
     #portfolio,
     #contact,
     #index {
-        padding-top: 40px;
+        padding-top: 20px;
         position: relative;
         text-align: center;
     }
     
     .section-title {
         position: relative;
-        padding-bottom: 62px;
+        padding-bottom: 20px;
         text-align: center;
     }
     /*---------------------------------------
@@ -198,7 +198,7 @@
         position: relative;
         text-align: center;
         padding-top: 60px;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
     }
     
     #home hr {
