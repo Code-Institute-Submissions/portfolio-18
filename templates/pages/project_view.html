@@ -23,6 +23,10 @@
                 <a href="{{project.url_source}}"><i class="fas fa-arrow-right"></i> View Website</a>
             </div>
 
+            <div class="col-md-12 col-sm-12 text-center">
+                <a href="{{ url_for('portfolio')}}" type="submit" class="form-control btn"> Go back to portfolio</a>
+            </div>
+
             {% if session['email'] %}
             <div class="col-md-12 col-sm-12 text-center">
                 <a href="{{ url_for('admin')}}" type="submit" class="form-control btn"> Go back to admin page</a>
