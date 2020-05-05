@@ -8,7 +8,10 @@
             <input type="text" id="project_name" name="project_name" class="form-control mb-4" placeholder="Project Title" value="{{project.project_name}}">
             <input type="text" id="for_who" name="for_who" class="form-control mb-4" placeholder="For who" value="{{project.for_who}}">
             <input type="number" id="year_of_submission" name="year_of_submission" class="form-control mb-4" value="{{project.year_of_submission}}" placeholder="When finished?">
-            <input type="text" id="url" name="url" class="form-control mb-4" value="{{project.url}}" placeholder="Add Image URL">
+            <input type="text" id="url" name="url" class="form-control mb-4" value="{{project.url}}" placeholder="Card image URL">
+            <input type="text" id="url" name="url" class="form-control mb-4" value="{{project.url_big}}" placeholder="Big project image URL">
+            <input type="text" id="url" name="url" class="form-control mb-4" value="{{project.url_source}}" placeholder="Url to real project">
+
             <div class="form-group green-border-focus">
                 <textarea class="form-control" id="project_description" name='project_description' rows="3" value="{{project.description}}"></textarea>
             </div>
