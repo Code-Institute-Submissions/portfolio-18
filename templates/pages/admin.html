@@ -6,13 +6,17 @@
         <div class="row">
             <div class="col-12 text-center">
                 <h2>Admin panel</h2>
+                <hr> {% if session['email'] != None %}
+                <i>You are logged in as:</i>
+                <h4 class="m-0">{{ session['email'] }}</h4>
+                {% endif %}
                 <hr>
             </div>
             <div class="col-6">
                 <h2>Add a new project</h2>
                 <hr>
                 <form method="POST" id="add_new" action="{{url_for('insert_project')}}" onSubmit="alert('New project added succesfully');">
-                    <i class="material-icons prefix">You are logged in as:</i>
+
                     <input value="{{session.email}}" id="email" name="email" type="text" class="form-control mb-4" required>
 
                     <input type="text" id="project_name" name="project_name" class="form-control mb-4" placeholder="Project Title" required>
@@ -40,12 +44,7 @@
 
 
                 <h2>My projects</h2>
-                <hr> {% if session['email'] != None %}
 
-                <h4 class="m-0">{{ session['email'] }}</h4>
-
-
-                {% endif %}
 
                 <div style="overflow-x:auto;">
                     <table class="table table-sm table-striped">
