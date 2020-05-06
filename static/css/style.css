@@ -29,6 +29,11 @@
         font-weight: 300;
         overflow-x: hidden;
     }
+    
+    img {
+        width: 100%;
+        height: auto;
+    }
     /*--------------------------------------
     Typography             
 -----------------------------------------*/
@@ -209,39 +214,6 @@
     #home hr {
         width: 82px;
         margin-top: 32px;
-    }
-    /*---------------------------------------
-   About Section             
------------------------------------------*/
-    
-    #about .text-center {
-        padding-bottom: 42px;
-    }
-    
-    #about .col-lg-8 {
-        padding-left: 0px;
-    }
-    
-    #about hr {
-        width: 100px;
-        margin-top: 42px;
-        margin-bottom: 42px;
-    }
-    
-    #about ul {
-        padding-left: 22px;
-    }
-    
-    #about ul li {
-        color: #777;
-        font-size: 16px;
-        font-weight: 400;
-        padding-top: 2px;
-        padding-bottom: 2px;
-    }
-    
-    #aboutImg {
-        background-image: url('/static/img/patrycja.PNG')
     }
     /*---------------------------------------
    Portfolio section              
