@@ -21,11 +21,11 @@ Patrycja.io is created by Patrycja Tyra as her Full - Stack Developer profession
     + [Business Stories](#business-stories)
 - [Design Choices](#design-choices)
     + [Fonts](#fonts)
-    + [Colors](#colors)
+    + [Colours](#colors)
     + [Wireframes](#wireframes)
 - [Features:](#features-)
     + [Existing Features](#existing-features)
-      - [Nav Bar](#nav-bar)
+      - [NavBar](#nav-bar)
       - [Main Page](#main-page)
       - [Portfolio Page](#portfolio-page)
       - [Contact Page](#contact-page)
@@ -72,7 +72,7 @@ Patrycja.io is created by Patrycja Tyra as her Full - Stack Developer profession
 The central target audience for Patrycja.io Portfolio are:
 
 - People who will visit my social media and are curious about my work
-- People looking for inspirations or informations about me
+- People looking for inspirations or information about me
 
 
 #### Business Goals
@@ -91,15 +91,15 @@ The target businesses to use Patrycja.io to advertise:
 - Font Work Sans - was for me the best choice of non serif font. As well it is very simple and not well know font. Because it seemed to be unique for me I decided to use those one.
 - Font Awesome 5.0 - used to mark CRUD options( view, edit and delete), social icons, as well as programming languages icons. 
 
-### Colors
+### Colours
 
 <div align="center"><img src="static\img\patrycja.io color scheme.png" >
 </div>
 
- - **White, Black and Gray** -Purpose of choosing mainly white and black colour scheme came with a reason to not interfere with projects photos.
+ - **White, Black and Grey** -Purpose of choosing mainly white and black colour scheme came with a reason to not interfere with projects photos.
  Most of the photos of project are colourful what would broke all concept of good user experience. I prefer to make my websites in monochromatic colours if not any specific theme/ reason dedicated to highlight purpose of the site.
 Otherwise making website colourful would decrease value and UX and user would leave quickly as being confused and eyes tired.
- I used black to highligh important elements. Most of black elements change from gray to black when hover over.
+ I used black to highlight important elements. Most of black elements change from gray to black when hover over.
  
  - **Other colours** - Programming languages - font awesome are made colorfull to show straigh away what languages are used by this full-stack developer.
 
@@ -118,7 +118,7 @@ These wireframes were created using Balsamiq during the Scope Plane part of the 
 
 ### Existing Features
 
-#### Nav Bar 
+#### NavBar 
 Contains logotype and menu section. Logotype redirect to main/home page. In the menu section you can find buttons - home, portfolio, contact. Navbar stay the same always for not logged in user. Home button -redirect to home page. Portfolio leads to project views and contact redirect to contact form. 
 
 -After **when user is logged in** in Navbar will appear **Log out** section, to log out from existing session, 
@@ -126,7 +126,7 @@ Contains logotype and menu section. Logotype redirect to main/home page. In the 
 
 #### Main Page
 
-The main page allows all users of the site to view just a couple words where user arrived and what this webiste is for The page is divided into 3 sections. The first section has explanation what this website is for. The second section contains photo of the owner. 3rd section explain who owner of the website is.
+The main page allows all users of the site to view just a couple words where user arrived and what this website is for The page is divided into 3 sections. The first section has explanation what this website is for. The second section contains photo of the owner. 3rd section explain who owner of the website is.
 
 #### Portfolio Page
 
@@ -160,10 +160,10 @@ The update-run page allows the user or admin-user to update the currently select
 Accessed via the logout button and allows the user or admin-user to end their current session. Informs the user that they have successfully logged out and provides a link back to the main page.
 
 #### Permission Denied Page
-If the user tries to access a user account, other than the current user count, via the url address then they will be redirected to the permission-denied page. The permission-denied page informs the current user that they don't have permission to go to that page and provides a link back to the main page.
+If the user tries to access a user account, other than the current user count, via the URL address then they will be redirected to the permission-denied page. The permission-denied page informs the current user that they don't have permission to go to that page and provides a link back to the main page.
 
 #### 404 Error Page
-If the user attempts to use a url that does not exist then they will be redirected to the 404 page. The 404 page will inform the current user that the page they are trying to access doesn't exist and provides a link back to the main page.
+If the user attempts to use a URL that does not exist then they will be redirected to the 404 page. The 404 page will inform the current user that the page they are trying to access doesn't exist and provides a link back to the main page.
 
 ### Features Left to Implement
 
@@ -178,20 +178,19 @@ If the user attempts to use a url that does not exist then they will be redirect
 - [Visual Studio Code is the IDE used for developing this project.](https://code.visualstudio.com/)
 - PIP for installation of tools needed in this project.
 - [Git to handle version control.](https://git-scm.com/)
-
 - [MongoDB Atlas is the database for this project](https://www.mongodb.com/cloud/atlas)
 - [GitHub to store and share all project code remotely.](https://github.com/)
-- [Picresize to edit, crop and save images as well as ulitizing the colour picker to ensure color consistency over the entire project.](https://picresize.com/)
--  https://sizzy.co/
-- GitHub Wiki TOC generator
-- -https://dillinger.io/
-- https://favicon.io/favicon-generator/
+- [Picresize](https://picresize.com/) to edit, crop and save images as well as ulitizing the colour picker to ensure colour consistency over the entire project.
+- [GitHub Wiki TOC generator](https://ecotrust-canada.github.io/markdown-toc/)
+- [Online Markdown Editor](https://dillinger.io/)
+- [Favicon generator](https://favicon.io/favicon-generator/)
 - Browserstack to test functionality on all browsers and devices.
-- Am I Responsive to create the images in this readme file of each page displayed on different screen sizes.
+- [Sizzy](https://sizzy.co/)to check responsiveness on other devices
+- [Am I Responsive](http://ami.responsivedesign.is/) to create the images in this readme file of each page displayed on different screen sizes.
 - EZgif provided gif editing software for the gif in this readme file.
-- https://coolors.co/
-- https://www.materialui.co/colors
--  [The Padwan Project](https://github.com/Eventyret/Padawan)
+- [Coolors](https://coolors.co/)colour schemes generator
+- [Material Design Clours](https://www.materialui.co/colors)
+- [The Padwan Project](https://github.com/Eventyret/Padawan)
 
 ### Libraries
 - JQuery to simplify DOM manipulation.
