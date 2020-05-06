@@ -123,7 +123,7 @@ def register():
 def logout():
     session['email'] = None
     session['name'] = None
-    return redirect(url_for('home_page'))
+    return render_template('pages/logout.html', headTitle="Logout")
 
 @app.route("/admin")
 def admin():
