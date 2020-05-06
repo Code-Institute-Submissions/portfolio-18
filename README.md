@@ -61,6 +61,10 @@ The target businesses to use Patrycja.io to advertise:
 ## Design Choices
 ### Fonts
 ### Colors
+<div align="center"><img src="" >
+</div>
+
+
 ### Wireframes
 
 Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
