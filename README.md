@@ -59,7 +59,10 @@ The target businesses to use Patrycja.io to advertise:
 ### Business Stories
 
 ## Design Choices
-### Fonts
+
+### Fonts 
+- Font Work Sans - was for me the best choice of non serif font. As well it is very simple and not well know font. Because it seemed to be unique for me I decided to use those one.
+- Font Awesome 5.0 - used to mark CRUD options( view, edit and delete), social icons, as well as programming languages icons. 
 
 ### Colors
 <div align="center"><img src="static\img\patrycja.io color scheme.png" >
@@ -80,16 +83,32 @@ These wireframes were created using Balsamiq during the Scope Plane part of the 
 
 
 # Features:
+
 ### Existing Features
+
+#### Nav Bar 
+Contains logotype and menu section. Logotype redirect to main/home page. In the menu section you can find buttons - home, portfolio, contact. Navbar stay the same always for not logged in user. Home button -redirect to home page. Portfolio leads to project views and contact redirect to contact form. 
+
+-After **when user is logged in** in Navbar will appear **Log out** section, to log out from existing session, 
 
 
 #### Main Page
-The main page allows all users of the site to view the qc data for all sequencing runs. The page is divided into two sections. The first section has four modal links that display qc data as line charts. The second section contains two modal links that display qc data as pie charts. From the main page the user is able to access the login or signup page.
+
+The main page allows all users of the site to view just a couple words where user arrived and what this webiste is for The page is divided into 3 sections. The first section has explanation what this website is for. The second section contains photo of the owner. 3rd section explain who owner of the website is.
+
 
 #### Login Page
-The login page allows a registered user to log into their user account using their unique username. If successful the user is directed to the main user page.
+
+The login page allows a registered user to log into their user account using their unique username. If successful the user is directed to the main user page. NOTE! that there Register Page Do
+
 #### User/Admin Page
-The user page (accessed by logging in with username) allows the user to view all of the qc data for their own sequencing runs. The page has the main layout features as the main page. From the user page the user is able to access the add-run page and the manage-runs page.
+
+To get to the Admin page, user needs to type in after website address **/admin**. Feature this is not redirected by any button on site by security purpose. As no one part of admin of this website should have access to this feature. And users visiting website shouldn't try to get to website backend. After typing "/admin" page will redirect to log in view. To log with credential only known to admin. For credentials used to log in to admin page go to **instructions**.
+
+In the Admin page by purpose I haven't use option to manage admin/user as admin/owner of the website should be just only one.
+
+
+
 
 #### Add Run Page
 The add-run page allows the user to add new qc run data to the database.
@@ -97,13 +116,10 @@ The add-run page allows the user to add new qc run data to the database.
 #### Manage Runs Page
 The manage-runs page allows the user to view qc data for individual runs or groups of runs. Once an individual run has been selected, the user is able to access the delete-run or update-run pages.
 
-#### Admin or User Page
-The admin-or-user page allows users with admin privileges to choose to login as a standard user or as an admin user.
-
-#### Delete Run Page
+#### Delete Project
 The delete-run page allows the user or admin-user to delete the currently selected run.
 
-#### Update Run Page
+#### Update Project
 The update-run page allows the user or admin-user to update the currently selected run.
 
 #### Delete User Page
