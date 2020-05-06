@@ -141,7 +141,7 @@ The login page allows a registered user to log into their user account using the
 
 #### User/Admin Page
 
-To get to the Admin page, user needs to type in after website address **/admin**. Feature this is not redirected by any button on site by security purpose. As no one part of admin of this website should have access to this feature. And users visiting website shouldn't try to get to website backend. After typing "/admin" page will redirect to log in view. To log with credential only known to admin. For credentials used to log in to admin page go to **instructions**.
+To get to the Admin page, user needs to type in after website address **/admin**. Feature this is not redirected by any button on site by security purpose. As no one part of admin of this website should have access to this feature. And users visiting website shouldn't try to get to website backend. After typing "/admin" page will redirect to log in view. To log with credential only known to admin. **Note for Project Assessor** For credentials used to log in to admin page go to **instructions**.
 
 In the Admin page by purpose I haven't use option to manage admin/user as admin/owner of the website should be just only one.
 
@@ -307,7 +307,8 @@ You can visit the website at `http://127.0.0.1:5000`
 
  11. Click on the "Open App" button at the top of the page. The Heroku website is now successfully deployed.
 
-# Instructions how to log to admin panel
+# Instructions how to log to admin panel 
+**Note for Project Assessor**
 
 To log in to admin panel type after page address **/admin**
 After being redirected to login page type **admin@gmail.com** to email form and **admin** to password form.

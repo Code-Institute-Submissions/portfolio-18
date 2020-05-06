@@ -135,9 +135,9 @@ def admin():
 
 
 # No permission page
-@app.route('/permission-denied')
+@app.route('/permission')
 def permission_denied():
-    return render_template("pages/permission.html", active="errorPage", loggedIn=False, headTitle="Access denied")
+    return render_template("pages/permission.html", loggedIn=False, headTitle="Access denied")
 
 # 404 - Page not found
 @app.errorhandler(404) 
