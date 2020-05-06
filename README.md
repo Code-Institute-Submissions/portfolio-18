@@ -36,11 +36,20 @@ Patrycja.io is created by Patrycja Tyra as her Full - Stack Developer profession
 <!-- markdownlint-disable MD033 -->
 
 
-One or two paragraphs providing an overview of your project.
 
-Essentially, this part is your sales pitch.
 
 ## UX
+### Goals
+#### Visitor Goals
+#### Business Goals
+
+### User Stories
+### Business Stories
+
+## Design Choices
+### Fonts
+### Colors
+### Wireframes
 
 Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
@@ -50,7 +59,9 @@ In particular, as part of this section we recommend that you provide a list of U
 
 This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
 
-### Existing features:
+# Features:
+### Existing Features
+
 
 #### Main Page
 The main page allows all users of the site to view the qc data for all sequencing runs. The page is divided into two sections. The first section has four modal links that display qc data as line charts. The second section contains two modal links that display qc data as pie charts. From the main page the user is able to access the login or signup page.
@@ -255,3 +266,6 @@ You can visit the website at `http://127.0.0.1:5000`
 https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat
 https://code.visualstudio.com/docs/python/environments
 
+
+## Disclaimer
+The content of this website is educational purposes only.
