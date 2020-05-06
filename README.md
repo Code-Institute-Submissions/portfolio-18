@@ -9,7 +9,7 @@ Patrycja.io is created by Patrycja Tyra as her Full - Stack Developer profession
 
 ***
 # Table of Contents  
-- [PATRYCJA.IO](#patrycjaio)
+
 - [Introduction](#introduction)
 - [Table of Contents](#table-of-contents)
 - [UX](#ux)
