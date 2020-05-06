@@ -263,7 +263,7 @@ https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat
 https://code.visualstudio.com/docs/python/environments
 
 #### Images
-- [404 page - Yoda image] (https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSwrqDHcMescJn5XJ9AuGQiG3CuR_EZwJUJPHVEufwLCd2P4O5-&usqp=CAU)
+- [404 page - Yoda image] (https://c7.uihere.com/files/502/424/998/5bbbf8b5ba40f.jpg)
 - Main page photo - picture of myself made by phone.
 - Pictures of real life projects are made by snipping tool build in Windows OS.
 
