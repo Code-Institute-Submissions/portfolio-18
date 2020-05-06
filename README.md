@@ -61,7 +61,7 @@ The target businesses to use Patrycja.io to advertise:
 ## Design Choices
 ### Fonts
 ### Colors
-<div align="center"><img src="" >
+<div align="center"><img src="static\img\patrycja.io color scheme.png" >
 </div>
 
 
