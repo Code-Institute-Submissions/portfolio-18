@@ -121,6 +121,7 @@ In addition, you may also use this section to discuss plans for additional featu
 - [Visual Studio Code is the IDE used for developing this project.](https://code.visualstudio.com/)
 - PIP for installation of tools needed in this project.
 - [Git to handle version control.](https://git-scm.com/)
+
 - [MongoDB Atlas is the database for this project](https://www.mongodb.com/cloud/atlas)
 - [GitHub to store and share all project code remotely.](https://github.com/)
 - [Picresize to edit, crop and save images as well as ulitizing the colour picker to ensure color consistency over the entire project.](https://picresize.com/)
@@ -255,8 +256,18 @@ You can visit the website at `http://127.0.0.1:5000`
 - The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
 
 ### Media
+ [The Padwan Project](https://github.com/Eventyret/Padawan)
+https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat
+https://code.visualstudio.com/docs/python/environments
 
-- The photos used in this site were obtained from ...
+#### Images
+- [404 page - Yoda image] (https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSwrqDHcMescJn5XJ9AuGQiG3CuR_EZwJUJPHVEufwLCd2P4O5-&usqp=CAU)
+- Main page photo - picture of myself made by phone.
+- Pictures of real life projects are made by snipping tool build in Windows OS.
+
+
+
+### Code
 
 ### Acknowledgements
 
@@ -264,9 +275,7 @@ You can visit the website at `http://127.0.0.1:5000`
 - The project is inspired by my experience made so far in software developmet.
 
 - Special thanks to my Code Institute Mentor [Simen Daehlin](https://github.com/Eventyret)for his coding expertise, patience and generosity with his time. 
- [The Padwan Project](https://github.com/Eventyret/Padawan)
-https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat
-https://code.visualstudio.com/docs/python/environments
+
 
 
 ## Disclaimer
