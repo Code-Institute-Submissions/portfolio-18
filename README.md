@@ -233,7 +233,7 @@ The following must be installed on your machine:
 
 ### Instructions
 
-1. Save a copy of the github repository located at https://github.com/patrycja-io/portfolio by clicking the "download zip" button at the top of the page and extracting the zip file to your chosen folder. If you have Git installed on your system, you can clone the repository with the following command.
+1. Save a copy of the GitHub repository located at https://github.com/patrycja-io/portfolio by clicking the "download zip" button at the top of the page and extracting the zip file to your chosen folder. If you have Git installed on your system, you can clone the repository with the following command.
 
 `git clone https://github.com/patrycja-io/portfolio`
 
@@ -268,10 +268,6 @@ Again this command may differ depending on your operating system, please check t
 `python app.py`
 
 You can visit the website at `http://127.0.0.1:5000`
-
-
-
-
 
 ## Heroku Deployment
 
@@ -319,9 +315,8 @@ After being redirected to login page type **admin@gmail.com** to email form and 
 - The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
 
 ### Media
+
  [The Padwan Project](https://github.com/Eventyret/Padawan)
-https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat
-https://code.visualstudio.com/docs/python/environments
 
 #### Images
 
@@ -329,18 +324,17 @@ https://code.visualstudio.com/docs/python/environments
 - Main page photo - picture of myself made by phone.
 - Pictures of real life projects are made by snipping tool build in Windows OS.
 
-
-
 ### Code
+
+https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat
+https://code.visualstudio.com/docs/python/environments
 
 ### Acknowledgements
 
 
 - The project is inspired by my experience made so far in software developmet.
 
-- Special thanks to my Code Institute Mentor [Simen Daehlin](https://github.com/Eventyret) for his coding expertise, patience and generosity with his time. 
-
-
+- Special thanks to my Code Institute Mentor [Simen Daehlin](https://github.com/Eventyret) for his coding expertise, endless patience and generosity with his time. 
 
 # Disclaimer
 The content of this website is educational purposes only.
