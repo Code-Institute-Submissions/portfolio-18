@@ -193,15 +193,16 @@ If the user attempts to use a URL that does not exist then they will be redirect
 - [The Padwan Project](https://github.com/Eventyret/Padawan)
 
 ### Libraries
-- JQuery to simplify DOM manipulation.
-- Bootstrap to simplify the structure of the website and make the website responsive easily.
-- FontAwesome to provide icons for Family Hub.
-- Google Fonts to style the website fonts.
+- [JQuery] to simplify DOM manipulation.
+- [Bootstrap] to simplify the structure of the website and make the website responsive easily.
+- [FontAwesome] to provide icons for Family Hub.
+- [Google Fonts] to style the website fonts.
 - [PyMongo](https://flask-pymongo.readthedocs.io/en/latest/) to make communication between Python and MongoDB possible.
-- Flask to construct and render pages.
-- Jinja to simplify displaying data from the backend of this project smoothly and effectively in html.
+- [Flask] to construct and render pages.
+- [Jinja]to simplify displaying data from the backend of this project smoothly and effectively in html.
 
 ### Languages
+
 This project uses HTML, CSS, JavaScript and Python programming languages.
 
 
