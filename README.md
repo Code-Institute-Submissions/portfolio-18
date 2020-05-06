@@ -101,6 +101,10 @@ Contains logotype and menu section. Logotype redirect to main/home page. In the 
 
 The main page allows all users of the site to view just a couple words where user arrived and what this webiste is for The page is divided into 3 sections. The first section has explanation what this website is for. The second section contains photo of the owner. 3rd section explain who owner of the website is.
 
+#### Portfolio Page
+
+
+#### Contact Page
 
 #### Login Page
 
@@ -113,12 +117,15 @@ To get to the Admin page, user needs to type in after website address **/admin**
 In the Admin page by purpose I haven't use option to manage admin/user as admin/owner of the website should be just only one.
 
 #### View project
+
 The manage-runs page allows the user to view qc data for individual runs or groups of runs. Once an individual run has been selected, the user is able to access the delete-run or update-run pages.
 
 #### Delete Project
+
 The delete-run page allows the user or admin-user to delete the currently selected run.
 
 #### Update Project
+
 The update-run page allows the user or admin-user to update the currently selected run.
 
 
@@ -271,7 +278,7 @@ You can visit the website at `http://127.0.0.1:5000`
  10. In the Automatic Deploys section click Enable Automatic Deploys to ensure your Heroku app is automatically updated everytime your GitHub repository is updated.
 
  11. Click on the "Open App" button at the top of the page. The Heroku website is now successfully deployed.
- 
+
 ## Instructions how to log to admin panel
 
 To log in to admin panel type after page address **/admin**
