@@ -8,18 +8,18 @@
 Patrycja.io is created by Patrycja Tyra as her Full - Stack Developer professional portfolio to be able to get freelance projects on side but as well to be visible to future employers
 
 ***
-## Table of Contents  
+# Table of Contents  
 - [PATRYCJA.IO](#patrycjaio)
 - [Introduction](#introduction)
-  * [Table of Contents](#table-of-contents)
-  * [UX](#ux)
+- [Table of Contents](#table-of-contents)
+- [UX](#ux)
     + [Goals](#goals)
       - [Visitor Goals](#visitor-goals)
       - [Business Goals](#business-goals)
   * [User Stories:](#user-stories-)
     + [Visitor Stories](#visitor-stories)
     + [Business Stories](#business-stories)
-  * [Design Choices](#design-choices)
+- [Design Choices](#design-choices)
     + [Fonts](#fonts)
     + [Colors](#colors)
     + [Wireframes](#wireframes)
@@ -38,24 +38,23 @@ Patrycja.io is created by Patrycja Tyra as her Full - Stack Developer profession
       - [Permission Denied Page](#permission-denied-page)
       - [404 Error Page](#404-error-page)
     + [Features Left to Implement](#features-left-to-implement)
-  * [Technologies Used](#technologies-used)
+- [Technologies Used](#technologies-used)
     + [Tools](#tools)
     + [Libraries](#libraries)
     + [Languages](#languages)
-  * [Testing](#testing)
+- [Testing](#testing)
 - [Deployment](#deployment)
   * [How to run this project locally](#how-to-run-this-project-locally)
     + [Instructions](#instructions)
   * [Heroku Deployment](#heroku-deployment)
-  * [Instructions how to log to admin panel](#instructions-how-to-log-to-admin-panel)
-  * [Credits](#credits)
+- [Instructions how to log to admin panel](#instructions-how-to-log-to-admin-panel)
+- [Credits](#credits)
     + [Content](#content)
     + [Media](#media)
       - [Images](#images)
     + [Code](#code)
     + [Acknowledgements](#acknowledgements)
-  * [Disclaimer](#disclaimer)
-
+- [Disclaimer](#disclaimer)
 
 
 
@@ -65,7 +64,8 @@ Patrycja.io is created by Patrycja Tyra as her Full - Stack Developer profession
 
 
 
-## UX
+# UX
+
 ### Goals
 #### Visitor Goals
 
@@ -85,7 +85,7 @@ The target businesses to use Patrycja.io to advertise:
 ### Visitor Stories
 ### Business Stories
 
-## Design Choices
+# Design Choices
 
 ### Fonts 
 - Font Work Sans - was for me the best choice of non serif font. As well it is very simple and not well know font. Because it seemed to be unique for me I decided to use those one.
@@ -172,7 +172,7 @@ If the user attempts to use a url that does not exist then they will be redirect
 - More animations and more fun stuff utilising front-end skills.
 
 
-## Technologies Used
+# Technologies Used
 ------
 ### Tools
 - [Visual Studio Code is the IDE used for developing this project.](https://code.visualstudio.com/)
@@ -206,7 +206,7 @@ If the user attempts to use a url that does not exist then they will be redirect
 This project uses HTML, CSS, JavaScript and Python programming languages.
 
 
-## Testing
+# Testing
 
 Please see [Testing](TESTING.md) for all my testing
 
@@ -306,13 +306,13 @@ You can visit the website at `http://127.0.0.1:5000`
 
  11. Click on the "Open App" button at the top of the page. The Heroku website is now successfully deployed.
 
-## Instructions how to log to admin panel
+# Instructions how to log to admin panel
 
 To log in to admin panel type after page address **/admin**
 After being redirected to login page type **admin@gmail.com** to email form and **admin** to password form.
 
 
-## Credits
+# Credits
 
 ### Content
 
@@ -342,5 +342,5 @@ https://code.visualstudio.com/docs/python/environments
 
 
 
-## Disclaimer
+# Disclaimer
 The content of this website is educational purposes only.
