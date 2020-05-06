@@ -65,11 +65,16 @@ The target businesses to use Patrycja.io to advertise:
 - Font Awesome 5.0 - used to mark CRUD options( view, edit and delete), social icons, as well as programming languages icons. 
 
 ### Colors
+
 <div align="center"><img src="static\img\patrycja.io color scheme.png" >
 </div>
- - Purpose of choosing mainly white and black color scheme came with a reason to not interfere with projects photos.
- Most of them are colorful what would broke all concept of good user experience. As well as making website colorful would decreese empahasise on projects when purpose of this site is to show off the projects, so them should be highlighted.
- - Programming languages - font awesome are made colorfull to show straigh away what languages are used by this full-stack developer.
+
+ - **White, Black and Gray** -Purpose of choosing mainly white and black colour scheme came with a reason to not interfere with projects photos.
+ Most of the photos of project are colourful what would broke all concept of good user experience. I prefer to make my websites in monochromatic colours if not any specific theme/ reason dedicated to highlight purpose of the site.
+Otherwise making website colourful would decrease value and UX and user would leave quickly as being confused and eyes tired.
+ I used black to highligh important elements. Most of black elements change from gray to black when hover over.
+ 
+ -**Other colours** - Programming languages - font awesome are made colorfull to show straigh away what languages are used by this full-stack developer.
 
 
 ### Wireframes 
