@@ -8,7 +8,7 @@
 Patrycja.io is created by Patrycja Tyra as her Full - Stack Developer professional portfolio to be able to get freelance projects on side but as well to be visible to future employers
 
 ***
-##### Table of Contents  
+## Table of Contents  
 - [UX](#ux)
   * [Goals](#goals)
 - [Features](#features)
@@ -41,9 +41,21 @@ Patrycja.io is created by Patrycja Tyra as her Full - Stack Developer profession
 ## UX
 ### Goals
 #### Visitor Goals
+
+The central target audience for Patrycja.io Portfolio are:
+
+- People who will visit my social media and are curious about my work
+- People looking for inspirations or informations about me
+
+
 #### Business Goals
 
-### User Stories
+The target businesses to use Patrycja.io to advertise:
+
+
+## User Stories:
+
+### Visitor Stories
 ### Business Stories
 
 ## Design Choices
@@ -263,7 +275,8 @@ https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat
 https://code.visualstudio.com/docs/python/environments
 
 #### Images
-- [404 page - Yoda image] (https://c7.uihere.com/files/502/424/998/5bbbf8b5ba40f.jpg)
+
+- [404 page - Yoda image](https://c7.uihere.com/files/502/424/998/5bbbf8b5ba40f.jpg)
 - Main page photo - picture of myself made by phone.
 - Pictures of real life projects are made by snipping tool build in Windows OS.
 
@@ -276,7 +289,7 @@ https://code.visualstudio.com/docs/python/environments
 
 - The project is inspired by my experience made so far in software developmet.
 
-- Special thanks to my Code Institute Mentor [Simen Daehlin](https://github.com/Eventyret)for his coding expertise, patience and generosity with his time. 
+- Special thanks to my Code Institute Mentor [Simen Daehlin](https://github.com/Eventyret) for his coding expertise, patience and generosity with his time. 
 
 
 
