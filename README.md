@@ -129,6 +129,8 @@ Contains logotype and menu section. Logotype redirect to main/home page. In the 
 
 The main page allows all users of the site to view just a couple words where user arrived and what this website is for The page is divided into 3 sections. The first section has explanation what this website is for. The second section contains photo of the owner. 3rd section explain who owner of the website is.
 
+#### Footer
+
 #### Portfolio Page
 
 #### Contact Page
@@ -164,6 +166,9 @@ If the user tries to access a user account, other than the current user count, v
 
 #### 404 Error Page
 If the user attempts to use a URL that does not exist then they will be redirected to the 404 page. The 404 page will inform the current user that the page they are trying to access doesn't exist and provides a link back to the main page.
+
+
+
 
 ### Features Left to Implement
 
