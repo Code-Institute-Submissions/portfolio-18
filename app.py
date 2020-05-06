@@ -48,8 +48,14 @@ def project_view(project_id):
 # Page for user to edit review
 @app.route('/edit_project/<project_id>')
 def edit_project(project_id):
-    the_project = mongo.db.projects.find_one({"_id": ObjectId(project_id)})
-    return render_template('pages/edit_project.html',  project=the_project, headTitle="Edit")    
+
+    loggedIn = True if 'email' in session else False
+
+    if not loggedIn:
+        return redirect(url_for('permission'))
+    else:
+        the_project = mongo.db.projects.find_one({"_id": ObjectId(project_id)})
+        return render_template('pages/edit_project.html',  project=the_project, headTitle="Edit")    
 
 # Updating project in database
 @app.route('/update_project/<project_id>', methods=["POST"])
@@ -68,13 +74,11 @@ def update_project(project_id):
     })
     return redirect(url_for('admin'))
 
-
 # Deleting projects's entry from database
 @app.route('/delete_project/<project_id>')
 def delete_project(project_id):
     mongo.db.projects.remove({'_id': ObjectId(project_id)})
     return redirect(url_for('admin'))
-
 
 # Contact page
 @app.route("/contact", methods=['GET', 'POST'])
