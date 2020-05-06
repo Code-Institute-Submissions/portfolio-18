@@ -55,7 +55,7 @@ def edit_project(project_id):
         return redirect(url_for('permission'))
     else:
         the_project = mongo.db.projects.find_one({"_id": ObjectId(project_id)})
-        return render_template('pages/edit_project.html',  project=the_project, headTitle="Edit")    
+        return render_template('pages/edit_project.html',  project=the_project, email=session['email'], headTitle="Edit")    
 
 # Updating project in database
 @app.route('/update_project/<project_id>', methods=["POST"])
