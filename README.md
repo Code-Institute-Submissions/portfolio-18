@@ -60,9 +60,13 @@ The target businesses to use Patrycja.io to advertise:
 
 ## Design Choices
 ### Fonts
+
 ### Colors
 <div align="center"><img src="static\img\patrycja.io color scheme.png" >
 </div>
+ - Purpose of choosing mainly white and black color scheme came with a reason to not interfere with projects photos.
+ Most of them are colorful what would broke all concept of good user experience. As well as making website colorful would decreese empahasise on projects when purpose of this site is to show off the projects, so them should be highlighted.
+ - Programming languages - font awesome are made colorfull to show straigh away what languages are used by this full-stack developer.
 
 
 ### Wireframes
@@ -128,7 +132,9 @@ In addition, you may also use this section to discuss plans for additional featu
 
 ### Features Left to Implement
 
-- Another feature idea
+- Skills tab - to show what frameworks/libraries are used with this projects.
+- CV - downloader or , cv tab to make it useful for future recruiter browsing this portfolio.
+- More animations and more fun stuff utilising front-end skills.
 
 
 ## Technologies Used
