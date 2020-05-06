@@ -101,14 +101,14 @@ The target businesses to use Patrycja.io to advertise:
 Otherwise making website colourful would decrease value and UX and user would leave quickly as being confused and eyes tired.
  I used black to highligh important elements. Most of black elements change from gray to black when hover over.
  
- -**Other colours** - Programming languages - font awesome are made colorfull to show straigh away what languages are used by this full-stack developer.
+ - **Other colours** - Programming languages - font awesome are made colorfull to show straigh away what languages are used by this full-stack developer.
 
 
 ### Wireframes 
 
 These wireframes were created using Balsamiq during the Scope Plane part of the design and planning process for this project.
 
-<div align="center"><img src="MAIN.png" >
+<div align="center"><img src="wireframes\main.PNG" >
 </div>
 
 
