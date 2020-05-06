@@ -118,12 +118,13 @@ In addition, you may also use this section to discuss plans for additional featu
 ## Technologies Used
 ------
 ### Tools
-- Visual Studio Code is the IDE used for developing this project.
+- [Visual Studio Code is the IDE used for developing this project.](https://code.visualstudio.com/)
 - PIP for installation of tools needed in this project.
-- Git to handle version control.
-- MongoDB Atlas is the database for this project
-- GitHub to store and share all project code remotely.
-- Picresize to edit, crop and save images as well as ulitizing the colour picker to ensure color consistency over the entire project.
+- [Git to handle version control.](https://git-scm.com/)
+- [MongoDB Atlas is the database for this project](https://www.mongodb.com/cloud/atlas)
+- [GitHub to store and share all project code remotely.](https://github.com/)
+- [Picresize to edit, crop and save images as well as ulitizing the colour picker to ensure color consistency over the entire project.](https://picresize.com/)
+-  https://sizzy.co/
 - GitHub Wiki TOC generator
 - -https://dillinger.io/
 - https://favicon.io/favicon-generator/
@@ -131,6 +132,7 @@ In addition, you may also use this section to discuss plans for additional featu
 - Am I Responsive to create the images in this readme file of each page displayed on different screen sizes.
 - EZgif provided gif editing software for the gif in this readme file.
 - https://coolors.co/
+- https://www.materialui.co/colors
 -  [The Padwan Project](https://github.com/Eventyret/Padawan)
 
 ### Libraries
