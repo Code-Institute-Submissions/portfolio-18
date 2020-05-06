@@ -271,7 +271,11 @@ You can visit the website at `http://127.0.0.1:5000`
  10. In the Automatic Deploys section click Enable Automatic Deploys to ensure your Heroku app is automatically updated everytime your GitHub repository is updated.
 
  11. Click on the "Open App" button at the top of the page. The Heroku website is now successfully deployed.
+ 
 ## Instructions how to log to admin panel
+
+To log in to admin panel type after page address **/admin**
+After being redirected to login page type **admin@gmail.com** to email form and **admin** to password form.
 
 
 ## Credits
