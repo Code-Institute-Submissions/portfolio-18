@@ -130,7 +130,6 @@ The main page allows all users of the site to view just a couple words where use
 
 #### Portfolio Page
 
-
 #### Contact Page
 
 #### Login Page
@@ -312,7 +311,7 @@ After being redirected to login page type **admin@gmail.com** to email form and 
 
 ### Content
 
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+- The text for content was created by myself
 
 ### Media
 
