@@ -131,15 +131,6 @@ If the user tries to access a user account, other than the current user count, v
 #### 404 Error Page
 If the user attempts to use a url that does not exist then they will be redirected to the 404 page. The 404 page will inform the current user that the page they are trying to access doesn't exist and provides a link back to the main page.
 
-### Existing Features
-
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
-
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
-
 ### Features Left to Implement
 
 - Skills tab - to show what frameworks/libraries are used with this projects.
