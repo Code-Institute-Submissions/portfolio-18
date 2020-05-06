@@ -8,8 +8,6 @@
 <div align="center"><img src="static\img\responsive_web.PNG" >
 </div>
 
-Patrycja.io is created by Patrycja Tyra as her Full - Stack Developer professional portfolio to be able to get freelance projects on side but as well to be visible to future employers
-
 ***
 # Table of Contents  
 
@@ -151,11 +149,11 @@ The manage-runs page allows the user to view qc data for individual runs or grou
 
 #### Delete Project
 
-The delete-run page allows the user or admin-user to delete the currently selected run.
+The delete button allows the admin or to delete chosen project 
 
-#### Update Project
+#### Edit/Update Project
 
-The update-run page allows the user or admin-user to update the currently selected run.
+The update button allows the admin to redirect to update form and edit/updated the currently selected project.
 
 
 #### Logout Page
