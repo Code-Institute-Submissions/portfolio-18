@@ -107,13 +107,7 @@ To get to the Admin page, user needs to type in after website address **/admin**
 
 In the Admin page by purpose I haven't use option to manage admin/user as admin/owner of the website should be just only one.
 
-
-
-
-#### Add Run Page
-The add-run page allows the user to add new qc run data to the database.
-
-#### Manage Runs Page
+#### View project
 The manage-runs page allows the user to view qc data for individual runs or groups of runs. Once an individual run has been selected, the user is able to access the delete-run or update-run pages.
 
 #### Delete Project
@@ -122,11 +116,6 @@ The delete-run page allows the user or admin-user to delete the currently select
 #### Update Project
 The update-run page allows the user or admin-user to update the currently selected run.
 
-#### Delete User Page
-The delete-user page allows the admin-user to delete the currently selected user account.
-
-#### Update User Page
-The update-user page allows the admin-user to update the currently selected user account.
 
 #### Logout Page
 Accessed via the logout button and allows the user or admin-user to end their current session. Informs the user that they have successfully logged out and provides a link back to the main page.
