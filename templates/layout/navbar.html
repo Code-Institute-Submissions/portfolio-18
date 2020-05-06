@@ -11,9 +11,10 @@
                 </li>
                 <li class="nav-item "><a href="{{ url_for( 'see_projects')}} " class="nav-link {% if active == 'portfolio' %}active{% endif %}">Portfolio</a>
                 </li>
+                {% if not session['email'] %}
                 <li class="nav-item "><a href="{{ url_for( 'contact')}} " class="nav-link {% if active == 'contact' %}active{% endif %}">Contact</a>
                 </li>
-                {% if session['email'] %}
+                {% endif %} {% if session['email'] %}
                 <li class="nav-item "><a href="{{ url_for( 'logout')}} " class="nav-link {% if active == 'admin' %}active{% endif %}">Log out</a>
                 </li>
                 {% endif %}
