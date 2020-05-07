@@ -28,6 +28,9 @@
     Contact appeared instead.
 
 ## Footer
+   Go to social icons and press on every single one if it works.
+   If it redirects to social services it works.
+   Twitter redirect to main account as it I doesn't have Twitter account.
 
 ## Portfolio
 
