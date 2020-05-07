@@ -113,14 +113,12 @@ Otherwise making website colourful would decrease value and UX and user would le
 
 These wireframes were created using Balsamiq during the Scope Plane part of the design and planning process for this project.
 
-<div align="center"><img src="wireframes\main.PNG" >
-</div>
-<div align="center"><img src="wireframes\main.PNG" >
-</div><div align="center"><img src="wireframes\main.PNG" >
-</div><div align="center"><img src="wireframes\main.PNG" >
-</div><div align="center"><img src="wireframes\main.PNG" >
-</div>
 
+<div align="center"><img src="wireframes\main.png" ></div>
+<div align="center"><img src="wireframes\portfolio.PNG" >
+</div><div align="center"><img src="wireframes\admin panel.PNG" >
+</div><div align="center"><img src="wireframes\contact.PNG" >
+</div>
 
 
 
