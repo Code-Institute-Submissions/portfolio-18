@@ -1,12 +1,35 @@
 # Testing
 
- In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
- Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
 
  For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
 
- 1. Contact form:
+
+Navbar
+
+ 1.Logo (home button)
+    Go to the Navbar and try to press Logotype button (PATRYCJA.IO)
+    If it will redirect you to the main/home page it means it works
+   
+ 2. Home button
+    Go to the Navbar and try to press home button (HOME)
+    If it will redirect you to the main/home page it means it works
+
+ 3.Portfolio button.
+    Go to the Navbar and try to press portfolio button (PORTFOLIO))
+    If it will redirect you to the portfolio page it means it works
+
+ 4.Contact button (visible only when admin is logged out)
+    Go to the Navbar and try to press contact button (CONTACT)
+    If it will redirect you to the contact page it means it works.
+
+ 5.Log out button ( appears only when admin is logged in ).
+    Log out button shouldn't be visible when admin is logged out.
+    Logged out from admin Panel and logout button vanished.
+    Contact appeared instead.
+
+
+
+ 1. Contact:
      1. Go to the "Contact Us" page
      2. Try to submit the empty form and verify that an error message about the required fields appears
      3. Try to submit the form with an invalid email address and verify that a relevant error message appears
