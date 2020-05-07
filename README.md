@@ -67,24 +67,28 @@
 
 # UX
 
+There are  two types of user to acess website, unregistered visitor and registered admin:
+
 ### Goals
-#### Visitor Goals
-
-The central target audience for Patrycja.io Portfolio are:
-
-- People who will visit my social media and are curious about my work
-- People looking for inspirations or information about me
-
-
-#### Business Goals
-
-The target businesses to use Patrycja.io to advertise:
-
-
 ## User Stories:
 
-### Visitor Stories
-### Business Stories
+### Visitor Stories as an unregistered user:
+
+ 1. I want to see the latest projects of software developer Patrycja Tyra
+ 2. I want to get known who she is and what is her story
+ 3. I want to reach her GitHub to check the code
+ 4. I want to see her work experience
+ 5. I want to contact Patrycja Tyra if I would have any questions.
+ 6. I am an owner of a business looking to hire someone for freelance
+ 7. I want to send some business offer
+
+### Owner stories as Admin user:
+
+1. I want to log on to the website and be able to add new projects
+2. I want to log on to the website and delete old not needed projects
+3. I want to log on and edit previously created project.
+
+
 
 # Design Choices
 
@@ -339,6 +343,7 @@ https://code.visualstudio.com/docs/python/environments
 
 
 - The project is inspired by my experience made so far in software developmet.
+- Manny thanks to my Code Institute Tutors team, especially Anna Greaves with her endless willing to help and patience with my lack of knowlegde.
 
 - Special thanks to my Code Institute Mentor [Simen Daehlin](https://github.com/Eventyret) for his coding expertise, endless patience and generosity with his time. 
 
