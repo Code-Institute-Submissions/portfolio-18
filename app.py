@@ -48,13 +48,8 @@ def project_view(project_id):
 # Page for user to edit review
 @app.route('/edit_project/<project_id>')
 def edit_project(project_id):   
-    login_user = True if 'email' in session else False
-        
-    if not login_user:   
-       return redirect(url_for('permission_denied'))
-    else:
-        the_project = mongo.db.projects.find_one({"_id": ObjectId(project_id)})
-        return render_template('pages/edit_project.html',  project=the_project, email=session['email'], headTitle="Edit")    
+    the_project = mongo.db.projects.find_one({"_id": ObjectId(project_id)})
+    return render_template('pages/edit_project.html',  project=the_project, email=session['email'], headTitle="Edit")    
 
 # Updating project in database
 @app.route('/update_project/<project_id>', methods=["POST"])

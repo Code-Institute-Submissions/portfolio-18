@@ -53,10 +53,8 @@
 
 
 ## Responsiveness on small devices
-<div align="center"><img src="static\img\patrycja.io color scheme.png" >
-</div><div align="center"><img src="static\img\patrycja.io color scheme.png" >
-</div><div align="center"><img src="static\img\patrycja.io color scheme.png" >
-</div><div align="center"><img src="static\img\patrycja.io color scheme.png" >
-</div><div align="center"><img src="static\img\patrycja.io color scheme.png" >
-</div><div align="center"><img src="static\img\patrycja.io color scheme.png" >
+<div align="center"><img src="static\img\responsive_web.PNG" >
+</div><div align="center"><img src="static\img\testing_responsivness_2.PNG" >
+</div><div align="center"><img src="static\img\testing_responsivness_3.PNG" >
+</div><div align="center"><img src="static\img\testing_responsivness.PNG" >
 </div>
