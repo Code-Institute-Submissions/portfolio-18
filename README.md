@@ -115,6 +115,11 @@ These wireframes were created using Balsamiq during the Scope Plane part of the 
 
 <div align="center"><img src="wireframes\main.PNG" >
 </div>
+<div align="center"><img src="wireframes\main.PNG" >
+</div><div align="center"><img src="wireframes\main.PNG" >
+</div><div align="center"><img src="wireframes\main.PNG" >
+</div><div align="center"><img src="wireframes\main.PNG" >
+</div>
 
 
 
