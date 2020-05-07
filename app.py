@@ -51,9 +51,8 @@ def edit_project(project_id):
     user = mongo.db.user
     login_user = user.find_one({
         'email': request.form.get('email')})
-    if not login_user:
-        
-        return render_template('pages/permission.html', headTitle="Access denied")
+    if not login_user:   
+        return redirect(url_for('permission'))
     else:
         the_project = mongo.db.projects.find_one({"_id": ObjectId(project_id)})
         return render_template('pages/edit_project.html',  project=the_project, email=session['email'], headTitle="Edit")    
