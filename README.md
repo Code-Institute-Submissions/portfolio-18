@@ -139,6 +139,7 @@ The main page allows all users of the site to view just a couple words where use
 
 #### Contact Page
 
+
 #### Login Page
 
 The login page allows a registered user to log into their user account using their unique username. If successful the user is directed to the main user page. NOTE! that there Register Page Do
