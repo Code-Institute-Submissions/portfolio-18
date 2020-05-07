@@ -4,7 +4,7 @@
  For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
 
 
-Navbar
+## Navbar
 
  1.Logo (home button)
     Go to the Navbar and try to press Logotype button (PATRYCJA.IO)
@@ -26,6 +26,16 @@ Navbar
     Log out button shouldn't be visible when admin is logged out.
     Logged out from admin Panel and logout button vanished.
     Contact appeared instead.
+
+## Footer
+
+## Portfolio
+
+   Go to portfolio section and press on particular square presenting project.
+   Square should redirect to portfolio view. It redirects to particular project page.
+   In project page there is a main photo, after pressing on it, visitor should be redirected to real life project.
+   It redirect to project. When Admin is logged in should see "visible go back to admin panel button".
+   After logging to admin panel - button is visible and redirects to admin panel.
 
 
 
