@@ -1,9 +1,6 @@
 # Testing
 
 
- For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
-
 ## Navbar
 
  1.Logo (home button)
@@ -45,5 +42,14 @@
 ## Contact form
 
      Go to the "Contact" page. Try to submit the empty form and verify that an error message about the required fields appears.Try to submit the form with an invalid email address and verify that a relevant error message appears.Try to submit the form with all inputs valid and verify that a success message appears.
+
+## Login Panel
+     Try to log in on login panel with credentials: login: admin@gmail.com, password: admin
+     If it works it should redirect to admin panel.
+     Try to log in with different credentials. If its wrong it should redirect to permission denied page
+
+## Admin Panel
+    
+
 
 ## Responsiveness on small devices
