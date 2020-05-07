@@ -47,10 +47,9 @@ def project_view(project_id):
 
 # Page for user to edit review
 @app.route('/edit_project/<project_id>')
-def edit_project(project_id):
-    user = mongo.db.user
-    login_user = user.find_one({
-        'email': request.form.get('email')})
+def edit_project(project_id):   
+    login_user = True if 'email' in session else False
+        
     if not login_user:   
        return redirect(url_for('permission_denied'))
     else:
