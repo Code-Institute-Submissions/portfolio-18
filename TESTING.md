@@ -33,17 +33,14 @@
 
    Go to portfolio section and press on particular square presenting project.
    Square should redirect to portfolio view. It redirects to particular project page.
+
    In project page there is a main photo, after pressing on it, visitor should be redirected to real life project.
    It redirect to project. When Admin is logged in should see "visible go back to admin panel button".
    After logging to admin panel - button is visible and redirects to admin panel.
 
 
-
- 1. Contact:
-     1. Go to the "Contact Us" page
-     2. Try to submit the empty form and verify that an error message about the required fields appears
-     3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-     4. Try to submit the form with all inputs valid and verify that a success message appears.
+## Contact form
+     Go to the "Contact" page. Try to submit the empty form and verify that an error message about the required fields appears.Try to submit the form with an invalid email address and verify that a relevant error message appears.Try to submit the form with all inputs valid and verify that a success message appears.
 
  In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
 
