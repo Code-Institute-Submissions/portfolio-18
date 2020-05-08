@@ -46,20 +46,20 @@ def see_projects():
     return render_template('pages/portfolio.html', headTitle="Portfolio", projects=mongo.db.projects.find())
 
 # Viewing a projects's information
-@app.route('/project_view/<project_id>')
-def project_view(project_id):
+@app.route('/project/<project_id>')
+def project(project_id):
     the_project = mongo.db.projects.find_one({"_id": ObjectId(project_id)})
     return render_template('pages/project.html', target="_blank", headTitle="Project", project=the_project)
 
 # Page for user to edit review
-@app.route('/edit_project/<project_id>')
-def edit_project(project_id):   
+@app.route('/project/edit/<project_id>')
+def edit(project_id):   
     the_project = mongo.db.projects.find_one({"_id": ObjectId(project_id)})
     return render_template('pages/edit.html',  project=the_project, email=session['email'], headTitle="Edit")    
 
 # Updating project in database
-@app.route('/update_project/<project_id>', methods=["POST"])
-def update_project(project_id):
+@app.route('/project/update/<project_id>', methods=["POST"])
+def update(project_id):
     projects=mongo.db.projects
     projects.update({'_id': ObjectId(project_id)},
     {
@@ -75,8 +75,8 @@ def update_project(project_id):
     return redirect(url_for('admin'))
 
 # Deleting projects's entry from database
-@app.route('/delete_project/<project_id>')
-def delete_project(project_id):
+@app.route('/project/delete/<project_id>')
+def delete(project_id):
     mongo.db.projects.remove({'_id': ObjectId(project_id)})
     return redirect(url_for('admin'))
 
