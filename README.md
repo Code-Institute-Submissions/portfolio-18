@@ -69,7 +69,7 @@
 
 There are  two types of user to acess website, unregistered visitor and registered admin:
 
-### Goals
+
 ## User Stories:
 
 ### Visitor Stories as an unregistered user:
@@ -301,8 +301,8 @@ You can visit the website at `http://127.0.0.1:5000`
   
 |Key     | Value | 
 | -------|-------|
-| DEBUG  | FALSE | 
-| IP     | 0.0.0.0|  
+| DEV  | 1 | 
+| HOSTNAME    | 0.0.0.0|  
 | MONGO_URI | `mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority`      | 
 | PORT   |5000   |  
 | SECRET_KEY |	`<your_secret_key> `   |
