@@ -76,6 +76,7 @@ def update(project_id):
 # Deleting projects's entry from database
 @app.route('/project/delete/<project_id>')
 def delete(project_id):
+     """ Function deleting""" 
     mongo.db.projects.remove({'_id': ObjectId(project_id)})
     return redirect(url_for('admin'))
 
@@ -124,6 +125,7 @@ def admin():
 # No permission page
 @app.route('/permission')
 def permission_denied():
+    """ Function made to redirect when visitor wants to get to views permited only for admin """ 
     return render_template("pages/permission.html",active="errorPage", loggedIn=False, headTitle="Access denied")
 
 # 404 - Page not found
