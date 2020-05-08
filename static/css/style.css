@@ -285,7 +285,8 @@
     }
     
     input[type="submit"]:hover {
-        background: #000;
+        background: #ffffff;
+        color: #222;
     }
     
     .section-title h2 {
