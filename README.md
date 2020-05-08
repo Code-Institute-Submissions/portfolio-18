@@ -117,8 +117,6 @@ These wireframes were created using Balsamiq during the Scope Plane part of the 
 <div align="center"><img src="wireframes\admin.png" ></div>
 <div align="center"><img src="wireframes\contact.png" ></div>
 
-
-
 # Features:
 
 ### Existing Features
@@ -140,6 +138,7 @@ The main page allows all users of the site to view just a couple words where use
  Portfolio Page is a main page when you can see collection of cards presenting projects added to data base.
 
 #### Contact Page
+ Classic contact form to fill out for future business offers.
 
 
 #### Login Page
