@@ -20,7 +20,13 @@
             </div>
             <hr>
 
+
         </form>
+        {% if session['email'] %}
+        <div class="col-md-12 col-sm-12 text-center">
+            <a href="{{ url_for('admin')}}"> Go back to admin page</a>
+        </div>
+        {% endif %}
     </div>
 </div>
 
