@@ -25,11 +25,6 @@ mongo = PyMongo(app)
 def home_page():    
     return render_template('pages/index.html', headTitle="Home")
 
-@app.route("/logout")
-def logout():
-    session['email'] = None
-    session['name'] = None
-    return render_template('pages/logout.html', headTitle="Logout")
 
 # Adding a project to the database
 @app.route('/insert_project', methods=['POST'])
@@ -63,7 +58,7 @@ def edit(project_id):
 
 # Updating project in database
 @app.route('/project/update/<project_id>', methods=["POST"])
-def update(project_id):
+def update(project_id): 
     projects=mongo.db.projects
     projects.update({'_id': ObjectId(project_id)},
     {
@@ -107,9 +102,17 @@ def login():
       
     return render_template('pages/permission.html', headTitle="Access denied")
        
-    
+@app.route("/logout")
+def logout():
+    session['email'] = None
+    session['name'] = None
+    return render_template('pages/logout.html', headTitle="Logout")
+
+
 @app.route('/register', methods=['POST', 'GET'])
 def register():
+    """ This is function allowing me to sign up in case I would forget user data.
+     This is as well a blueprint for login option"""
     email = session.get('email')
     if email:
       return redirect(url_for('login'))
@@ -131,6 +134,8 @@ def register():
 
 @app.route("/admin")
 def admin():
+    """ This is function redirecting me to admin panel, but at the same time not allowing for authentication if user not in session. 
+    """
     projects=mongo.db.projects.find({'email':session.get('email')})
     email = session.get('email')
     if not email:
