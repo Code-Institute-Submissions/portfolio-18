@@ -5,7 +5,7 @@
 
 **Patrycja.io is created by Patrycja Tyra as her Full - Stack Developer professional portfolio to be able to get freelance projects on side but as well to be visible to future employers**
 
-<div align="center"><img src="static\img\responsive_web.PNG" >
+<div align="center"><img src="static\img\testing1.png" >
 </div>
 
 ***
@@ -98,7 +98,7 @@ There are  two types of user to acess website, unregistered visitor and register
 
 ### Colours
 
-<div align="center"><img src="static\img\patrycja.io color scheme.png" >
+<div align="center"><img src="static\img\colors.png" >
 </div>
 
  - **White, Black and Grey** -Purpose of choosing mainly white and black colour scheme came with a reason to not interfere with projects photos.
@@ -116,7 +116,7 @@ These wireframes were created using Balsamiq during the Scope Plane part of the 
 
 <div align="center"><img src="wireframes\main.png"></div>
 <div align="center"><img src="wireframes\portfolio.png" ></div>
-<div align="center"><img src="wireframes\admin panel.png" ></div>
+<div align="center"><img src="wireframes\admin.png" ></div>
 <div align="center"><img src="wireframes\contact.png" ></div>
 
 
