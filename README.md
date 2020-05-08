@@ -5,7 +5,7 @@
 
 **Patrycja.io is created by Patrycja Tyra as her Full - Stack Developer professional portfolio to be able to get freelance projects on side but as well to be visible to future employers**
 
-<div align="center"><img src="static\img\testing1.png" >
+<div align="center"><img src="static\img\testing0.png" >
 </div>
 
 ***
@@ -67,12 +67,12 @@
 
 # UX
 
-There are  two types of user to acess website, unregistered visitor and registered admin:
+There are  two types of user to access website, unregistered visitor and registered admin:
 
 
 ## User Stories:
 
-### Visitor Stories as an unregistered user:
+### Visitor Stories:
 
  1. I want to see the latest projects of software developer Patrycja Tyra
  2. I want to get known who she is and what is her story
@@ -82,7 +82,7 @@ There are  two types of user to acess website, unregistered visitor and register
  6. I am an owner of a business looking to hire someone for freelance
  7. I want to send some business offer
 
-### Owner stories as Admin user:
+### Admin user:
 
 1. I want to log on to the website and be able to add new projects
 2. I want to log on to the website and delete old not needed projects
@@ -198,16 +198,16 @@ If the user attempts to use a URL that does not exist then they will be redirect
 - [GitHub Wiki TOC generator](https://ecotrust-canada.github.io/markdown-toc/)
 - [Online Markdown Editor](https://dillinger.io/)
 - [Favicon generator](https://favicon.io/favicon-generator/)
-- [Sizzy](https://sizzy.co/)to check responsiveness on other devices
+- [Sizzy](https://sizzy.co/) to check responsiveness on other devices
 - [Am I Responsive](http://ami.responsivedesign.is/) to create the images in this readme file of each page displayed on different screen sizes.
 - EZgif provided gif editing software for the gif in this readme file.
-- [Coolors](https://coolors.co/)colour schemes generator
+- [Coolors](https://coolors.co/) colour schemes generator
 - [Material Design Clours](https://www.materialui.co/colors)
 - [The Padwan Project](https://github.com/Eventyret/Padawan)
 
 ### Libraries/Frameworks
-- [Bootstrap](https://getbootstrap.com/)to simplify the structure of the website and make the website responsive easily.
-- [FontAwesome](https://fontawesome.com/)to provide icons for Family Hub.
+- [Bootstrap](https://getbootstrap.com/) to simplify the structure of the website and make the website responsive easily.
+- [FontAwesome](https://fontawesome.com/) to provide icons for Family Hub.
 - [Google Fonts](https://fonts.google.com/) to style the website fonts.
 - [PyMongo](https://flask-pymongo.readthedocs.io/en/latest/) to make communication between Python and MongoDB possible.
 - [Flask](https://flask.palletsprojects.com/en/1.1.x/) to construct and render pages.
