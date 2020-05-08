@@ -68,7 +68,7 @@
                                 <td>{{project.project_name}}</td>
                                 <td><a href="{{ url_for('project', project_id=project._id) }}" class="btn btn-outline-info"><i class="fas fa-search"></i></a></td>
                                 <td><a href="{{ url_for('edit', project_id=project._id) }}" class="btn btn-outline-warning"><i class="fas fa-edit"></i></a></td>
-                                <td><a href="{{ url_for('delete', project_id=project._id) }}" data-toggle="modal" data-target="modalDelete" class="btn btn-outline-danger"><i class="far fa-trash-alt"></i></a></td>
+                                <td><a href="{{ url_for('delete', project_id=project._id) }}"><button data-toggle="modal" data-target="modalDelete" class="btn btn-outline-danger"></button><i class="far fa-trash-alt"></i></a></td>
                             </tr>
 
 
