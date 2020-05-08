@@ -265,15 +265,15 @@ Again this command may differ depending on your operating system, please check t
 
 4. If needed, Upgrade pip locally with
 
-`pip install --upgrade pip.`
+`pip install --upgrade pip`
 
 5. Install all required modules with the command
 
-`pip -r requirements.txt.`
+`pip -r requirements.txt`
 
-6. In your local IDE create a file called `.flaskenv.`
+6. In your local IDE create a file called `.venv`
 
-7. Inside the `.flaskenv` file, create a SECRET_KEY variable and a MONGO_URI to link to your own database. Please make sure to call your database `portfolio`, with 2 collections called `users` and `projects`. You will find example json structures for these collections in the schemas folder.
+7. Inside the `.venv` file, create a SECRET_KEY variable and a MONGO_URI to link to your own database. Please make sure to call your database `portfolio`, with 2 collections called `users` and `projects`. You will find example json structures for these collections in the schemas folder.
 
 8. You can now run the application with the command
 
@@ -310,7 +310,7 @@ You can visit the website at `http://127.0.0.1:5000`
  
  9. In the Heroku dashboard, click "Deploy".
 
- 10. In the Automatic Deploys section click Enable Automatic Deploys to ensure your Heroku app is automatically updated everytime your GitHub repository is updated.
+ 10. In the Automatic Deploys section click Enable Automatic Deploys to ensure your Heroku app is automatically updated every time your GitHub repository is updated.
 
  11. Click on the "Open App" button at the top of the page. The Heroku website is now successfully deployed.
 
