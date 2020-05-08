@@ -245,6 +245,8 @@ The following must be installed on your machine:
 
 ### Instructions
 
+***Instructions underneath are for Windows users please refer it to your OS**
+
 1. Save a copy of the GitHub repository located at https://github.com/patrycja-io/portfolio by clicking the "download zip" button at the top of the page and extracting the zip file to your chosen folder. If you have Git installed on your system, you can clone the repository with the following command.
 
 `git clone https://github.com/patrycja-io/portfolio`
