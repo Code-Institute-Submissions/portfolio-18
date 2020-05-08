@@ -337,10 +337,6 @@ After being redirected to login page type **admin@gmail.com** to email form and 
 - Main page photo - picture of myself made by phone.
 - Pictures of real life projects are made by snipping tool build in Windows OS.
 
-### Code
-
-https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat
-https://code.visualstudio.com/docs/python/environments
 
 ### Acknowledgements
 
