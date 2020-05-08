@@ -93,7 +93,7 @@ There are  two types of user to acess website, unregistered visitor and register
 # Design Choices
 
 ### Fonts 
-- Font Work Sans - was for me the best choice of non serif font. As well it is very simple and not well know font. Because it seemed to be unique for me I decided to use those one.
+- [Font Work Sans] (https://fonts.google.com/specimen/Work+Sans)- was for me the best choice of non serif font. As well it is very simple and not well know font. Because it seemed to be unique for me I decided to use those one.
 - Font Awesome 5.0 - used to mark CRUD options( view, edit and delete), social icons, as well as programming languages icons. 
 
 ### Colours
@@ -189,7 +189,7 @@ If the user attempts to use a URL that does not exist then they will be redirect
 # Technologies Used
 ------
 ### Tools
-- [Visual Studio Code] (https://code.visualstudio.com/) is the IDE used for developing this project.
+- [Visual Studio Code](https://code.visualstudio.com/) is the IDE used for developing this project.
 - PIP for installation of tools needed in this project.
 - [Git to handle version control.](https://git-scm.com/)
 - [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) is the database for this project.
@@ -198,7 +198,6 @@ If the user attempts to use a URL that does not exist then they will be redirect
 - [GitHub Wiki TOC generator](https://ecotrust-canada.github.io/markdown-toc/)
 - [Online Markdown Editor](https://dillinger.io/)
 - [Favicon generator](https://favicon.io/favicon-generator/)
-- Browserstack to test functionality on all browsers and devices.
 - [Sizzy](https://sizzy.co/)to check responsiveness on other devices
 - [Am I Responsive](http://ami.responsivedesign.is/) to create the images in this readme file of each page displayed on different screen sizes.
 - EZgif provided gif editing software for the gif in this readme file.
@@ -206,14 +205,13 @@ If the user attempts to use a URL that does not exist then they will be redirect
 - [Material Design Clours](https://www.materialui.co/colors)
 - [The Padwan Project](https://github.com/Eventyret/Padawan)
 
-### Libraries
-- [JQuery] to simplify DOM manipulation.
-- [Bootstrap] to simplify the structure of the website and make the website responsive easily.
-- [FontAwesome] to provide icons for Family Hub.
-- [Google Fonts] to style the website fonts.
+### Libraries/Frameworks
+- [Bootstrap](https://getbootstrap.com/)to simplify the structure of the website and make the website responsive easily.
+- [FontAwesome](https://fontawesome.com/)to provide icons for Family Hub.
+- [Google Fonts](https://fonts.google.com/) to style the website fonts.
 - [PyMongo](https://flask-pymongo.readthedocs.io/en/latest/) to make communication between Python and MongoDB possible.
-- [Flask] to construct and render pages.
-- [Jinja]to simplify displaying data from the backend of this project smoothly and effectively in html.
+- [Flask](https://flask.palletsprojects.com/en/1.1.x/) to construct and render pages.
+- [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) to simplify displaying data from the backend of this project smoothly and effectively in html.
 
 ### Languages
 

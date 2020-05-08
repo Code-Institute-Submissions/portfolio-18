@@ -277,7 +277,7 @@
     input[type="submit"] {
         background: #222;
         border-radius: 100px;
-        border: none;
+        border-color: #ffffff;
         color: #ffffff;
         font-weight: 400;
         transition: all 0.4s ease-in-out;
