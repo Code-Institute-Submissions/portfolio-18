@@ -139,7 +139,7 @@ The main page allows all users of the site to view just a couple words where use
  In footer you can fin contact details (email) and as well my social icons.
 
 #### Portfolio Page
-
+ Portfolio Page is a main page when you can see collection of cards presenting projects added to data base.
 
 #### Contact Page
 
