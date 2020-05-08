@@ -108,12 +108,11 @@ Otherwise making website colourful would decrease value and UX and user would le
  
  - **Other colours** - Programming languages - font awesome are made colorfull to show straigh away what languages are used by this full-stack developer.
 
-### Wireframes 
+### Wireframes
+
 
 These wireframes were created using Balsamiq during the Scope Plane part of the design and planning process for this project.
--
 
-<div align="center"><img src="wireframes\main.png" ></div>
 <div align="center"><img src="wireframes\portfolio.png" ></div>
 <div align="center"><img src="wireframes\admin.png" ></div>
 <div align="center"><img src="wireframes\contact.png" ></div>
