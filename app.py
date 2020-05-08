@@ -17,11 +17,9 @@ app.config['MONGO_URI'] = os.getenv('MONGO_URI')
 
 mongo = PyMongo(app)
 
-# Home page
-@app.route('/')
 
 # Index page
-@app.route('/index', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def home_page():    
     return render_template('pages/index.html', headTitle="Home")
 
