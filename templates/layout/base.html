@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-
+    <!-- Links -->
     {% include 'layout/links.html' %}
     <title> {{ headTitle }} | patrycja.io</title>
 </head>
@@ -12,15 +12,15 @@
     <!-- Navigation -->
     {% include 'layout/navbar.html' %}
 
-    <!-- main 
-        content -->
+    <!-- Main content -->
     {% block content %} {% endblock %}
 
 
     <!-- Footer -->
     {% include 'layout/footer.html' %}
 
-
+    <!-- Scripts -->
+    {% include 'layout/scripts.html' %}
 
 </body>
 
