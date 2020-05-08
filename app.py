@@ -86,6 +86,7 @@ def contact():
 
 @app.route('/login', methods=['POST', 'GET'])
 def login():
+    """ function allowing to login to admin panel, but only with good credentials, otherwise it will be redirected to permission denied"""
     if request.method == 'GET': 
         return render_template('pages/login.html', headTitle="Login")
     else:
@@ -107,29 +108,6 @@ def logout():
     session['email'] = None
     session['name'] = None
     return render_template('pages/logout.html', headTitle="Logout")
-
-
-@app.route('/register', methods=['POST', 'GET'])
-def register():
-    """ This is function allowing me to sign up in case I would forget user data.
-     This is as well a blueprint for login option"""
-    email = session.get('email')
-    if email:
-      return redirect(url_for('login'))
-    user = None
-    if request.method == 'POST':
-        name = request.form['username']
-        email = request.form['email']
-        password = request.form['password']
-        user = {'name': name, 'email': email, 'password': password}
-        if mongo.db.user.find_one({"email": email}):
-            return render_template('pages/register.html')
-        else:
-            mongo.db.user.insert_one(user)
-            return render_template('pages/login.html')
-
-    return render_template('pages/register.html', headTitle="Register")
-
 
 
 @app.route("/admin")
