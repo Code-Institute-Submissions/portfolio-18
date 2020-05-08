@@ -136,8 +136,10 @@ Contains logotype and menu section. Logotype redirect to main/home page. In the 
 The main page allows all users of the site to view just a couple words where user arrived and what this website is for The page is divided into 3 sections. The first section has explanation what this website is for. The second section contains photo of the owner. 3rd section explain who owner of the website is.
 
 #### Footer
+ In footer you can fin contact details (email) and as well my social icons.
 
 #### Portfolio Page
+
 
 #### Contact Page
 
@@ -187,11 +189,11 @@ If the user attempts to use a URL that does not exist then they will be redirect
 # Technologies Used
 ------
 ### Tools
-- [Visual Studio Code is the IDE used for developing this project.](https://code.visualstudio.com/)
+- [Visual Studio Code] (https://code.visualstudio.com/) is the IDE used for developing this project.
 - PIP for installation of tools needed in this project.
 - [Git to handle version control.](https://git-scm.com/)
-- [MongoDB Atlas is the database for this project](https://www.mongodb.com/cloud/atlas)
-- [GitHub to store and share all project code remotely.](https://github.com/)
+- [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) is the database for this project.
+- [GitHub](https://github.com/) to store and share all project code remotely.
 - [Picresize](https://picresize.com/) to edit, crop and save images as well as ulitizing the colour picker to ensure colour consistency over the entire project.
 - [GitHub Wiki TOC generator](https://ecotrust-canada.github.io/markdown-toc/)
 - [Online Markdown Editor](https://dillinger.io/)
