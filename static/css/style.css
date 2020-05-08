@@ -277,7 +277,7 @@
     input[type="submit"] {
         background: #222;
         border-radius: 100px;
-        border-color: #ffffff;
+        border: 2px solid#ffffff;
         color: #ffffff;
         font-weight: 400;
         transition: all 0.4s ease-in-out;
@@ -287,7 +287,7 @@
     input[type="submit"]:hover {
         background: #ffffff;
         color: #222;
-        border-color: #222
+        border: 2px solid #222;
     }
     
     .section-title h2 {
