@@ -53,8 +53,12 @@ def project(project_id):
 
 # Page for user to edit review
 @app.route('/project/edit/<project_id>')
-def edit(project_id):   
+def edit(project_id):       
     the_project = mongo.db.projects.find_one({"_id": ObjectId(project_id)})
+    email = session.get('email')
+    if not email:
+        return redirect(url_for('permission'))
+
     return render_template('pages/edit.html',  project=the_project, email=session['email'], headTitle="Edit")    
 
 # Updating project in database
