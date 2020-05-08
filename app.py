@@ -17,6 +17,8 @@ app.config['MONGO_URI'] = os.getenv('MONGO_URI')
 
 mongo = PyMongo(app)
 
+# Home page
+@app.route('/')
 
 # Index page
 @app.route('/', methods=['GET', 'POST'])
@@ -41,13 +43,13 @@ def see_projects():
 @app.route('/project_view/<project_id>')
 def project_view(project_id):
     the_project = mongo.db.projects.find_one({"_id": ObjectId(project_id)})
-    return render_template('pages/project_view.html', headTitle="Project", project=the_project)
+    return render_template('pages/project.html', headTitle="Project", project=the_project)
 
 # Page for user to edit review
 @app.route('/edit_project/<project_id>')
 def edit_project(project_id):   
     the_project = mongo.db.projects.find_one({"_id": ObjectId(project_id)})
-    return render_template('pages/edit_project.html',  project=the_project, email=session['email'], headTitle="Edit")    
+    return render_template('pages/edit.html',  project=the_project, email=session['email'], headTitle="Edit")    
 
 # Updating project in database
 @app.route('/update_project/<project_id>', methods=["POST"])
