@@ -224,7 +224,7 @@ Please see [Testing](TESTING.md) for all my testing
 
 # Deployment
 
-In order to deploy this project you must first set up an account at MongoDB Atlas. Click here for instructions on how to set up able Mongo Atlas account.
+In order to deploy this project you must first set up an account at MongoDB Atlas. Click [here](https://www.youtube.com/watch?v=rPqRyYJmx2g) for instructions on how to set up able Mongo Atlas account.
 
 ## How to run this project locally
 
