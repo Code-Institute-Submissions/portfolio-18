@@ -314,10 +314,17 @@ You can visit the website at `http://127.0.0.1:5000`
  11. Click on the "Open App" button at the top of the page. The Heroku website is now successfully deployed.
 
 # Instructions how to log to admin panel 
+
 **Note for Project Assessor**
 
 To log in to admin panel type after page address **/admin**
-After being redirected to login page type **admin@gmail.com** to email form and **admin** to password form.
+
+| LOGIN | PASSWORD |
+| ------ | ------ |
+| admin@gmail.com | admin |
+
+
+
 
 
 # Credits
