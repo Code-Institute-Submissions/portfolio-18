@@ -74,19 +74,19 @@ There are  two types of user to access website, unregistered visitor and registe
 
 ### Visitor Stories:
 
- 1. I want to see the latest projects of software developer Patrycja Tyra
- 2. I want to get known who she is and what is her story
- 3. I want to reach her GitHub to check the code
- 4. I want to see her work experience
- 5. I want to contact Patrycja Tyra if I would have any questions.
- 6. I am an owner of a business looking to hire someone for freelance
- 7. I want to send some business offer
+ 1. As a visitor I want to see the latest projects of software developer Patrycja Tyra
+ 2. As a visitor I want to get known who she is and what is her story
+ 3. As a visitor I want to reach her GitHub to check the code
+ 4. As a visitor I want to see her work experience
+ 5. As a visitor I want to contact Patrycja Tyra if I would have any questions.
+ 6. As a visitor I am an owner of a business looking to hire someone for freelance
+ 7. As a visitor I want to send some business offer
 
 ### Admin user:
 
-1. I want to log on to the website and be able to add new projects
-2. I want to log on to the website and delete old not needed projects
-3. I want to log on and edit previously created project.
+1. As an admin I want to log on to the website and be able to add new projects
+2. As an admin I want to log on to the website and delete old not needed projects
+3. As an admin I want to log on and edit previously created project.
 
 
 
@@ -112,6 +112,8 @@ Otherwise making website colourful would decrease value and UX and user would le
 
 
 These wireframes were created using Balsamiq during the Scope Plane part of the design and planning process for this project.
+-
+
 
 <div align="center"><img src="wireframes\main.png" ></div>
 <div align="center"><img src="wireframes\portfolio.png" ></div>
