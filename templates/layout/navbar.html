@@ -4,8 +4,9 @@
     <div class="container">
         <a class="navbar-brand" href="{{url_for('home_page')}}">PATRYCJA.IO</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="navbar-collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span></button>
+        </button>
         <div class="collapse navbar-collapse">
+            <span class="navbar-toggler-icon"></span>
             <ul class="navbar-nav mr-auto">
                 <li class="active nav-item">
                     <a href="{{ url_for('home_page')}}" class="nav-link {% if active == 'index' %}active{% endif %}">Home</a>
