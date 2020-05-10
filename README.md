@@ -109,16 +109,13 @@ Otherwise making website colourful would decrease value and UX and user would le
  - **Other colours** - Programming languages - font awesome are made colorfull to show straigh away what languages are used by this full-stack developer.
 
 ### Wireframes
-
-
 These wireframes were created using Balsamiq during the Scope Plane part of the design and planning process for this project.
--
 
 
-<div align="center"><img src="wireframes\main.png" ></div>
 <div align="center"><img src="wireframes\portfolio.png" ></div>
 <div align="center"><img src="wireframes\admin.png" ></div>
 <div align="center"><img src="wireframes\contact.png" ></div>
+<div align="center"><img src="wireframes\main.png" ></div>
 
 # Features:
 
@@ -200,7 +197,6 @@ If the user attempts to use a URL that does not exist then they will be redirect
 - [Favicon generator](https://favicon.io/favicon-generator/)
 - [Sizzy](https://sizzy.co/) to check responsiveness on other devices
 - [Am I Responsive](http://ami.responsivedesign.is/) to create the images in this readme file of each page displayed on different screen sizes.
-- EZgif provided gif editing software for the gif in this readme file.
 - [Coolors](https://coolors.co/) colour schemes generator
 - [Material Design Clours](https://www.materialui.co/colors)
 - [The Padwan Project](https://github.com/Eventyret/Padawan)
