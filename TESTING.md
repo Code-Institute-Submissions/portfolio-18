@@ -48,10 +48,20 @@
      Try to log in with different credentials. If its wrong it should redirect to permission denied page
 
 ## Admin Panel
+  Go to add form and fill all the forms try to press button add and check if button works and trigger alert. 
+  If it triggers it works.
+  Go to newly created project and press edit, should redirect to edit page.
+  Go back to admin page and click view - should redirect to view page.
+  go back to admin page and click delete - should delete project
+
+ ## Edit page 
+
+ Go to edit page and fill all inputs.
+ Try to press edit- should edit project with new details.
     
 
-
 ## Responsiveness on small devices
+
 <div align="center"><img src="static\img\testing0.png" >
 </div><div align="center"><img src="static\img\testing1.png" >
 </div><div align="center"><img src="static\img\testing2.png" >
