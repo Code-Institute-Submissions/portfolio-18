@@ -181,6 +181,7 @@ If the user attempts to use a URL that does not exist then they will be redirect
 - Skills tab - to show what frameworks/libraries are used with this projects.
 - CV - downloader or , cv tab to make it useful for future recruiter browsing this portfolio.
 - More animations and more fun stuff utilising front-end skills.
+- Delete alert, preventing accidental deleting project
 
 
 # Technologies Used
